@@ -1,5 +1,5 @@
 title: "AIoT Lab, Reitaku University"
-description: "Artificial Intelligence & IoT Laboratory at Reitaku University"
+description: "Artificial Intelligent IoT Laboratory at Reitaku University"
 author: "AIoT Lab"
 url: "https://aiot-lab-yin.github.io"
 baseurl: ""
@@ -29,6 +29,6 @@ favicon: "/assets/img/lab-logo.svg"
 markdown: kramdown
 
 # Collections (optional future use)
-# collections:
-#   members:
-#     output: true
+collections:
+  members:
+    output: true
