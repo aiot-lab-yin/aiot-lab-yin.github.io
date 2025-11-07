@@ -33,7 +33,109 @@
   margin: 1rem 0;
 }
 
-// 响应式调整
+// ==================== 响应式图片样式 ====================
+
+// 文章内容中的图片基础样式
+.post-content img,
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+// 图片包装容器
+.image-wrapper {
+  text-align: center;
+  margin: 2rem 0;
+  
+  &.small {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &.medium {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &.large {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// 图片说明文字
+.image-caption {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 特色图片（在Front Matter中设置的）
+.post-image-featured {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2rem;
+}
+
+// 新闻/博客文章中的图片
+.blog-post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  
+  // 为宽屏设备设置最大宽度
+  @media (min-width: 768px) {
+    max-width: 90%;
+  }
+  
+  @media (min-width: 992px) {
+    max-width: 80%;
+  }
+}
+
+// 团队成员图片
+.team-member-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+// 研究项目示意图
+.research-diagram {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    box-shadow: none;
+  }
+}
+
+// ==================== 响应式调整 ====================
 @media (max-width: 768px) {
   .hero-section {
     padding: 2rem 0;
@@ -45,5 +147,60 @@
     .lead {
       font-size: 1.2rem;
     }
+  }
+  
+  // 移动端图片调整
+  .post-content img,
+  article img {
+    margin: 1rem auto;
+    border-radius: 4px;
+  }
+  
+  .image-wrapper {
+    margin: 1.5rem 0;
+    
+    &.small,
+    &.medium,
+    &.large {
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  
+  .image-caption {
+    max-width: 95%;
+    font-size: 0.85rem;
+  }
+  
+  .blog-post-image {
+    max-width: 100%;
+  }
+  
+  .team-member-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+// 大屏幕优化
+@media (min-width: 1200px) {
+  .image-wrapper {
+    &.medium {
+      max-width: 800px;
+    }
+    
+    &.large {
+      max-width: 1000px;
+    }
+  }
+}
+
+// 打印样式
+@media print {
+  .post-content img,
+  article img {
+    max-width: 80% !important;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
   }
 }
