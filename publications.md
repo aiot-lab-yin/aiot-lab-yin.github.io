@@ -80,8 +80,10 @@ description: "Research publications from AIoT Laboratory"
 ## By Category
 
 ### Journal Papers
-{% assign journal_papers = site.data.publications | where_exp: "item", "item.category == 'journal' or item.category == 'journal_japanese'" | sort: "year" | reverse %}
-{% for pub in journal_papers %}
+{% assign journal_papers = site.data.publications | where: "category", "journal" %}
+{% assign journal_japanese = site.data.publications | where: "category", "journal_japanese" %}
+{% assign all_journals = journal_papers | concat: journal_japanese | sort: "year" | reverse %}
+{% for pub in all_journals %}
 <div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
     <strong>{{ pub.title }}</strong><br>
     {{ pub.authors }}<br>
@@ -96,8 +98,10 @@ description: "Research publications from AIoT Laboratory"
 {% endfor %}
 
 ### Conference Papers
-{% assign conference_papers = site.data.publications | where_exp: "item", "item.category == 'conference' or item.category == 'conference_japanese'" | sort: "year" | reverse %}
-{% for pub in conference_papers %}
+{% assign conference_papers = site.data.publications | where: "category", "conference" %}
+{% assign conference_japanese = site.data.publications | where: "category", "conference_japanese" %}
+{% assign all_conferences = conference_papers | concat: conference_japanese | sort: "year" | reverse %}
+{% for pub in all_conferences %}
 <div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
     <strong>{{ pub.title }}</strong><br>
     {{ pub.authors }}<br>
@@ -112,8 +116,10 @@ description: "Research publications from AIoT Laboratory"
 {% endfor %}
 
 ### Workshop & Symposium Papers
-{% assign workshop_papers = site.data.publications | where_exp: "item", "item.category == 'workshop' or item.category == 'workshop_japanese'" | sort: "year" | reverse %}
-{% for pub in workshop_papers %}
+{% assign workshop_papers = site.data.publications | where: "category", "workshop" %}
+{% assign workshop_japanese = site.data.publications | where: "category", "workshop_japanese" %}
+{% assign all_workshops = workshop_papers | concat: workshop_japanese | sort: "year" | reverse %}
+{% for pub in all_workshops %}
 <div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
     <strong>{{ pub.title }}</strong><br>
     {{ pub.authors }}<br>
