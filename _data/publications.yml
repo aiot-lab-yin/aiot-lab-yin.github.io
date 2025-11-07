@@ -1,5 +1,7 @@
 # 2025年出版物
 
+
+
 - year: 2025
   category: "conference"
   title: "RF-Rock: An Intermodulation-based RFID Unauthorized Identification Attack without Tag Activation"
@@ -36,6 +38,18 @@
     pdf: "#"
     doi: "https://doi.org/10.1145/3715014.3722047"
   status: "published"
+
+- year: 2025
+  category: "conference_japanese"
+  title: "On the Sensitivity of Wi-Fi RF Fingerprinting under Cross-Channel Scenarios"
+  authors: "Zhen Jia, Wenhao Huang, Zewei Guo, Jinxiao Zhu, Yin Chen"
+  venue: "IEICE Technical Report, vol. 125, no. 221, BioX2025-86, pp. 1-5"
+  venue_short: "IEICE Tech. Rep. BioX2025-86"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+  note: "Presented at BioX研究会, November 4, 2025"
 
 - year: 2025
   category: "journal"

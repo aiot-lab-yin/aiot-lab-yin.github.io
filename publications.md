@@ -63,7 +63,7 @@ description: "Research publications from AIoT Laboratory"
 
 {% endfor %}
 
----
+<!-- ---
 
 ## By Category
 
@@ -138,7 +138,7 @@ description: "Research publications from AIoT Laboratory"
         {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
     </span>
 </div>
-{% endfor %}
+{% endfor %} -->
 
 ---
 
