@@ -2,6 +2,8 @@
 layout: page
 title: 研究室ニュース
 description: "AIoT研究室からの最新情報"
+hide-title: true
+
 ---
 
 当研究室の最新の研究成果、受賞情報、イベントなどをご紹介します。定期的にチェックしてください！

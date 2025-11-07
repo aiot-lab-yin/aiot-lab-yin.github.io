@@ -6,6 +6,7 @@ author: AIoT Laboratory
 categories: [Awards, Research]
 tags: [smart-city, environment, AI-sensing]
 image: /assets/img/2025-honda-award.jpg
+hide-title: true
 ---
 
 ## 🚛10年かけてごみ収集車を研究していたら、まさかの受賞！

@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Welcome to the AIoT Laboratory Website"
-date: 2024-01-15
+date: 2025-11-07
 tags: [announcement]
+hide-title: true
 ---
 
 We are excited to launch the new website for the Artificial Intelligent IoT Laboratory at Reitaku University!

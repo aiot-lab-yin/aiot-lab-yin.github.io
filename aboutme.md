@@ -2,6 +2,7 @@
 layout: page
 title: About Our Lab
 description: "Learn about the AIoT Laboratory at Reitaku University"
+hide-title: true
 ---
 
 # About AIoT Laboratory

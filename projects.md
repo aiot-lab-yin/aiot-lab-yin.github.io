@@ -2,6 +2,7 @@
 layout: page
 title: Research Projects
 description: "Our ongoing research projects"
+hide-title: true
 ---
 
 # Research Projects

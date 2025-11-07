@@ -2,6 +2,7 @@
 layout: page
 title: Contact Us
 description: "Get in touch with our laboratory"
+hide-title: true
 ---
 
 # Contact Information

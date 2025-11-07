@@ -2,6 +2,7 @@
 layout: page
 title: Laboratory Members
 description: "AIoT Laboratory Members"
+hide-title: true
 ---
 
 <!-- # Laboratory Members
