@@ -1,34 +1,30 @@
-title: "AIoT Lab, Reitaku University"
-description: "Artificial Intelligent IoT Laboratory at Reitaku University"
-author: "AIoT Lab"
-url: "https://aiot-lab-yin.github.io"
-baseurl: ""
+# 在现有配置基础上添加：
+# Laboratory information
+lab_name: "AIoT Laboratory"
+university: "Reitaku University"
+university_url: "https://www.reitaku-u.ac.jp/"
+department: "Faculty of Foreign Studies"  # 请根据实际情况修改
+pi_name: "Dr. Yin Chen"
+pi_email: "ychen@reitaku-u.ac.jp"
 
-# Use Beautiful Jekyll remote theme (GitHub Pages supports this)
-remote_theme: "daattali/beautiful-jekyll@6.0.1"
+# 网站设置
+lang: "en"
+timezone: "Asia/Tokyo"
 
-# Navigation bar links (Page title: filename without extension)
-navbar-links:
-  About: "aboutme"
-  Members: "members"
-  Research Projects: "projects"
-  Publications: "publications"
-  News: "blog"
-  Contact: "contact"
-
-# Social media / contact
+# 社交链接扩展
 social-network-links:
   email: "ychen@reitaku-u.ac.jp"
   github: "aiot-lab-yin"
+  # 可以添加更多：
+  # twitter: "your_twitter"
+  # linkedin: "your_linkedin" 
+  # google-scholar: "your_scholar_id"
 
-# Site logo & favicon
-avatar: "/assets/img/lab-logo.svg"
-favicon: "/assets/img/lab-logo.svg"
+# 评论功能（可选）
+comments:
+  disqus: false
+  facebook: false
+  staticman: false
 
-# Build settings
-markdown: kramdown
-
-# Collections (optional future use)
-collections:
-  members:
-    output: true
+# 分享按钮
+share-links-active: true

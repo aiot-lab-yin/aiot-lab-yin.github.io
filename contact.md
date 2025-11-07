@@ -1,34 +1,27 @@
 ---
 layout: page
-title: "Contact"
-permalink: /contact
+title: Contact Us
+description: "Get in touch with our laboratory"
 ---
 
-## 🧭 Contact Information
+# Contact Information
 
-**AIoT Lab, Reitaku University**  
-Artificial Intelligence Internet-of-things Laboratory  
+## Laboratory Director
+**Dr. Yin Chen**  
+Email: [ychen@reitaku-u.ac.jp](mailto:ychen@reitaku-u.ac.jp)
 
----
-
-### 👨‍🏫 Dr. Yin Chen   
-
----
-
-**Main Tel**: +81-471-73-3571 (Ext. 3571)  
-**Office Tel**: +81-471-73-3643 (Ext. 3643)  
-**Email**: ychen[AT]reitaku-u.ac.jp  
-
-**Address**:  
-Reitaku University, Satsuki Building Room 302  
-2-1-1 Hikarigaoka, Kashiwa City,  
-Chiba Prefecture, 277-8686, Japan
-
----
-
+## Laboratory Address
+Tel: +81-471-73-3643
+Email: ychen@reitaku-u.ac.jp
+Address: 2-1-1, Hikarigaoka, Kashiwa City, Chiba Prefecture, 277-8686, Japan
 📄 [Visitor Information (PDF)](/assets/docs/Visitor_Information.pdf)
 
----
+## Join Our Laboratory
+We are always looking for motivated students! If you're interested in joining our research team, please contact Dr. Chen via email.
+
+## Social Media
+- [GitHub](https://github.com/aiot-lab-yin)
+
 
 ### 🗺️ Access Map
 
@@ -41,3 +34,4 @@ Chiba Prefecture, 277-8686, Japan
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade">
 </iframe>
+

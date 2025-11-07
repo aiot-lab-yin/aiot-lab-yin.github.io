@@ -1,12 +1,21 @@
 ---
 layout: page
-title: "Publications"
-permalink: /publications
+title: Publications
+description: "Our research publications"
 ---
 
-| Year | Title | Venue | Link |
-|------|-------|-------|------|
-| 2024 | *Device Fingerprint via Wi‑Fi Preamble Analysis* | IEEE Internet of Things Journal | [PDF](#) |
-| 2023 | *Transformer‑based Open‑set Recognition* | CVPR | [arXiv](#) |
+# Publications
 
-> Tip: You can maintain this list manually in Markdown or integrate Zotero/Google Scholar exports later.
+## Journal Papers
+
+### 2024
+1. **Author, A.**, Author, B., & Chen, Y. (2024). "Paper Title". *Journal Name*, Volume(Issue), pages. [DOI] [PDF]
+
+### 2023
+1. **Author, A.**, Chen, Y., & Author, C. (2023). "Paper Title". *Journal Name*, Volume(Issue), pages. [DOI] [PDF]
+
+## Conference Papers
+- [Conference publication details...]
+
+## Theses
+- [Master/PhD theses...]
