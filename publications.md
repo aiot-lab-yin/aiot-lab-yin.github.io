@@ -13,8 +13,16 @@ description: "Research publications from AIoT Laboratory"
 <!-- ## By Year -->
 
 {% assign all_publications = site.data.publications | sort: "year" %}
-{% assign publication_count = 1 %}
 {% assign publications_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+
+{% assign total_count = 0 %}
+{% for year_group in publications_by_year %}
+  {% for pub in year_group.items %}
+    {% assign total_count = total_count | plus: 1 %}
+  {% endfor %}
+{% endfor %}
+
+{% assign current_count = total_count %}
 
 {% for year_group in publications_by_year %}
 
@@ -24,11 +32,10 @@ description: "Research publications from AIoT Laboratory"
 {% for sorted_pub in all_publications %}
 {% if sorted_pub.title == pub.title and sorted_pub.authors == pub.authors %}
 <div class="publication-item {% if pub.category contains 'japanese' %}japanese{% endif %} {% if pub.awards.size > 0 %}has-award{% endif %}">
-    <div class="pub-number">{{ publication_count }}</div>
     <div class="pub-content">
         <div class="pub-header">
             <h4 class="pub-title">
-                {{ pub.title }}
+                [{{ current_count }}] {{ pub.title }}
                 {% if pub.links.pdf or pub.links.doi or pub.links.code %}
                 <span class="title-links">
                     {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}" target="_blank">PDF</a>]{% endif %}
@@ -67,7 +74,7 @@ description: "Research publications from AIoT Laboratory"
         {% endif %}
     </div>
 </div>
-{% assign publication_count = publication_count | plus: 1 %}
+{% assign current_count = current_count | minus: 1 %}
 {% endif %}
 {% endfor %}
 {% endfor %}
