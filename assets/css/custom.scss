@@ -3,11 +3,87 @@
 
 // Custom styles for AIoT Lab website
 
+// ==================== 导航栏样式 ====================
+
+.navbar-custom {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 0.8rem 0;
+    transition: all 0.3s ease;
+    
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: white !important;
+        padding: 0.5rem 0;
+        
+        &:hover {
+            color: rgba(255,255,255,0.9) !important;
+        }
+    }
+    
+    .nav-link {
+        color: rgba(255,255,255,0.9) !important;
+        font-weight: 500;
+        margin: 0 3px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        padding: 0.5rem 1rem !important;
+        
+        &:hover {
+            background-color: rgba(255,255,255,0.15) !important;
+            color: white !important;
+            transform: translateY(-1px);
+        }
+    }
+    
+    // 激活状态
+    .nav-item.active .nav-link {
+        background-color: rgba(255,255,255,0.2) !important;
+        color: white !important;
+    }
+    
+    // 移动端菜单按钮
+    .navbar-toggler {
+        border: 1px solid rgba(255,255,255,0.3);
+        padding: 0.25rem 0.5rem;
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
+    
+    // 下拉菜单
+    .dropdown-menu {
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        
+        .dropdown-item {
+            padding: 0.75rem 1.5rem;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background-color: #3498db;
+                color: white;
+            }
+        }
+    }
+}
+
+// 为固定导航栏添加body上边距
+body {
+    padding-top: 76px;
+}
+
+// ==================== 首页英雄区域 ====================
+
 .hero-section {
   background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
   color: white;
   padding: 4rem 0;
   margin-bottom: 2rem;
+  border-radius: 0 0 20px 20px;
   
   h1 {
     font-weight: 300;
@@ -31,6 +107,71 @@
   border-left: 4px solid #3498db;
   padding-left: 1rem;
   margin: 1rem 0;
+}
+
+// ==================== 成员页面样式 ====================
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.member-card {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+}
+
+.member-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.member-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    color: #3498db;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.member-research {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
 // ==================== 响应式图片样式 ====================
@@ -127,77 +268,6 @@ article img {
     box-shadow: none;
   }
 }
-
-// ==================== 响应式调整 ====================
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 2rem 0;
-    
-    h1 {
-      font-size: 2rem;
-    }
-    
-    .lead {
-      font-size: 1.2rem;
-    }
-  }
-  
-  // 移动端图片调整
-  .post-content img,
-  article img {
-    margin: 1rem auto;
-    border-radius: 4px;
-  }
-  
-  .image-wrapper {
-    margin: 1.5rem 0;
-    
-    &.small,
-    &.medium,
-    &.large {
-      max-width: 95% !important; // 移动端更严格的限制
-      padding: 0 1rem;
-    }
-    
-    img.blog-post-image {
-      max-width: 100% !important;
-    }
-  }
-  
-  .image-caption {
-    max-width: 95%;
-    font-size: 0.85rem;
-  }
-  
-  .team-member-img {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-// 大屏幕优化
-@media (min-width: 1200px) {
-  .image-wrapper {
-    &.medium {
-      max-width: 700px;
-    }
-    
-    &.large {
-      max-width: 900px;
-    }
-  }
-}
-
-// 打印样式
-@media print {
-  .post-content img,
-  article img {
-    max-width: 80% !important;
-    box-shadow: none !important;
-    border: 1px solid #ddd !important;
-  }
-}
-
 
 // ==================== 出版物样式 ====================
 
@@ -384,29 +454,128 @@ article img {
   }
 }
 
-// 移动端优化
+// ==================== 响应式调整 ====================
 @media (max-width: 768px) {
-  .publication-item {
-    padding: 1rem;
-  }
-  
-  .pub-header {
-    flex-direction: column;
-  }
-  
-  .pub-awards {
-    margin-left: 0;
-    margin-top: 0.5rem;
-  }
-  
-  .publication-item.japanese {
-    .pub-title {
-      font-size: 1rem;
-      line-height: 1.5;
+    // 导航栏移动端调整
+    .navbar-custom {
+        .nav-link {
+            margin: 2px 0;
+            text-align: center;
+        }
+        
+        .navbar-nav {
+            padding: 1rem 0;
+        }
     }
     
-    .pub-authors, .pub-venue {
-      font-size: 0.85rem;
+    body {
+        padding-top: 66px;
     }
-  }
+    
+    // 英雄区域
+    .hero-section {
+        padding: 2rem 0;
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        .lead {
+            font-size: 1.2rem;
+        }
+    }
+    
+    // 成员网格
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    // 移动端图片调整
+    .post-content img,
+    article img {
+        margin: 1rem auto;
+        border-radius: 4px;
+    }
+    
+    .image-wrapper {
+        margin: 1.5rem 0;
+        
+        &.small,
+        &.medium,
+        &.large {
+            max-width: 95% !important; // 移动端更严格的限制
+            padding: 0 1rem;
+        }
+        
+        img.blog-post-image {
+            max-width: 100% !important;
+        }
+    }
+    
+    .image-caption {
+        max-width: 95%;
+        font-size: 0.85rem;
+    }
+    
+    .team-member-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    // 出版物移动端优化
+    .publication-item {
+        padding: 1rem;
+    }
+    
+    .pub-header {
+        flex-direction: column;
+    }
+    
+    .pub-awards {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .publication-item.japanese {
+        .pub-title {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .pub-authors, .pub-venue {
+            font-size: 0.85rem;
+        }
+    }
+}
+
+// 大屏幕优化
+@media (min-width: 1200px) {
+    .image-wrapper {
+        &.medium {
+            max-width: 700px;
+        }
+        
+        &.large {
+            max-width: 900px;
+        }
+    }
+}
+
+// 打印样式
+@media print {
+    .navbar-custom {
+        display: none !important;
+    }
+    
+    body {
+        padding-top: 0 !important;
+    }
+    
+    .post-content img,
+    article img {
+        max-width: 80% !important;
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
 }

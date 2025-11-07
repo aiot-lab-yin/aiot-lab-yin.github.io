@@ -1,26 +1,47 @@
-# 在现有配置基础上添加：
+# 在现有配置基础上添加/修改：
+
 # Laboratory information
 lab_name: "AIoT Laboratory"
+lab_short_name: "AIoT Lab"
 university: "Reitaku University"
 university_url: "https://www.reitaku-u.ac.jp/"
-department: "Faculty of engineering"  # 请根据实际情况修改
+department: "Faculty of Information Science"  # 根据实际情况调整
 pi_name: "Dr. Yin Chen"
 pi_email: "ychen[AT]reitaku-u.ac.jp"
 
 # 网站设置
+title: "AIoT Laboratory - Reitaku University"
+name: "AIoT Laboratory"
+description: "Artificial Intelligence of Things Laboratory at Reitaku University"
 lang: "en"
 timezone: "Asia/Tokyo"
-custom_css:
-  - "/assets/css/custom.scss"
+baseurl: ""
+url: "https://aiot-lab.github.io"  # 替换为您的实际网址
 
-# 社交链接扩展
+# 导航栏设置
+navbar-title: "🧠 AIoT Lab"
+navbar-links:
+  Home: "/"
+  Members: "/members"
+  Publications: "/publications"
+  Research: "/research"
+  Projects: "/projects"
+  News: "/news"
+  Contact: "/contact"
+
+# 社交链接
 social-network-links:
   email: "ychen@reitaku-u.ac.jp"
   github: "aiot-lab-yin"
-  # 可以添加更多：
-  # twitter: "your_twitter"
-  # linkedin: "your_linkedin" 
-  # google-scholar: "your_scholar_id"
+  researchmap: "yinchen"  # 如果陈老师有researchmap
+  # 可选添加：
+  # twitter: "aiot_lab"
+  # linkedin: "company/aiot-lab"
+  # youtube: "channel/your_channel"
+
+# 主题设置
+theme: beautiful-jekyll-theme
+remote_theme: daattali/beautiful-jekyll
 
 # 评论功能（可选）
 comments:
@@ -30,3 +51,7 @@ comments:
 
 # 分享按钮
 share-links-active: true
+
+# 自定义CSS
+custom_css:
+  - "/assets/css/custom.scss"
