@@ -139,17 +139,62 @@ description: "AIoT研究室からの最新情報"
 .news-excerpt {
     color: #666;
     line-height: 1.6;
+    margin-bottom: 12px;
 }
 
-.news-categories-badge {
-    display: inline-block;
-    background: #667eea;
+/* 改良したタグスタイル */
+.news-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.news-tag {
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 3px 10px;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    margin-right: 8px;
-    margin-top: 10px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.news-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.tag-icon {
+    margin-right: 4px;
+    font-size: 0.7rem;
+}
+
+/* 画像のレスポンシブスタイル */
+.news-page-intro img,
+.news-list img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 画像の中央揃え用クラス */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -163,6 +208,15 @@ description: "AIoT研究室からの最新情報"
     
     .stats-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .news-tags {
+        gap: 6px;
+    }
+    
+    .news-tag {
+        padding: 3px 10px;
+        font-size: 0.7rem;
     }
 }
 </style>
@@ -221,16 +275,47 @@ description: "AIoT研究室からの最新情報"
             <h3 class="news-title">
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h3>
-            {% if post.categories %}
-                <div class="news-categories">
-                    {% for category in post.categories %}
-                    <span class="news-categories-badge">{{ category }}</span>
-                    {% endfor %}
-                </div>
+            
+            <!-- 投稿内の画像をレスポンシブ表示 -->
+            {% if post.image %}
+            <div class="image-container">
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+            </div>
             {% endif %}
+            
             {% if post.excerpt %}
             <div class="news-excerpt">
                 {{ post.excerpt }}
+            </div>
+            {% endif %}
+            
+            <!-- 改良したタグ表示（最大4個） -->
+            {% if post.categories %}
+            <div class="news-tags">
+                {% assign display_categories = post.categories | slice: 0, 4 %}
+                {% for category in display_categories %}
+                    {% assign icon = "" %}
+                    {% case category %}
+                        {% when "Awards" %}{% assign icon = "🏆" %}
+                        {% when "Research" %}{% assign icon = "📝" %}
+                        {% when "Events" %}{% assign icon = "🎤" %}
+                        {% when "Members" %}{% assign icon = "👥" %}
+                        {% when "Collaboration" %}{% assign icon = "🤝" %}
+                        {% when "Internship" %}{% assign icon = "💼" %}
+                        {% when "International" %}{% assign icon = "🌐" %}
+                        {% else %}{% assign icon = "📌" %}
+                    {% endcase %}
+                    <span class="news-tag">
+                        <span class="tag-icon">{{ icon }}</span>{{ category }}
+                    </span>
+                {% endfor %}
+                
+                <!-- タグが4個以上ある場合の表示 -->
+                {% if post.categories.size > 4 %}
+                <span class="news-tag" style="background: #6c757d;">
+                    +{{ post.categories.size | minus: 4 }}
+                </span>
+                {% endif %}
             </div>
             {% endif %}
         </div>
