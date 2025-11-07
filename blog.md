@@ -8,8 +8,6 @@ description: "AIoT研究室からの最新情報"
 
 当研究室の最新の研究成果、受賞情報、イベントなどをご紹介します。定期的にチェックしてください！
 
-<!-- Beautiful Jekyll will automatically list blog posts here -->
-
 <style>
 .news-page-intro {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -99,6 +97,61 @@ description: "AIoT研究室からの最新情報"
     color: #6c757d;
 }
 
+/* ニュースリストのスタイル */
+.news-list {
+    margin-top: 40px;
+}
+
+.news-item {
+    border-left: 4px solid #667eea;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateX(5px);
+}
+
+.news-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.news-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.news-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.news-title a:hover {
+    color: #667eea;
+}
+
+.news-excerpt {
+    color: #666;
+    line-height: 1.6;
+}
+
+.news-categories-badge {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
 @media (max-width: 768px) {
     .news-page-intro {
         padding: 30px 0;
@@ -155,4 +208,36 @@ description: "AIoT研究室からの最新情報"
     </div>
 </div>
 
-<!-- Beautiful Jekyll will automatically list blog posts here -->
+<!-- ニュースリストの表示 -->
+<div class="news-list">
+    <h2>最新ニュース</h2>
+    
+    {% if site.posts.size > 0 %}
+        {% for post in site.posts %}
+        <div class="news-item">
+            <div class="news-date">
+                📅 {{ post.date | date: "%Y年%m月%d日" }}
+            </div>
+            <h3 class="news-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            {% if post.categories %}
+                <div class="news-categories">
+                    {% for category in post.categories %}
+                    <span class="news-categories-badge">{{ category }}</span>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% if post.excerpt %}
+            <div class="news-excerpt">
+                {{ post.excerpt }}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="no-news">
+            <p>現在、ニュースはありません。</p>
+        </div>
+    {% endif %}
+</div>
