@@ -2,7 +2,8 @@
 layout: base
 ---
 
-{% include header.html type="page" %}
+{% comment %} 注释掉这一行来隐藏所有page的标题 {% endcomment %}
+{% comment %}{% include header.html type="page" %}{% endcomment %}
 
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
