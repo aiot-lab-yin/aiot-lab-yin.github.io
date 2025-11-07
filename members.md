@@ -4,9 +4,9 @@ title: Laboratory Members
 description: "AIoT Laboratory Members"
 ---
 
-# Laboratory Members
+<!-- # Laboratory Members
 
-Meet the researchers and students of AIoT Laboratory.
+Meet the researchers and students of AIoT Laboratory. -->
 
 <style>
 .members-intro {
@@ -321,41 +321,6 @@ Meet the researchers and students of AIoT Laboratory.
     <p>Meet the researchers and students of AIoT Laboratory</p>
 </div>
 
-<!-- 研究室統計 -->
-<div class="lab-stats">
-    <h3>📊 Laboratory Statistics</h3>
-    <div class="stats-grid">
-        <div class="stat-item">
-            <span class="stat-number">{{ site.data.members.faculty | size }}</span>
-            <span class="stat-label">Faculty Members</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">
-                {% assign total_students = 0 %}
-                {% if site.data.members.phd_students %}{% assign total_students = total_students | plus: site.data.members.phd_students.size %}{% endif %}
-                {% if site.data.members.master_students %}{% assign total_students = total_students | plus: site.data.members.master_students.size %}{% endif %}
-                {% if site.data.members.bachelor_students %}{% assign total_students = total_students | plus: site.data.members.bachelor_students.size %}{% endif %}
-                {{ total_students }}
-            </span>
-            <span class="stat-label">Students</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">
-                {% if site.data.members.alumni %}{{ site.data.members.alumni.size }}{% else %}0{% endif %}
-            </span>
-            <span class="stat-label">Alumni</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">
-                {% assign total_members = site.data.members.faculty | size | plus: total_students %}
-                {% if site.data.members.alumni %}{% assign total_members = total_members | plus: site.data.members.alumni.size %}{% endif %}
-                {{ total_members }}
-            </span>
-            <span class="stat-label">Total Members</span>
-        </div>
-    </div>
-</div>
-
 <!-- 教員メンバー -->
 <div class="members-section">
     <h2 class="section-title">👨‍🏫 Faculty Members</h2>
@@ -662,3 +627,38 @@ Meet the researchers and students of AIoT Laboratory.
     </div>
 </div>
 {% endif %}
+
+<!-- 研究室統計 -->
+<div class="lab-stats">
+    <h3>📊 Laboratory Statistics</h3>
+    <div class="stats-grid">
+        <div class="stat-item">
+            <span class="stat-number">{{ site.data.members.faculty | size }}</span>
+            <span class="stat-label">Faculty Members</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">
+                {% assign total_students = 0 %}
+                {% if site.data.members.phd_students %}{% assign total_students = total_students | plus: site.data.members.phd_students.size %}{% endif %}
+                {% if site.data.members.master_students %}{% assign total_students = total_students | plus: site.data.members.master_students.size %}{% endif %}
+                {% if site.data.members.bachelor_students %}{% assign total_students = total_students | plus: site.data.members.bachelor_students.size %}{% endif %}
+                {{ total_students }}
+            </span>
+            <span class="stat-label">Students</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">
+                {% if site.data.members.alumni %}{{ site.data.members.alumni.size }}{% else %}0{% endif %}
+            </span>
+            <span class="stat-label">Alumni</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">
+                {% assign total_members = site.data.members.faculty | size | plus: total_students %}
+                {% if site.data.members.alumni %}{% assign total_members = total_members | plus: site.data.members.alumni.size %}{% endif %}
+                {{ total_members }}
+            </span>
+            <span class="stat-label">Total Members</span>
+        </div>
+    </div>
+</div>
