@@ -2,7 +2,7 @@
 layout: page
 title: Publications
 description: "Research publications from AIoT Laboratory"
-hide-title: true
+# hide-title: true
 ---
 
 <!-- # Publications -->
