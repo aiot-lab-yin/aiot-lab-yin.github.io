@@ -1,4 +1,30 @@
 # 2025年出版物
+
+- year: 2025
+  category: "conference"
+  title: "RF-Rock: An Intermodulation-based RFID Unauthorized Identification Attack without Tag Activation"
+  authors: "Chen Gong, Bo Liang, Purui Wang, Xiaoyu Ji, Yin Chen, Chenren Xu"
+  venue: "Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (ACM MobiCom 2025)"
+  venue_short: "ACM MobiCom 2025"
+  awards: []
+  links:
+    pdf: "#"
+    slides: "#"
+    code: "#"
+    video: "#"
+  status: "accepted"
+
+- year: 2025
+  category: "conference"
+  title: "Poster:Evaluating Effectiveness of Temporal Features and DTW Distance for Radio Frequency Fingerprinting"
+  authors: "Takamasa Kikuchi, Koki Shibata, Keiichi Yasumoto, Jinxiao Zhu, Yin Chen"
+  venue: "Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (ACM MobiCom 2025)"
+  venue_short: "ACM MobiCom 2025"
+  links:
+    pdf: "#"
+    poster: "#"
+  status: "accepted"
+
 - year: 2025
   category: "conference"
   title: "JumpQ: Stochastic Scheduling to Accelerating Object-detection-driven Mobile Sensing on Object-sparse Video Data"
