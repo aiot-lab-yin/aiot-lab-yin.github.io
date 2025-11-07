@@ -10,6 +10,7 @@ remote_theme: "daattali/beautiful-jekyll@6.0.1"
 # Navigation bar links (Page title: filename without extension)
 navbar-links:
   About: "aboutme"
+  Members: "members"
   Research Projects: "projects"
   Publications: "publications"
   News: "blog"
@@ -26,10 +27,6 @@ favicon: "/assets/img/lab-logo.svg"
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
 
 # Collections (optional future use)
 # collections:
