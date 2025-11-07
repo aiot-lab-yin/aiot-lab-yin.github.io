@@ -197,3 +197,42 @@ article img {
     border: 1px solid #ddd !important;
   }
 }
+
+
+
+// 日语出版物特殊样式
+.publication-item.japanese {
+  border-left: 4px solid #e74c3c;
+  
+  .pub-title {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, sans-serif;
+    line-height: 1.6;
+  }
+}
+
+// 按类别筛选按钮
+.pub-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  
+  .filter-btn {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &.active {
+      background: #3498db;
+      color: white;
+      border-color: #3498db;
+    }
+    
+    &:hover {
+      background: #d5dbdb;
+    }
+  }
+}

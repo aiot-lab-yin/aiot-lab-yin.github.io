@@ -1,0 +1,398 @@
+# 2025年出版物
+- year: 2025
+  category: "conference"
+  title: "JumpQ: Stochastic Scheduling to Accelerating Object-detection-driven Mobile Sensing on Object-sparse Video Data"
+  authors: "Kazuhiro Mikami, Wenhao Huang, Yin Chen, Jin Nakazawa"
+  venue: "Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems (SenSys 2025)"
+  venue_short: "ACM SenSys 2025"
+  awards: []
+  links:
+    pdf: "#"
+    doi: "https://doi.org/10.1145/3715014.3722047"
+  status: "published"
+
+- year: 2025
+  category: "journal"
+  title: "AdaLine: Adaptive Counting Line Optimization by Perspective-Aware Trajectory Modeling in Object-Detection-Tracking Systems"
+  authors: "Wenhao Huang, Yin Chen, Jin Nakazawa, Tadashi Okoshi"
+  venue: "IEEE Access, vol. 13, pp. 111282-111292"
+  venue_short: "IEEE Access"
+  awards: []
+  links:
+    pdf: "#"
+    doi: "https://doi.org/10.1109/ACCESS.2025.3582577"
+  status: "published"
+
+
+# 2025年新增出版物
+- year: 2025
+  category: "workshop_japanese"
+  title: "無線RF指紋による時系列分類を用いたWi-Fiデバイス識別方法"
+  authors: "菊池尊勝, 柴田洸希, 安本慶一, 朱金暁, 陳寅"
+  venue: "バイオメトリクス研究会 (BioX研究会), 2025年3月19日"
+  venue_short: "BioX研究会 2025"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+  note: "無線RF指紋と時系列分類によるWi-Fiデバイス識別"
+
+- year: 2025
+  category: "workshop_japanese"
+  title: "時系列特徴量とDTW距離を使った無線指紋デバイス識別法とその評価"
+  authors: "菊池尊勝, 柴田洸希, 安本慶一, 朱金暁, 陳寅"
+  venue: "バイオメトリクス研究会 (BioX研究会), 2025年3月19日"
+  venue_short: "BioX研究会 2025"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+  note: "時系列特徴量とDynamic Time Warping距離に基づく無線指紋識別"
+
+- year: 2025
+  category: "workshop_japanese"
+  title: "無線指紋デバイス識別におけるクラスタリングとOne-vs-Rest法を組み合わせた未知デバイス識別法"
+  authors: "柴田洸希, 菊池尊勝, 安本慶一, 朱金暁, 陳寅"
+  venue: "バイオメトリクス研究会 (BioX研究会), 2025年3月19日"
+  venue_short: "BioX研究会 2025"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+  note: "クラスタリングとOne-vs-Rest法による未知デバイス識別"
+
+# 2024年新增出版物
+- year: 2024
+  category: "workshop_japanese"
+  title: "サイバネティック・アバターのサービスユースケースとセキュリティ ～ 2050年からのバックキャスト ～"
+  authors: "西垣正勝, 陳寅, 大木哲史, 山口利恵, 八木康史"
+  venue: "電子情報通信学会バイオメトリクス研究会 (BioX研究会), 2024年7月22日"
+  venue_short: "BioX研究会 2024"
+  awards: ["招待講演"]
+  links:
+    pdf: "#"
+  status: "published"
+  note: "サイバネティック・アバターのユースケースとセキュリティに関するバックキャスト分析"
+
+- year: 2024
+  category: "workshop"
+  title: "An Experimental Study on Radio Frequency Fingerprinting-based Authentication in IEEE 802.11g"
+  authors: "Jia Zhen, Zewei Guo, Wenhao Huang, Yin Chen, Jinxiao Zhu, Xiaohong Jiang"
+  venue: "Biometrics Research Meeting (BioX研究会), 2024年6月23日"
+  venue_short: "BioX Workshop 2024"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+  note: "IEEE 802.11gにおけるRF指紋認証の実験的研究"
+
+# 2023年出版物
+- year: 2023
+  category: "journal"
+  title: "Fractal Dimension of DSSS Frame Preamble: Radiometric Feature for Wireless Device Identification"
+  authors: "Xufei Li, Yin Chen, Jinxiao Zhu, Shuiguang Zeng, Yulong Shen, Xiaohong Jiang, Daqing Zhang"
+  venue: "IEEE Transactions on Mobile Computing, vol. 23, no. 2, pp. 1416-1430"
+  venue_short: "IEEE TMC"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2023
+  category: "conference"
+  title: "Real-Time Image-Based Automotive Sensing: A Practice on Fine-Grained Garbage Disposal"
+  authors: "Wenhao Huang, Kazuhiro Mikami, Yin Chen, Jin Nakazawa"
+  venue: "Proceedings of the International Conference on the Internet of Things"
+  venue_short: "IoT Conference 2023"
+  awards: []
+  links:
+    pdf: "#"
+    doi: "https://doi.org/10.1145/3627050.3627058"
+  status: "published"
+
+- year: 2023
+  category: "conference"
+  title: "Forecasting Household Waste Generation with Deep Learning and Long-term Granular Database"
+  authors: "Yuanze Zhang, Wenhao Huang, Yin Chen, Jin Nakazawa"
+  venue: "Proceedings of the International Conference on the Internet of Things"
+  venue_short: "IoT Conference 2023"
+  awards: []
+  links:
+    pdf: "#"
+    doi: "https://doi.org/10.1145/3627050.3630726"
+  status: "published"
+
+- year: 2023
+  category: "journal"
+  title: "Time-Frequency Fusion for Enhancement of Deep Learning-Based Physical Layer Identification"
+  authors: "Shuiguang Zeng, Yin Chen, Xufei Li, Jinxiao Zhu, Yulong Shen, Norio Shiratori"
+  venue: "Ad Hoc Networks, vol. 142, pp. 103099"
+  venue_short: "Ad Hoc Networks"
+  awards: []
+  links:
+    pdf: "#"
+    doi: "https://doi.org/10.1016/j.adhoc.2023.103099"
+  status: "published"
+
+# 2022年出版物
+- year: 2022
+  category: "journal"
+  title: "Visibility Graph Entropy Based Radiometric Feature for Physical Layer Identification"
+  authors: "Shuiguang Zeng, Yin Chen, Xufei Li, Jinxiao Zhu, Yulong Shen, Norio Shiratori"
+  venue: "Ad Hoc Networks, vol. 127, pp. 102780"
+  venue_short: "Ad Hoc Networks"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+# 2021年出版物
+- year: 2021
+  category: "journal"
+  title: "Making Cities Smarter with Regional IoT and the Force of Information"
+  authors: "Yin Chen, Jin Nakazawa"
+  venue: "Journal of The Institute of Electrical Engineers of Japan, vol. 141, no. 1, pp. 11-14"
+  venue_short: "IEEJ Journal"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2021
+  category: "journal_japanese"
+  title: "地域を網羅する IoT と情報の力による街のスマート化"
+  authors: "陳寅, 中澤仁"
+  venue: "電気学会誌, vol. 141, no. 1, pp. 11-14"
+  venue_short: "電気学会誌"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2021
+  category: "journal"
+  title: "Rppuf: An Ultra-Lightweight Reconfigurable Pico-Physically Unclonable Function for Resource-Constrained IoT Devices"
+  authors: "Zhao Huang, Liang Li, Yin Chen, Zeyu Li, Quan Wang, Xiaohong Jiang"
+  venue: "Electronics, vol. 10, no. 23, pp. 3039"
+  venue_short: "Electronics"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+# 2020年出版物
+- year: 2020
+  category: "journal"
+  title: "A Survey on Machine Learning against Hardware Trojan Attacks: Recent Advances and Challenges"
+  authors: "Zhao Huang, Quan Wang, Yin Chen, Xiaohong Jiang"
+  venue: "IEEE Access, vol. 8, pp. 10796-10826"
+  venue_short: "IEEE Access"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2020
+  category: "journal_japanese"
+  title: "DeepCounter: 深層学習を用いた細粒度なゴミ排出量データ収集手法"
+  authors: "三上量弘, 陳寅, 中澤仁"
+  venue: "情報処理学会論文誌, vol. 61, no. 1, pp. 36-48"
+  venue_short: "情報処理学会論文誌"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+# 2019年出版物
+- year: 2019
+  category: "journal"
+  title: "Cruisers: An Automotive Sensing Platform for Smart Cities Using Door-to-Door Garbage Collecting Trucks"
+  authors: "Yin Chen, Jin Nakazawa, Takuro Yonezawa, Hideyuki Tokuda"
+  venue: "Ad Hoc Networks, vol. 85, pp. 32-45"
+  venue_short: "Ad Hoc Networks"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2019
+  category: "journal"
+  title: "End-to-End Physical Layer Authentication for Dual-Hop Wireless Networks"
+  authors: "Pinchang Zhang, Jinxiao Zhu, Yin Chen, Xiaohong Jiang"
+  venue: "IEEE Access, vol. 7, pp. 38322-38336"
+  venue_short: "IEEE Access"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2019
+  category: "journal_japanese"
+  title: "Ortho-Detector: オルソ画像を用いた海岸ゴミ検出手法の提案と検出タスクの分析"
+  authors: "海法修平, 谷村朋樹, 陳寅, 大越匡, 中澤仁, 鈴木もとこ, 山田曉"
+  venue: "研究報告ヒューマンコンピュータインタラクション (HCI), vol. 2019, no. 2, pp. 1-8"
+  venue_short: "HCI Research Report"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+# 2018年出版物
+- year: 2018
+  category: "conference"
+  title: "OmimamoriNet: An Outdoor Positioning System Based on Wi-SUN FAN Network"
+  authors: "Yin Chen, Mina Sakamura, Jin Nakazawa, Takuro Yonezawa, Akira Tsuge, Yuichi Hamada"
+  venue: "2018 Eleventh International Conference on Mobile Computing and Ubiquitous Network (ICMU)"
+  venue_short: "ICMU 2018"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2018
+  category: "conference"
+  title: "Deepcounter: Using Deep Learning to Count Garbage Bags"
+  authors: "Kazuhiro Mikami, Yin Chen, Jin Nakazawa, Yasuhiro Iida, Yasunari Kishimoto, Yu Oya"
+  venue: "2018 IEEE 24th International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)"
+  venue_short: "RTCSA 2018"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2018
+  category: "conference"
+  title: "Using Deep Learning to Count Garbage Bags"
+  authors: "Kazuhiro Mikami, Yin Chen, Jin Nakazawa"
+  venue: "Proceedings of the 16th ACM Conference on Embedded Networked Sensor Systems"
+  venue_short: "ACM SenSys 2018"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2018
+  category: "journal"
+  title: "Automotive Sensing for Smart Cities: Current Practices and Challenges"
+  authors: "Yin Chen, Takuro Yonezawa, Jin Nakazawa"
+  venue: "Journal Article"
+  venue_short: "Journal Article"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+# 2017年出版物
+- year: 2017
+  category: "conference"
+  title: "Evaluating the Spatio-Temporal Coverage of Automotive Sensing for Smart Cities"
+  authors: "Yin Chen, Takuro Yonezawa, Jin Nakazawa, Hideyuki Tokuda"
+  venue: "2017 Tenth International Conference on Mobile Computing and Ubiquitous Network (ICMU)"
+  venue_short: "ICMU 2017"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2017
+  category: "journal"
+  title: "On the Rate of Successful Transmissions in Finite Slotted Aloha MANETs"
+  authors: "Yin Chen, Jinxiao Zhu, Yulong Shen, Xiaohong Jiang, Hideyuki Tokuda"
+  venue: "Ad Hoc Networks, vol. 62, pp. 76-87"
+  venue_short: "Ad Hoc Networks"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2017
+  category: "conference"
+  title: "Physical Layer Authentication and Identification in Wireless Network via the Locations of Surrounding Noise Sources"
+  authors: "Yongchao Dang, Yin Chen, Huihui Wu, Yulong Shen, Xiaohong Jiang"
+  venue: "2017 International Conference on Networking and Network Applications (NaNA)"
+  venue_short: "NaNA 2017"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+# 2016年出版物
+- year: 2016
+  category: "journal"
+  title: "On the Throughput Capacity Study for Aloha Mobile Ad Hoc Networks"
+  authors: "Yin Chen, Yulong Shen, Jinxiao Zhu, Xiaohong Jiang, Hideyuki Tokuda"
+  venue: "IEEE Transactions on Communications, vol. 64, no. 4, pp. 1646-1659"
+  venue_short: "IEEE TCOM"
+  awards: []
+  links:
+    pdf: "#"
+    doi: "https://doi.org/10.1109/TCOMM.2016.2527658"
+  status: "published"
+
+- year: 2016
+  category: "conference"
+  title: "Cruisers: A Public Automotive Sensing Platform for Smart Cities"
+  authors: "Yin Chen, Jin Nakazawa, Takuro Yonezawa, Takafumi Kawsaki, Hideyuki Tokuda"
+  venue: "2016 IEEE 36th International Conference on Distributed Computing Systems (ICDCS)"
+  venue_short: "IEEE ICDCS 2016"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2016
+  category: "conference"
+  title: "An Empirical Study on Coverage-Ensured Automotive Sensing Using Door-to-Door Garbage Collecting Trucks"
+  authors: "Yin Chen, Jin Nakazawa, Takuro Yonezawa, Takafumi Kawasaki, Hideyuki Tokuda"
+  venue: "Proceedings of the 2nd International Workshop on Smart"
+  venue_short: "Smart Workshop 2016"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+# 2015年及更早的出版物
+- year: 2015
+  category: "journal"
+  title: "Capacity and Delay-Throughput Tradeoff in ICMNs with Poisson Contact Process"
+  authors: "Yin Chen, Yulong Shen, Jinxiao Zhu, Xiaohong Jiang"
+  venue: "Wireless Networks, vol. 21, pp. 2453-2466"
+  venue_short: "Wireless Networks"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2015
+  category: "conference"
+  title: "Modeling the Success Transmission Rate in Aloha MANETs with Binomial Point Process"
+  authors: "Yin Chen, Jinxiao Zhu, Yulong Shen, Xiaohong Jiang"
+  venue: "2015 Eighth International Conference on Mobile Computing and Ubiquitous Networking (ICMU)"
+  venue_short: "ICMU 2015"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+- year: 2015
+  category: "conference"
+  title: "A Public Vehicle-Based Urban Sensing System"
+  authors: "Yin Chen, Takuro Yonezawa, Kazunori Takashio, Yutaro Kyono, Jin Nakazawa, Hideyuki Tokuda"
+  venue: "Adjunct Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2015 ACM International Symposium on Wearable Computers"
+  venue_short: "UbiComp/ISWC 2015"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
+
+# 博士论文
+- year: 2014
+  category: "thesis"
+  title: "Exact Throughput Capacity Studies for Mobile Ad Hoc Networks"
+  authors: "Yin Chen"
+  venue: "PhD Dissertation, Future University Hakodate"
+  venue_short: "PhD Dissertation"
+  awards: []
+  links:
+    pdf: "#"
+  status: "published"
