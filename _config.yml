@@ -3,9 +3,9 @@
 lab_name: "AIoT Laboratory"
 university: "Reitaku University"
 university_url: "https://www.reitaku-u.ac.jp/"
-department: "Faculty of Foreign Studies"  # 请根据实际情况修改
+department: "Faculty of engineering"  # 请根据实际情况修改
 pi_name: "Dr. Yin Chen"
-pi_email: "ychen@reitaku-u.ac.jp"
+pi_email: "ychen[AT]reitaku-u.ac.jp"
 
 # 网站设置
 lang: "en"
