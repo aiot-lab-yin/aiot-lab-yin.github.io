@@ -1,0 +1,28 @@
+# _data/members.yml
+
+faculty:
+  - name: "Yin Chen"
+    japanese_name: "陳 寅"
+    role: "Associate Professor (Tenured)/  Laboratory Director"
+    japanese_role: "准教授（常勤）"
+    position: "Associate Professor, Reitaku University / Project Associate Professor (Part-time), Keio University"
+    japanese_position: "麗澤大学 准教授 / 慶應義塾大学 大学院メディアデザイン研究科 プロジェクト准教授（非常勤）"
+    period: "2020〜"
+    research: "Wireless Security, Edge AI, IoT Systems, RF Fingerprinting"
+    japanese_research: "無線セキュリティ、エッジAI、IoTシステム、RFフィンガープリンティング"
+    email: "ychen@reitaku-u.ac.jp"
+    researchmap: "https://researchmap.jp/yinchen"
+    website: "#"
+    avatar: "/assets/img/members/chen-photo.jpg"
+    tags: ["Wireless Security", "Edge AI", "IoT", "RF Fingerprinting"]
+    japanese_tags: ["無線セキュリティ", "エッジAI", "IoT", "RFフィンガープリンティング"]
+    education:
+      - "Ph.D. in System Information Science - Future University-Hakodate (2014)"
+      - "M.S. in Computer Science - Xidian University, China (2011)"
+      - "B.S. in Computer Science - Xidian University, China (2008)"
+    affiliations:
+      - "Associate Professor (Tenured), Reitaku University"
+      - "Project Associate Professor (Part-time), Graduate School of Media and Governance, Keio University"
+    japanese_affiliations:
+      - "麗澤大学 准教授（常勤）"
+      - "慶應義塾大学 大学院メディアデザイン研究科 プロジェクト准教授（非常勤）"
