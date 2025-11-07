@@ -1,147 +1,173 @@
----
-layout: page
-title: "AIoT Laboratory - Reitaku University"
-description: "Artificial Intelligent IoT Laboratory at Reitaku University - Bridging AI and IoT for Intelligent Systems"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIoT Laboratory - Reitaku University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tagline {
+            font-size: 1.2rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+        .news-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .publication-item {
+            margin-bottom: 15px;
+        }
+        .section-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #1a73e8, #6c8ef5);
+            color: white;
+            padding: 60px 0;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <!-- Hero Section -->
+        <section class="hero-section text-center mb-5">
+            <h1 class="display-4">AIoT Laboratory</h1>
+            <p class="lead">Artificial Intelligent IoT Laboratory at Reitaku University</p>
+            <p class="tagline">Bridging Artificial Intelligence and Internet of Things for Next-Generation Intelligent Systems</p>
+            
+            <div class="mt-4">
+                <a href="/aboutme" class="btn btn-light btn-lg me-2">About Our Lab</a>
+                <a href="/contact" class="btn btn-outline-light btn-lg">Join Our Team</a>
+            </div>
+        </section>
 
-<!-- Hero Section -->
-<section class="text-center mb-5">
-  <h1 class="display-4">AIoT Laboratory</h1>
-  <p class="lead">Artificial Intelligent IoT Laboratory at Reitaku University</p>
-  <p class="tagline">Bridging Artificial Intelligence and Internet of Things for Next-Generation Intelligent Systems</p>
-  
-  <div class="mt-4">
-    <a href="{{ site.baseurl }}/aboutme" class="btn btn-primary btn-lg mr-2">About Our Lab</a>
-    <a href="{{ site.baseurl }}/contact" class="btn btn-outline-primary btn-lg">Join Our Team</a>
-  </div>
-</section>
-
-<!-- Quick Introduction -->
-<div class="row mb-5">
-  <div class="col-lg-8 mx-auto">
-    <div class="card bg-light">
-      <div class="card-body text-center">
-        <h3>Welcome to AIoT Lab</h3>
-        <p class="card-text">
-          We are a research laboratory at Reitaku University focused on the integration of Artificial Intelligence 
-          and Internet of Things technologies. Our mission is to develop intelligent systems that solve real-world 
-          problems through innovative research in edge computing, smart sensors, and autonomous systems.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Three Column Highlights -->
-<div class="row mb-5">
-  <div class="col-md-4 mb-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h4 class="card-title">📚 Latest News</h4>
-        {% for post in site.posts limit:3 %}
-        <div class="news-item mb-3">
-          <small class="text-muted">{{ post.date | date: "%b %d, %Y" }}</small>
-          <h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
+        <!-- Quick Introduction -->
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <h3>Welcome to AIoT Lab</h3>
+                        <p class="card-text">
+                            We are a research laboratory at Reitaku University focused on the integration of Artificial Intelligence 
+                            and Internet of Things technologies. Our mission is to develop intelligent systems that solve real-world 
+                            problems through innovative research in edge computing, smart sensors, and autonomous systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        {% endfor %}
-        <a href="{{ site.baseurl }}/blog" class="btn btn-sm btn-outline-primary">View All News</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-md-4 mb-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h4 class="card-title">🔬 Research Areas</h4>
-        <ul class="list-unstyled">
-          <li>• Edge AI & Computing</li>
-          <li>• Smart Sensor Networks</li>
-          <li>• Intelligent IoT Systems</li>
-          <li>• Machine Learning for IoT</li>
-          <li>• Autonomous Systems</li>
-        </ul>
-        <a href="{{ site.baseurl }}/projects" class="btn btn-sm btn-outline-primary">View Projects</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="col-md-4 mb-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h4 class="card-title">👥 Join Our Team</h4>
-        <p>We are looking for motivated students interested in AIoT research!</p>
-        <p><strong>Open Positions:</strong></p>
-        <ul>
-          <!-- <li>Master's Students</li>
-          <li>PhD Students</li> -->
-          <li>Research Interns</li>
-        </ul>
-        <a href="{{ site.baseurl }}/contact" class="btn btn-sm btn-outline-primary">Contact Us</a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Recent Publications -->
-<div class="row mb-5">
-  <div class="col-12">
-    <h2 class="text-center mb-4">Recent Publications</h2>
-    <div class="card">
-      <div class="card-body">
-        <div class="publication-item">
-          <h5>Paper Title 1</h5>
-          <p class="text-muted">Authors, Conference/Journal, Year</p>
-          <a href="#" class="btn btn-sm btn-outline-secondary">PDF</a>
-          <a href="#" class="btn btn-sm btn-outline-secondary">Code</a>
+        <!-- Vertical Layout for Highlights -->
+        <div class="row mb-5">
+            <!-- Latest News Section -->
+            <div class="col-12 mb-4">
+                <div class="card section-card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="fas fa-newspaper me-2"></i>Latest News</h4>
+                        <div class="news-item mb-3">
+                            <small class="text-muted">Nov 07, 2025</small>
+                            <h6><a href="#">Our Research on Wireless Security Makes an Impact at ACM MobiCom 2025</a></h6>
+                        </div>
+                        <div class="news-item mb-3">
+                            <small class="text-muted">Jan 15, 2024</small>
+                            <h6><a href="#">Welcome to the AIoT Laboratory Website</a></h6>
+                        </div>
+                        <a href="/blog" class="btn btn-outline-primary">View All News</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Research Areas Section -->
+            <div class="col-12 mb-4">
+                <div class="card section-card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="fas fa-flask me-2"></i>Research Areas</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-circle me-2 text-primary" style="font-size: 0.5rem;"></i>Edge AI & Computing</li>
+                            <li><i class="fas fa-circle me-2 text-primary" style="font-size: 0.5rem;"></i>Smart Sensor Networks</li>
+                            <li><i class="fas fa-circle me-2 text-primary" style="font-size: 0.5rem;"></i>Intelligent IoT Systems</li>
+                            <li><i class="fas fa-circle me-2 text-primary" style="font-size: 0.5rem;"></i>Machine Learning for IoT</li>
+                            <li><i class="fas fa-circle me-2 text-primary" style="font-size: 0.5rem;"></i>Autonomous Systems</li>
+                        </ul>
+                        <a href="/projects" class="btn btn-outline-primary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Join Our Team Section -->
+            <div class="col-12 mb-4">
+                <div class="card section-card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="fas fa-users me-2"></i>Join Our Team</h4>
+                        <p>We are looking for motivated students interested in AIoT research!</p>
+                        <p><strong>Open Positions:</strong></p>
+                        <ul>
+                            <li>Research Interns</li>
+                        </ul>
+                        <a href="/contact" class="btn btn-outline-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr>
-        <div class="publication-item">
-          <h5>Paper Title 2</h5>
-          <p class="text-muted">Authors, Conference/Journal, Year</p>
-          <a href="#" class="btn btn-sm btn-outline-secondary">PDF</a>
-          <a href="#" class="btn btn-sm btn-outline-secondary">Code</a>
-        </div>
-        <div class="text-center mt-3">
-          <a href="{{ site.baseurl }}/publications" class="btn btn-primary">View All Publications</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Contact Info -->
-<div class="row">
-  <div class="col-lg-6 mx-auto">
-    <div class="card bg-light">
-      <div class="card-body text-center">
-        <h4>Contact Information</h4>
-        <p><strong>Laboratory Director:</strong> Dr. Yin Chen</p>
-        <p><strong>Email:</strong> {{ site.social-network-links.email }}</p>
-        <p><strong>Location:</strong> Reitaku University, Japan</p>
-        <div class="social-links mt-3">
-          <a href="https://github.com/{{ site.social-network-links.github }}" class="btn btn-outline-dark btn-sm">
-            <i class="fab fa-github"></i> GitHub
-          </a>
+        <!-- Recent Publications -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Recent Publications</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="publication-item">
+                            <h5>Paper Title 1</h5>
+                            <p class="text-muted">Authors, Conference/Journal, Year</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">PDF</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Code</a>
+                        </div>
+                        <hr>
+                        <div class="publication-item">
+                            <h5>Paper Title 2</h5>
+                            <p class="text-muted">Authors, Conference/Journal, Year</p>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">PDF</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Code</a>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="/publications" class="btn btn-primary">View All Publications</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<style>
-.tagline {
-  font-size: 1.2rem;
-  color: #6c757d;
-  font-style: italic;
-}
-.news-item {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-}
-.news-item:last-child {
-  border-bottom: none;
-}
-.publication-item {
-  margin-bottom: 15px;
-}
-</style>
+        <!-- Contact Info -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <h4>Contact Information</h4>
+                        <p><strong>Laboratory Director:</strong> Dr. Yin Chen</p>
+                        <p><strong>Email:</strong> yin.chen@reitaku-u.ac.jp</p>
+                        <p><strong>Location:</strong> Reitaku University, Japan</p>
+                        <div class="social-links mt-3">
+                            <a href="https://github.com/aiot-lab" class="btn btn-outline-dark btn-sm">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
