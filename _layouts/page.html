@@ -5,9 +5,41 @@ layout: base
 {% comment %} 注释掉这一行来隐藏所有page的标题 {% endcomment %}
 {% comment %}{% include header.html type="page" %}{% endcomment %}
 
+<style>
+/* 为无标题页面添加安全间距 */
+.page-content-wrapper {
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+/* 平板设备调整 */
+@media (max-width: 992px) {
+    .page-content-wrapper {
+        margin-top: 30px;
+        padding-top: 15px;
+    }
+}
+
+/* 手机设备调整 */
+@media (max-width: 768px) {
+    .page-content-wrapper {
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+}
+
+/* 小手机设备进一步调整 */
+@media (max-width: 480px) {
+    .page-content-wrapper {
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+}
+</style>
+
 <main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
-    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %}">
+    <div class="{% if page.full-width %} col {% else %} col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 {% endif %} page-content-wrapper">
       {% if page.before-content %}
         <div class="before-content">
           {% for file in page.before-content %}
