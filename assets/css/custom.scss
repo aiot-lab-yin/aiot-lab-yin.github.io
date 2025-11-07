@@ -204,3 +204,42 @@ article img {
     border: 1px solid #ddd !important;
   }
 }
+
+// 添加到现有的custom.scss文件中
+
+// 更严格的图片尺寸控制
+.image-wrapper {
+  img.blog-post-image {
+    max-width: 100%;
+    height: auto;
+    
+    // 为不同屏幕设置最大宽度
+    @media (min-width: 768px) {
+      max-width: 90%;
+    }
+    
+    @media (min-width: 992px) {
+      max-width: 80%;
+    }
+    
+    @media (min-width: 1200px) {
+      max-width: 70%;
+    }
+  }
+  
+  // 为中等尺寸包装器设置更严格的限制
+  &.medium {
+    max-width: 600px !important; // 强制最大宽度
+    
+    img.blog-post-image {
+      max-width: 100% !important;
+    }
+  }
+}
+
+// 确保所有文章图片都不会过大
+.post-content img,
+article img {
+  max-width: 100% !important;
+  height: auto !important;
+}
