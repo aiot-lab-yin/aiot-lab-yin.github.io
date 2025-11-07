@@ -10,6 +10,8 @@ pi_email: "ychen[AT]reitaku-u.ac.jp"
 # 网站设置
 lang: "en"
 timezone: "Asia/Tokyo"
+custom_css:
+  - "/assets/css/custom.scss"
 
 # 社交链接扩展
 social-network-links:
