@@ -425,6 +425,9 @@
     pdf: "#"
   status: "published"
 
+
+
+
 # 博士论文
 - year: 2014
   category: "thesis"
@@ -436,3 +439,62 @@
   links:
     pdf: "#"
   status: "published"
+
+- title: "Secrecy transmission capacity in noisy wireless ad hoc networks"
+  authors: "J. Zhu, Y. Chen, Y. Shen, O. Takahashi, X. Jiang, and N. Shiratori"
+  venue: "Ad Hoc Networks"
+  venue_short: "Ad Hoc Networks"
+  year: 2014
+  category: "journal"
+  links:
+    pdf: "path/to/paper4.pdf"
+    doi: "https://doi.org/10.1016/j.adhoc.2014.05.001"
+  volume: 21
+  pages: "123-133"
+
+- title: "Packet delivery ratio/cost in MANETs with erasure coding and packet replication"
+  authors: "B. Yang, Y. Chen, Y. Cai, and X. Jiang"
+  venue: "IEEE Transactions on Vehicular Technology"
+  venue_short: "IEEE Trans. Veh. Technol."
+  year: 2014
+  category: "journal"
+  links:
+    pdf: "path/to/paper5.pdf"
+    doi: "https://doi.org/10.1109/TVT.2014.2334635"
+  volume: 64
+  issue: 5
+  pages: "2062-2070"
+
+
+- year: 2013
+  title: "Throughput capacity of ALOHA manets"
+  authors: "Y. Chen, Y. Shen, X. Jiang, and J. Li"
+  venue: "2013 IEEE/CIC International Conference on Communications in China-Workshops (CIC/ICCC)"
+  venue_short: "CIC/ICCC 2013"
+  category: "conference"
+  links:
+    pdf: "path/to/paper1.pdf"
+    doi: "https://doi.org/10.1109/ICCChinaW.2013.6670692"
+  pages: "71-75"
+
+- title: "Asymptotic upper bound on the packet propagation speed in WANETs with directional antennas"
+  authors: "Y. Chen, J. Liu, X. Jiang, O. Takahashi, and N. Shiratori"
+  venue: "2013 IEEE/CIC International Conference on Communications in China (ICCC)"
+  venue_short: "ICCC 2013"
+  year: 2013
+  category: "conference"
+  links:
+    pdf: 
+    doi: "https://doi.org/10.1109/ICCChina.2013.6671146"
+  pages: "571-576"
+
+- title: "Exact throughput capacity in MANETs with directional antenna and transmission power constraint"
+  authors: "Y. Chen, J. Liu, X. Jiang, O. Takahashi, and N. Shiratori"
+  venue: "2012 18th Asia-Pacific Conference on Communications (APCC)"
+  venue_short: "APCC 2012"
+  year: 2012
+  category: "conference"
+  links:
+    pdf: 
+    doi: "https://doi.org/10.1109/APCC.2012.6388295"
+  pages: "450-455"
