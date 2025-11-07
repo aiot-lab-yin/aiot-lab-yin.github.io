@@ -317,10 +317,10 @@ Meet the researchers and students of AIoT Laboratory. -->
 }
 </style>
 
-<div class="members-intro">
+<!-- <div class="members-intro">
     <h1>Laboratory Members</h1>
     <p>Meet the researchers and students of AIoT Laboratory</p>
-</div>
+</div> -->
 
 <!-- 教員メンバー -->
 <div class="members-section">
