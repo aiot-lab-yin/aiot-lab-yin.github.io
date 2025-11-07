@@ -226,41 +226,6 @@ description: "AIoT研究室からの最新情報"
     <p>AIoT研究室の最新動向をお届けします</p>
 </div>
 
-<div class="news-categories">
-    <h3>📁 カテゴリから探す</h3>
-    <div class="category-tags">
-        <a href="#" class="category-tag">🏆 受賞情報</a>
-        <a href="#" class="category-tag">📝 論文発表</a>
-        <a href="#" class="category-tag">🎤 学会発表</a>
-        <a href="#" class="category-tag">👥 メンバー情報</a>
-        <a href="#" class="category-tag">🏫 イベント</a>
-        <a href="#" class="category-tag">🤝 共同研究</a>
-        <a href="#" class="category-tag">💼 インターンシップ</a>
-        <a href="#" class="category-tag">🌐 国際交流</a>
-    </div>
-</div>
-
-<div class="news-stats">
-    <h3>📊 ニュース統計</h3>
-    <div class="stats-grid">
-        <div class="stat-item">
-            <span class="stat-number">{{ site.posts | size }}</span>
-            <span class="stat-label">総投稿数</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ site.posts | where: "categories", "Awards" | size }}</span>
-            <span class="stat-label">受賞情報</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ site.posts | where: "categories", "Research" | size }}</span>
-            <span class="stat-label">研究成果</span>
-        </div>
-        <div class="stat-item">
-            <span class="stat-number">{{ site.posts | where: "categories", "Events" | size }}</span>
-            <span class="stat-label">イベント</span>
-        </div>
-    </div>
-</div>
 
 <!-- ニュースリストの表示 -->
 <div class="news-list">
@@ -326,3 +291,41 @@ description: "AIoT研究室からの最新情報"
         </div>
     {% endif %}
 </div>
+
+
+<div class="news-categories">
+    <h3>📁 カテゴリから探す</h3>
+    <div class="category-tags">
+        <a href="#" class="category-tag">🏆 受賞情報</a>
+        <a href="#" class="category-tag">📝 論文発表</a>
+        <a href="#" class="category-tag">🎤 学会発表</a>
+        <a href="#" class="category-tag">👥 メンバー情報</a>
+        <a href="#" class="category-tag">🏫 イベント</a>
+        <a href="#" class="category-tag">🤝 共同研究</a>
+        <a href="#" class="category-tag">💼 インターンシップ</a>
+        <a href="#" class="category-tag">🌐 国際交流</a>
+    </div>
+</div>
+
+<div class="news-stats">
+    <h3>📊 ニュース統計</h3>
+    <div class="stats-grid">
+        <div class="stat-item">
+            <span class="stat-number">{{ site.posts | size }}</span>
+            <span class="stat-label">総投稿数</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">{{ site.posts | where: "categories", "Awards" | size }}</span>
+            <span class="stat-label">受賞情報</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">{{ site.posts | where: "categories", "Research" | size }}</span>
+            <span class="stat-label">研究成果</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">{{ site.posts | where: "categories", "Events" | size }}</span>
+            <span class="stat-label">イベント</span>
+        </div>
+    </div>
+</div>
+
