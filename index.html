@@ -1,20 +1,147 @@
 ---
-layout: home
-title: "AIoT Lab, Reitaku University"
-subtitle: "Signal Intelligence • Wireless Fingerprinting • AI for Communications"
+layout: page
+title: "AIoT Laboratory - Reitaku University"
+description: "Artificial Intelligent IoT Laboratory at Reitaku University - Bridging AI and IoT for Intelligent Systems"
 ---
 
-<div class="home-intro" style="margin-top:1rem">
-  <p>
-    We explore the intelligence of wireless signals with AI and heterogeneous computing (CPU • GPU • NPU).
-    Our research spans device fingerprinting, open-set recognition, and real-time IoT systems.
-  </p>
-  <p>
-    <strong>Quick links:</strong>
-    <a href="{{ '/projects' | relative_url }}">Research Projects</a> ·
-    <a href="{{ '/publications' | relative_url }}">Publications</a> ·
-    <a href="{{ '/aboutme' | relative_url }}">Members</a> ·
-    <a href="{{ '/contact' | relative_url }}">Contact</a>
-  </p>
-  <img src="{{ '/assets/img/lab-logo.svg' | relative_url }}" alt="AIoT Lab Logo" style="width:160px;margin:1rem 0 0.5rem 0;display:block">
+<!-- Hero Section -->
+<section class="text-center mb-5">
+  <h1 class="display-4">AIoT Laboratory</h1>
+  <p class="lead">Artificial Intelligent IoT Laboratory at Reitaku University</p>
+  <p class="tagline">Bridging Artificial Intelligence and Internet of Things for Next-Generation Intelligent Systems</p>
+  
+  <div class="mt-4">
+    <a href="{{ site.baseurl }}/aboutme" class="btn btn-primary btn-lg mr-2">About Our Lab</a>
+    <a href="{{ site.baseurl }}/contact" class="btn btn-outline-primary btn-lg">Join Our Team</a>
+  </div>
+</section>
+
+<!-- Quick Introduction -->
+<div class="row mb-5">
+  <div class="col-lg-8 mx-auto">
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <h3>Welcome to AIoT Lab</h3>
+        <p class="card-text">
+          We are a research laboratory at Reitaku University focused on the integration of Artificial Intelligence 
+          and Internet of Things technologies. Our mission is to develop intelligent systems that solve real-world 
+          problems through innovative research in edge computing, smart sensors, and autonomous systems.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Three Column Highlights -->
+<div class="row mb-5">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">📚 Latest News</h4>
+        {% for post in site.posts limit:3 %}
+        <div class="news-item mb-3">
+          <small class="text-muted">{{ post.date | date: "%b %d, %Y" }}</small>
+          <h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
+        </div>
+        {% endfor %}
+        <a href="{{ site.baseurl }}/blog" class="btn btn-sm btn-outline-primary">View All News</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">🔬 Research Areas</h4>
+        <ul class="list-unstyled">
+          <li>• Edge AI & Computing</li>
+          <li>• Smart Sensor Networks</li>
+          <li>• Intelligent IoT Systems</li>
+          <li>• Machine Learning for IoT</li>
+          <li>• Autonomous Systems</li>
+        </ul>
+        <a href="{{ site.baseurl }}/projects" class="btn btn-sm btn-outline-primary">View Projects</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h4 class="card-title">👥 Join Our Team</h4>
+        <p>We are looking for motivated students interested in AIoT research!</p>
+        <p><strong>Open Positions:</strong></p>
+        <ul>
+          <li>Master's Students</li>
+          <li>PhD Students</li>
+          <li>Research Interns</li>
+        </ul>
+        <a href="{{ site.baseurl }}/contact" class="btn btn-sm btn-outline-primary">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Recent Publications -->
+<div class="row mb-5">
+  <div class="col-12">
+    <h2 class="text-center mb-4">Recent Publications</h2>
+    <div class="card">
+      <div class="card-body">
+        <div class="publication-item">
+          <h5>Paper Title 1</h5>
+          <p class="text-muted">Authors, Conference/Journal, Year</p>
+          <a href="#" class="btn btn-sm btn-outline-secondary">PDF</a>
+          <a href="#" class="btn btn-sm btn-outline-secondary">Code</a>
+        </div>
+        <hr>
+        <div class="publication-item">
+          <h5>Paper Title 2</h5>
+          <p class="text-muted">Authors, Conference/Journal, Year</p>
+          <a href="#" class="btn btn-sm btn-outline-secondary">PDF</a>
+          <a href="#" class="btn btn-sm btn-outline-secondary">Code</a>
+        </div>
+        <div class="text-center mt-3">
+          <a href="{{ site.baseurl }}/publications" class="btn btn-primary">View All Publications</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Info -->
+<div class="row">
+  <div class="col-lg-6 mx-auto">
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <h4>Contact Information</h4>
+        <p><strong>Laboratory Director:</strong> Dr. Yin Chen</p>
+        <p><strong>Email:</strong> {{ site.social-network-links.email }}</p>
+        <p><strong>Location:</strong> Reitaku University, Japan</p>
+        <div class="social-links mt-3">
+          <a href="https://github.com/{{ site.social-network-links.github }}" class="btn btn-outline-dark btn-sm">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.tagline {
+  font-size: 1.2rem;
+  color: #6c757d;
+  font-style: italic;
+}
+.news-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.news-item:last-child {
+  border-bottom: none;
+}
+.publication-item {
+  margin-bottom: 15px;
+}
+</style>
