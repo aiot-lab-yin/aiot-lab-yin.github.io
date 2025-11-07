@@ -20,7 +20,20 @@ description: "Research publications from AIoT Laboratory"
 {% for pub in year_group.items %}
 <div class="publication-item {% if pub.category contains 'japanese' %}japanese{% endif %} {% if pub.awards.size > 0 %}has-award{% endif %}">
     <div class="pub-header">
-        <h4 class="pub-title">{{ pub.title }}</h4>
+        <h4 class="pub-title">
+            {{ pub.title }}
+            {% if pub.links.pdf or pub.links.doi or pub.links.code %}
+            <span class="title-links">
+                {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}" target="_blank">PDF</a>]{% endif %}
+                {% if pub.links.doi %}[<a href="{{ pub.links.doi }}" target="_blank">DOI</a>]{% endif %}
+                {% if pub.links.code %}[<a href="{{ pub.links.code }}" target="_blank">Code</a>]{% endif %}
+                {% if pub.links.slides %}[<a href="{{ pub.links.slides }}" target="_blank">Slides</a>]{% endif %}
+                {% if pub.links.video %}[<a href="{{ pub.links.video }}" target="_blank">Video</a>]{% endif %}
+                {% if pub.links.poster %}[<a href="{{ pub.links.poster }}" target="_blank">Poster</a>]{% endif %}
+                {% if pub.links.demo %}[<a href="{{ pub.links.demo }}" target="_blank">Demo</a>]{% endif %}
+            </span>
+            {% endif %}
+        </h4>
         {% if pub.awards.size > 0 %}
         <div class="pub-awards">
             {% for award in pub.awards %}
@@ -30,10 +43,9 @@ description: "Research publications from AIoT Laboratory"
         {% endif %}
     </div>
     
-    <div class="pub-authors">{{ pub.authors }}</div>
-    
-    <div class="pub-venue">
-        <em>{{ pub.venue }}</em>
+    <div class="pub-meta">
+        <span class="pub-authors">{{ pub.authors }}</span>
+        <span class="pub-venue">{{ pub.venue }}</span>
         {% if pub.status == "accepted" %}
         <span class="status-badge accepted">Accepted</span>
         {% elsif pub.status == "forthcoming" %}
@@ -46,30 +58,6 @@ description: "Research publications from AIoT Laboratory"
         <small>{{ pub.note }}</small>
     </div>
     {% endif %}
-    
-    <div class="pub-links">
-        {% if pub.links.pdf %}
-        <a href="{{ pub.links.pdf }}" class="pub-link" target="_blank">PDF</a>
-        {% endif %}
-        {% if pub.links.doi %}
-        <a href="{{ pub.links.doi }}" class="pub-link" target="_blank">DOI</a>
-        {% endif %}
-        {% if pub.links.code %}
-        <a href="{{ pub.links.code }}" class="pub-link" target="_blank">Code</a>
-        {% endif %}
-        {% if pub.links.slides %}
-        <a href="{{ pub.links.slides }}" class="pub-link" target="_blank">Slides</a>
-        {% endif %}
-        {% if pub.links.video %}
-        <a href="{{ pub.links.video }}" class="pub-link" target="_blank">Video</a>
-        {% endif %}
-        {% if pub.links.poster %}
-        <a href="{{ pub.links.poster }}" class="pub-link" target="_blank">Poster</a>
-        {% endif %}
-        {% if pub.links.demo %}
-        <a href="{{ pub.links.demo }}" class="pub-link" target="_blank">Demo</a>
-        {% endif %}
-    </div>
 </div>
 {% endfor %}
 
@@ -85,15 +73,17 @@ description: "Research publications from AIoT Laboratory"
 {% assign all_journals = journal_papers | concat: journal_japanese | sort: "year" | reverse %}
 {% for pub in all_journals %}
 <div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
-    <strong>{{ pub.title }}</strong><br>
-    {{ pub.authors }}<br>
-    <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    <strong>{{ pub.title }}</strong>
     {% if pub.links.pdf or pub.links.doi %}
-    <span class="pub-links-compact">
+    <span class="title-links">
         {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}">PDF</a>]{% endif %}
         {% if pub.links.doi %}[<a href="{{ pub.links.doi }}">DOI</a>]{% endif %}
     </span>
     {% endif %}
+    <br>
+    <span class="pub-meta-compact">
+        {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    </span>
 </div>
 {% endfor %}
 
@@ -103,15 +93,17 @@ description: "Research publications from AIoT Laboratory"
 {% assign all_conferences = conference_papers | concat: conference_japanese | sort: "year" | reverse %}
 {% for pub in all_conferences %}
 <div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
-    <strong>{{ pub.title }}</strong><br>
-    {{ pub.authors }}<br>
-    <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    <strong>{{ pub.title }}</strong>
     {% if pub.links.pdf or pub.links.doi %}
-    <span class="pub-links-compact">
+    <span class="title-links">
         {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}">PDF</a>]{% endif %}
         {% if pub.links.doi %}[<a href="{{ pub.links.doi }}">DOI</a>]{% endif %}
     </span>
     {% endif %}
+    <br>
+    <span class="pub-meta-compact">
+        {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    </span>
 </div>
 {% endfor %}
 
@@ -121,15 +113,17 @@ description: "Research publications from AIoT Laboratory"
 {% assign all_workshops = workshop_papers | concat: workshop_japanese | sort: "year" | reverse %}
 {% for pub in all_workshops %}
 <div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
-    <strong>{{ pub.title }}</strong><br>
-    {{ pub.authors }}<br>
-    <em>{{ pub.venue_short }}</em>, {{ pub.year }}
-    {% if pub.awards.size > 0 %}
-    <span class="award-badge-small">
-        {% for award in pub.awards %}{{ award }}{% unless forloop.last %}, {% endunless %}{% endfor %}
-    </span>
-    {% endif %}
+    <strong>{{ pub.title }}</strong>
     {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}">PDF</a>]{% endif %}
+    <br>
+    <span class="pub-meta-compact">
+        {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+        {% if pub.awards.size > 0 %}
+        <span class="award-badge-small">
+            {% for award in pub.awards %}{{ award }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </span>
+        {% endif %}
+    </span>
 </div>
 {% endfor %}
 
@@ -137,10 +131,12 @@ description: "Research publications from AIoT Laboratory"
 {% assign theses = site.data.publications | where: "category", "thesis" | sort: "year" | reverse %}
 {% for pub in theses %}
 <div class="publication-item compact">
-    <strong>{{ pub.title }}</strong><br>
-    {{ pub.authors }}<br>
-    <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    <strong>{{ pub.title }}</strong>
     {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}">PDF</a>]{% endif %}
+    <br>
+    <span class="pub-meta-compact">
+        {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    </span>
 </div>
 {% endfor %}
 
