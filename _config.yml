@@ -40,8 +40,11 @@ social-network-links:
   # youtube: "channel/your_channel"
 
 # 主题设置
-theme: beautiful-jekyll-theme
+# theme: beautiful-jekyll-theme
 remote_theme: daattali/beautiful-jekyll
+
+
+
 
 # 评论功能（可选）
 comments:
