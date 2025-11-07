@@ -1,263 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - AIoT Laboratory</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        .page-header {
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-        }
-        .publications-intro {
-            margin-bottom: 30px;
-            font-size: 1.1rem;
-            color: #555;
-        }
-        .year-section {
-            margin-bottom: 30px;
-        }
-        .year-heading {
-            color: #1a73e8;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-        }
-        .publication-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            background-color: #f8f9fa;
-            transition: background-color 0.3s;
-        }
-        .publication-item:hover {
-            background-color: #e9ecef;
-        }
-        .pub-title {
-            font-weight: 600;
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-        .pub-number {
-            display: inline-block;
-            background-color: #1a73e8;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-            margin-right: 10px;
-            font-weight: bold;
-        }
-        .title-links a {
-            margin: 0 3px;
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        .title-links a:hover {
-            text-decoration: underline;
-        }
-        .pub-meta {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 5px;
-        }
-        .pub-authors {
-            font-weight: 500;
-        }
-        .pub-venue {
-            font-style: italic;
-        }
-        .award-badge {
-            display: inline-block;
-            background-color: #ffc107;
-            color: #212529;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-left: 10px;
-            font-weight: 500;
-        }
-        .invited {
-            background-color: #17a2b8;
-            color: white;
-        }
-        .status-badge {
-            display: inline-block;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-left: 8px;
-        }
-        .accepted {
-            background-color: #28a745;
-            color: white;
-        }
-        .forthcoming {
-            background-color: #6c757d;
-            color: white;
-        }
-        .pub-note {
-            font-size: 0.85rem;
-            color: #6c757d;
-            margin-top: 5px;
-        }
-        .publications-footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 0.9rem;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="page-header">
-            <h1>Publications</h1>
-            <p class="lead">Research publications from AIoT Laboratory</p>
-        </div>
+---
+layout: page
+title: Publications
+description: "Research publications from AIoT Laboratory"
+---
 
-        <div class="publications-intro">
-            <p>Our research contributions in Artificial Intelligence of Things, wireless security, edge computing, intelligent systems, and radio frequency fingerprinting.</p>
-        </div>
+<!-- # Publications -->
 
-        <!-- Publications by Year (Now to Past) -->
-        <div class="year-section">
-            <h3 class="year-heading">2025</h3>
-            
-            <div class="publication-item">
-                <div class="pub-header">
-                    <h4 class="pub-title">
-                        <span class="pub-number">5</span>
-                        Deep Learning for RF Fingerprinting in 6G Networks
-                        <span class="title-links">
-                            [<a href="#" target="_blank">PDF</a>]
-                            [<a href="#" target="_blank">DOI</a>]
-                            [<a href="#" target="_blank">Code</a>]
-                        </span>
-                    </h4>
-                    <div class="pub-awards">
-                        <span class="award-badge">Best Paper Award</span>
-                    </div>
-                </div>
-                <div class="pub-meta">
-                    <span class="pub-authors">Y. Chen, T. Tanaka, A. Yamada, S. Lee</span> | 
-                    <span class="pub-venue">IEEE Transactions on Wireless Communications</span>
-                    <span class="status-badge accepted">Accepted</span>
-                </div>
-                <div class="pub-note">
-                    <small>To appear in the December 2025 issue</small>
-                </div>
-            </div>
-            
-            <div class="publication-item">
-                <div class="pub-header">
-                    <h4 class="pub-title">
-                        <span class="pub-number">4</span>
-                        Edge Intelligence for Real-time IoT Security
-                        <span class="title-links">
-                            [<a href="#" target="_blank">PDF</a>]
-                            [<a href="#" target="_blank">DOI</a>]
-                        </span>
-                    </h4>
-                </div>
-                <div class="pub-meta">
-                    <span class="pub-authors">Y. Chen, M. Kobayashi, H. Suzuki</span> | 
-                    <span class="pub-venue">ACM MobiCom 2025</span>
-                </div>
-            </div>
-        </div>
+<div class="publications-intro">
+    <p>Our research contributions in Artificial Intelligence of Things, wireless security, edge computing, intelligent systems, and radio frequency fingerprinting.</p>
+</div>
 
-        <div class="year-section">
-            <h3 class="year-heading">2024</h3>
-            
-            <div class="publication-item">
-                <div class="pub-header">
-                    <h4 class="pub-title">
-                        <span class="pub-number">3</span>
-                        Adaptive Machine Learning for IoT Device Authentication
-                        <span class="title-links">
-                            [<a href="#" target="_blank">PDF</a>]
-                            [<a href="#" target="_blank">DOI</a>]
-                            [<a href="#" target="_blank">Code</a>]
-                        </span>
-                    </h4>
-                    <div class="pub-awards">
-                        <span class="award-badge invited">Invited Paper</span>
-                    </div>
-                </div>
-                <div class="pub-meta">
-                    <span class="pub-authors">Y. Chen, R. Wang, K. Nakamura</span> | 
-                    <span class="pub-venue">IEEE Internet of Things Journal</span>
-                </div>
-            </div>
-            
-            <div class="publication-item">
-                <div class="pub-header">
-                    <h4 class="pub-title">
-                        <span class="pub-number">2</span>
-                        Lightweight AI Models for Edge Computing
-                        <span class="title-links">
-                            [<a href="#" target="_blank">PDF</a>]
-                            [<a href="#" target="_blank">DOI</a>]
-                        </span>
-                    </h4>
-                </div>
-                <div class="pub-meta">
-                    <span class="pub-authors">Y. Chen, T. Sato, A. Johnson</span> | 
-                    <span class="pub-venue">IEEE International Conference on Communications (ICC)</span>
-                </div>
-            </div>
-        </div>
+<!-- ## By Year -->
 
-        <div class="year-section">
-            <h3 class="year-heading">2023</h3>
-            
-            <div class="publication-item">
-                <div class="pub-header">
-                    <h4 class="pub-title">
-                        <span class="pub-number">1</span>
-                        Foundations of AIoT: A Survey
-                        <span class="title-links">
-                            [<a href="#" target="_blank">PDF</a>]
-                            [<a href="#" target="_blank">DOI</a>]
-                        </span>
-                    </h4>
-                </div>
-                <div class="pub-meta">
-                    <span class="pub-authors">Y. Chen</span> | 
-                    <span class="pub-venue">ACM Computing Surveys</span>
-                </div>
-                <div class="pub-note">
-                    <small>Comprehensive survey of AIoT technologies and applications</small>
-                </div>
-            </div>
-        </div>
+{% assign all_publications = site.data.publications | sort: "year" %}
+{% assign publication_count = 1 %}
+{% assign publications_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
 
-        <div class="publications-footer">
-            <p><small>For pre-prints and additional materials, please visit our <a href="https://github.com/aiot-lab-yin" target="_blank">GitHub repository</a> or contact the authors directly.</small></p>
+{% for year_group in publications_by_year %}
+
+### {{ year_group.name }}
+
+{% for pub in year_group.items %}
+{% for sorted_pub in all_publications %}
+{% if sorted_pub.title == pub.title and sorted_pub.authors == pub.authors %}
+<div class="publication-item {% if pub.category contains 'japanese' %}japanese{% endif %} {% if pub.awards.size > 0 %}has-award{% endif %}">
+    <div class="pub-number">{{ publication_count }}</div>
+    <div class="pub-content">
+        <div class="pub-header">
+            <h4 class="pub-title">
+                {{ pub.title }}
+                {% if pub.links.pdf or pub.links.doi or pub.links.code %}
+                <span class="title-links">
+                    {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}" target="_blank">PDF</a>]{% endif %}
+                    {% if pub.links.doi %}[<a href="{{ pub.links.doi }}" target="_blank">DOI</a>]{% endif %}
+                    {% if pub.links.code %}[<a href="{{ pub.links.code }}" target="_blank">Code</a>]{% endif %}
+                    {% if pub.links.slides %}[<a href="{{ pub.links.slides }}" target="_blank">Slides</a>]{% endif %}
+                    {% if pub.links.video %}[<a href="{{ pub.links.video }}" target="_blank">Video</a>]{% endif %}
+                    {% if pub.links.poster %}[<a href="{{ pub.links.poster }}" target="_blank">Poster</a>]{% endif %}
+                    {% if pub.links.demo %}[<a href="{{ pub.links.demo }}" target="_blank">Demo</a>]{% endif %}
+                </span>
+                {% endif %}
+            </h4>
+            {% if pub.awards.size > 0 %}
+            <div class="pub-awards">
+                {% for award in pub.awards %}
+                <span class="award-badge {% if award contains '招待' %}invited{% endif %}">{{ award }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
+        
+        <div class="pub-meta">
+            <span class="pub-authors">{{ pub.authors }}</span>
+            <span class="pub-venue">{{ pub.venue }}</span>
+            {% if pub.status == "accepted" %}
+            <span class="status-badge accepted">Accepted</span>
+            {% elsif pub.status == "forthcoming" %}
+            <span class="status-badge forthcoming">Forthcoming</span>
+            {% endif %}
+        </div>
+        
+        {% if pub.note %}
+        <div class="pub-note">
+            <small>{{ pub.note }}</small>
+        </div>
+        {% endif %}
     </div>
+</div>
+{% assign publication_count = publication_count | plus: 1 %}
+{% endif %}
+{% endfor %}
+{% endfor %}
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+{% endfor %}
+
+<!-- ---
+
+## By Category
+
+### Journal Papers
+{% assign journal_papers = site.data.publications | where: "category", "journal" %}
+{% assign journal_japanese = site.data.publications | where: "category", "journal_japanese" %}
+{% assign all_journals = journal_papers | concat: journal_japanese | sort: "year" %}
+{% assign journal_count = 1 %}
+{% for pub in all_journals %}
+<div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
+    <span class="pub-number-small">[J{{ journal_count }}]</span>
+    <strong>{{ pub.title }}</strong>
+    {% if pub.links.pdf or pub.links.doi %}
+    <span class="title-links">
+        {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}">PDF</a>]{% endif %}
+        {% if pub.links.doi %}[<a href="{{ pub.links.doi }}">DOI</a>]{% endif %}
+    </span>
+    {% endif %}
+    <br>
+    <span class="pub-meta-compact">
+        {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    </span>
+</div>
+{% assign journal_count = journal_count | plus: 1 %}
+{% endfor %}
+
+### Conference Papers
+{% assign conference_papers = site.data.publications | where: "category", "conference" %}
+{% assign conference_japanese = site.data.publications | where: "category", "conference_japanese" %}
+{% assign all_conferences = conference_papers | concat: conference_japanese | sort: "year" %}
+{% assign conference_count = 1 %}
+{% for pub in all_conferences %}
+<div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
+    <span class="pub-number-small">[C{{ conference_count }}]</span>
+    <strong>{{ pub.title }}</strong>
+    {% if pub.links.pdf or pub.links.doi %}
+    <span class="title-links">
+        {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}">PDF</a>]{% endif %}
+        {% if pub.links.doi %}[<a href="{{ pub.links.doi }}">DOI</a>]{% endif %}
+    </span>
+    {% endif %}
+    <br>
+    <span class="pub-meta-compact">
+        {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    </span>
+</div>
+{% assign conference_count = conference_count | plus: 1 %}
+{% endfor %}
+
+### Workshop & Symposium Papers
+{% assign workshop_papers = site.data.publications | where: "category", "workshop" %}
+{% assign workshop_japanese = site.data.publications | where: "category", "workshop_japanese" %}
+{% assign all_workshops = workshop_papers | concat: workshop_japanese | sort: "year" %}
+{% assign workshop_count = 1 %}
+{% for pub in all_workshops %}
+<div class="publication-item compact {% if pub.category contains 'japanese' %}japanese{% endif %}">
+    <span class="pub-number-small">[W{{ workshop_count }}]</span>
+    <strong>{{ pub.title }}</strong>
+    {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}">PDF</a>]{% endif %}
+    <br>
+    <span class="pub-meta-compact">
+        {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+        {% if pub.awards.size > 0 %}
+        <span class="award-badge-small">
+            {% for award in pub.awards %}{{ award }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </span>
+        {% endif %}
+    </span>
+</div>
+{% assign workshop_count = workshop_count | plus: 1 %}
+{% endfor %}
+
+### Theses
+{% assign theses = site.data.publications | where: "category", "thesis" | sort: "year" %}
+{% assign thesis_count = 1 %}
+{% for pub in theses %}
+<div class="publication-item compact">
+    <span class="pub-number-small">[T{{ thesis_count }}]</span>
+    <strong>{{ pub.title }}</strong>
+    {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}">PDF</a>]{% endif %}
+    <br>
+    <span class="pub-meta-compact">
+        {{ pub.authors }} | <em>{{ pub.venue_short }}</em>, {{ pub.year }}
+    </span>
+</div>
+{% assign thesis_count = thesis_count | plus: 1 %}
+{% endfor %}
+
+--- -->
+
+<div class="publications-footer">
+    <p><small>For pre-prints and additional materials, please visit our <a href="https://github.com/aiot-lab-yin" target="_blank">GitHub repository</a> or contact the authors directly.</small></p>
+</div>
