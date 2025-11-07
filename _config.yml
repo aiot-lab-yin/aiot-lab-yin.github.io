@@ -24,10 +24,11 @@ navbar-links:
   Home: "/"
   Members: "/members"
   Publications: "/publications"
-  Research: "/research"
+  #Research: "/research"
   Projects: "/projects"
-  News: "/news"
+  News: "/blog"
   Contact: "/contact"
+  About: "/aboutme"
 
 # 社交链接
 social-network-links:
