@@ -2,6 +2,64 @@
 layout: page
 ---
 
+<style>
+.publication-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.pub-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.pub-meta {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.pub-note {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 3px;
+}
+
+.pub-links a {
+  color: #4169e1;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.pub-links a:hover {
+  color: #1e3a8a;
+  text-decoration: underline;
+}
+
+.pub-awards .award-badge {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.pub-year {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-left: 4px solid #4169e1;
+  padding-left: 8px;
+}
+</style>
+
 <div class="publications-intro">
   <p>Our research contributions in Artificial Intelligence of Things, wireless security, edge computing, intelligent systems, and radio frequency fingerprinting.</p>
 </div>
@@ -13,7 +71,7 @@ layout: page
 {% assign current = total %}
 
 {% for year_group in pubs_by_year %}
-## {{ year_group.name }}
+<h2 class="pub-year">{{ year_group.name }}</h2>
 
   {% for pub in year_group.items %}
     {% include publication-item.html publication=pub number=current %}
