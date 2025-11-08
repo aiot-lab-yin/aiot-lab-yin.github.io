@@ -227,7 +227,7 @@ hide-title: true
 
 
 <!-- ニュースリストの表示 -->
-<div class="news-list">
+<!-- <div class="news-list">
     <h2>最新ニュース</h2>
     
     {% if site.posts.size > 0 %}
@@ -289,7 +289,7 @@ hide-title: true
             <p>現在、ニュースはありません。</p>
         </div>
     {% endif %}
-</div>
+</div> -->
 
 
 <div class="news-categories">
