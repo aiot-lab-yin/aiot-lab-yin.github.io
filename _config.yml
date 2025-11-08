@@ -23,13 +23,13 @@ url: "https://aiot-lab-yin.github.io"
 # Navigation Bar
 navbar-title: "🧠 AIoT Lab"
 navbar-links:
-  Home: "/"
+  Home: "/index"
   About: "/aboutme"
   Members: "/members"
   Projects: "/projects"
   Publications: "/publications"
   News: "/blog"
-  Contact: "/#contact"
+  Contact: "/index#contact"
 
 # Social Links
 social-network-links:
