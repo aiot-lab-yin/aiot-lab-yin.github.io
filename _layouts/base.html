@@ -24,11 +24,35 @@ common-js:
 <!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
 {% include head.html %}
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
   {% include gtm_body.html %}
   {% include nav.html %}
   {{ content }}
   {% include footer.html %}
   {% include footer-scripts.html %}
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: "#mainNav",
+      offset: 80
+    });
+
+    // Smooth scroll for internal anchor links
+    const navLinks = document.querySelectorAll('#mainNav a.nav-link[href^="#"]');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  });
+  </script>
 </body>
 </html>

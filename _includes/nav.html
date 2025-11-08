@@ -6,7 +6,7 @@
     <a class="navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
   {%- endif -%}
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -26,7 +26,7 @@
           </li>
         {% else %}
           <li class="nav-item">
-            <a class="nav-link {% if page.url == link[1] or link[1] contains '#' %}active{% endif %}" href="{% if link[1] contains '#' %}{{ link[1] }}{% else %}{{ link[1] | relative_url }}{% endif %}">{{ link[0] }}</a>
+            <a class="nav-link" href="{% if link[1] contains '#' %}{{ link[1] }}{% else %}{{ link[1] | relative_url }}{% endif %}">{{ link[0] }}</a>
           </li>
         {% endif %}
       {%- endfor -%}
