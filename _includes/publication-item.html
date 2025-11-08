@@ -1,33 +1,33 @@
-<div class="publication-item {% if pub.category contains 'japanese' %}japanese{% endif %}">
+<div class="publication-item {% if include.publication.category contains 'japanese' %}japanese{% endif %}">
   <div class="pub-title">
-    [{{ counter }}] {{ pub.title }}
-    {% if pub.links.pdf or pub.links.doi or pub.links.code or pub.links.video %}
+    [{{ include.number }}] {{ include.publication.title }}
+    {% if include.publication.links.pdf or include.publication.links.doi or include.publication.links.code or include.publication.links.video %}
     <span class="pub-links">
-      {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}" target="_blank">PDF</a>]{% endif %}
-      {% if pub.links.doi %}[<a href="{{ pub.links.doi }}" target="_blank">DOI</a>]{% endif %}
-      {% if pub.links.code %}[<a href="{{ pub.links.code }}" target="_blank">Code</a>]{% endif %}
-      {% if pub.links.video %}[<a href="{{ pub.links.video }}" target="_blank">Video</a>]{% endif %}
-      {% if pub.links.slides %}[<a href="{{ pub.links.slides }}" target="_blank">Slides</a>]{% endif %}
-      {% if pub.links.poster %}[<a href="{{ pub.links.poster }}" target="_blank">Poster</a>]{% endif %}
-      {% if pub.links.demo %}[<a href="{{ pub.links.demo }}" target="_blank">Demo</a>]{% endif %}
+      {% if include.publication.links.pdf %}[<a href="{{ include.publication.links.pdf }}" target="_blank">PDF</a>]{% endif %}
+      {% if include.publication.links.doi %}[<a href="{{ include.publication.links.doi }}" target="_blank">DOI</a>]{% endif %}
+      {% if include.publication.links.code %}[<a href="{{ include.publication.links.code }}" target="_blank">Code</a>]{% endif %}
+      {% if include.publication.links.video %}[<a href="{{ include.publication.links.video }}" target="_blank">Video</a>]{% endif %}
+      {% if include.publication.links.slides %}[<a href="{{ include.publication.links.slides }}" target="_blank">Slides</a>]{% endif %}
+      {% if include.publication.links.poster %}[<a href="{{ include.publication.links.poster }}" target="_blank">Poster</a>]{% endif %}
+      {% if include.publication.links.demo %}[<a href="{{ include.publication.links.demo }}" target="_blank">Demo</a>]{% endif %}
     </span>
     {% endif %}
   </div>
 
   <div class="pub-meta">
-    {{ pub.authors }} — <em>{{ pub.venue }}</em>
-    {% if pub.status %}
-      <span class="status-badge {{ pub.status }}">{{ pub.status | capitalize }}</span>
+    {{ include.publication.authors }} — <em>{{ include.publication.venue }}</em>
+    {% if include.publication.status %}
+      <span class="status-badge {{ include.publication.status }}">{{ include.publication.status | capitalize }}</span>
     {% endif %}
   </div>
 
-  {% if pub.note %}
-  <div class="pub-note">{{ pub.note }}</div>
+  {% if include.publication.note %}
+  <div class="pub-note">{{ include.publication.note }}</div>
   {% endif %}
 
-  {% if pub.awards and pub.awards.size > 0 %}
+  {% if include.publication.awards and include.publication.awards.size > 0 %}
   <div class="pub-awards">
-    {% for award in pub.awards %}
+    {% for award in include.publication.awards %}
       <span class="award-badge">{{ award }}</span>
     {% endfor %}
   </div>
