@@ -5,7 +5,7 @@ layout: page
 # hide-title: true
 ---
 
-# About AIoT Laboratory
+<!-- # About AIoT Laboratory -->
 
 Welcome to the Artificial Intelligent IoT (AIoT) Laboratory at Reitaku University. Our lab focuses on the intersection of Artificial Intelligence and Internet of Things technologies.
 
