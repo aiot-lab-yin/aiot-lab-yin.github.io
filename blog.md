@@ -294,7 +294,7 @@ hide-title: true
 <div class="news-categories">
     <h3>📁 カテゴリから探す</h3>
     <div class="category-tags">
-        <a href="#" class="category-tag">🏆 受賞情報/</a>
+        <a href="#" class="category-tag">🏆 受賞情報</a>
         <a href="#" class="category-tag">📝 論文発表</a>
         <a href="#" class="category-tag">🎤 学会発表</a>
         <a href="#" class="category-tag">👥 メンバー情報</a>
