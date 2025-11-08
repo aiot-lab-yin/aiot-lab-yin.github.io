@@ -1,0 +1,35 @@
+<div class="publication-item {% if pub.category contains 'japanese' %}japanese{% endif %}">
+  <div class="pub-title">
+    [{{ counter }}] {{ pub.title }}
+    {% if pub.links.pdf or pub.links.doi or pub.links.code or pub.links.video %}
+    <span class="pub-links">
+      {% if pub.links.pdf %}[<a href="{{ pub.links.pdf }}" target="_blank">PDF</a>]{% endif %}
+      {% if pub.links.doi %}[<a href="{{ pub.links.doi }}" target="_blank">DOI</a>]{% endif %}
+      {% if pub.links.code %}[<a href="{{ pub.links.code }}" target="_blank">Code</a>]{% endif %}
+      {% if pub.links.video %}[<a href="{{ pub.links.video }}" target="_blank">Video</a>]{% endif %}
+      {% if pub.links.slides %}[<a href="{{ pub.links.slides }}" target="_blank">Slides</a>]{% endif %}
+      {% if pub.links.poster %}[<a href="{{ pub.links.poster }}" target="_blank">Poster</a>]{% endif %}
+      {% if pub.links.demo %}[<a href="{{ pub.links.demo }}" target="_blank">Demo</a>]{% endif %}
+    </span>
+    {% endif %}
+  </div>
+
+  <div class="pub-meta">
+    {{ pub.authors }} — <em>{{ pub.venue }}</em>
+    {% if pub.status %}
+      <span class="status-badge {{ pub.status }}">{{ pub.status | capitalize }}</span>
+    {% endif %}
+  </div>
+
+  {% if pub.note %}
+  <div class="pub-note">{{ pub.note }}</div>
+  {% endif %}
+
+  {% if pub.awards and pub.awards.size > 0 %}
+  <div class="pub-awards">
+    {% for award in pub.awards %}
+      <span class="award-badge">{{ award }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>

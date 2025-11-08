@@ -1,0 +1,65 @@
+<div class="publication-stats">
+  <h3>📊 Publication Statistics</h3>
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number">{{ site.data.publications | size }}</span>
+      <span class="stat-label">Total Publications</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">{{ site.data.publications | where: "category", "journal" | size }}</span>
+      <span class="stat-label">Journal Papers</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">{{ site.data.publications | where: "category", "conference" | size }}</span>
+      <span class="stat-label">Conference Papers</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">{{ site.data.publications | where: "category", "workshop" | size }}</span>
+      <span class="stat-label">Workshop Papers</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">{{ site.data.publications | where: "category", "thesis" | size }}</span>
+      <span class="stat-label">Theses</span>
+    </div>
+  </div>
+</div>
+
+<style>
+.publication-stats {
+  background-color: #fafafa;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.publication-stats h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+.stat-item {
+  padding: 10px;
+}
+.stat-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #667eea;
+}
+.stat-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
