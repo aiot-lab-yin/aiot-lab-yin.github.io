@@ -3,10 +3,9 @@ layout: page
 title: 研究室ニュース
 description: "AIoT研究室からの最新情報"
 hide-title: true
-
 ---
 
-当研究室の最新の研究成果、受賞情報、イベントなどをご紹介します。定期的にチェックしてください！
+当研究室の最新の研究成果、受賞情報、イベントなどをご紹介します。
 
 <style>
 .news-page-intro {
@@ -221,10 +220,10 @@ hide-title: true
 }
 </style>
 
-<div class="news-page-intro">
+<!-- <div class="news-page-intro">
     <h1>研究室ニュース</h1>
     <p>AIoT研究室の最新動向をお届けします</p>
-</div>
+</div> -->
 
 
 <!-- ニュースリストの表示 -->
