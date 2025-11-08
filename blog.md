@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 研究室ニュース
-description: "AIoT研究室からの最新情報"
+# title: 研究室ニュース
+# description: "AIoT研究室からの最新情報"
 hide-title: true
 ---
 
