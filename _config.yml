@@ -1,61 +1,67 @@
-# 在现有配置基础上添加/修改：
+# ===============================
+# 🔬 AIoT Laboratory Configuration
+# ===============================
 
-# Laboratory information
+# Laboratory Information
 lab_name: "AIoT Laboratory"
 lab_short_name: "AIoT Lab"
 university: "Reitaku University"
 university_url: "https://www.reitaku-u.ac.jp/"
-department: "Faculty of Information Science"  # 根据实际情况调整
+department: "Faculty of Engineering"
 pi_name: "Dr. Yin Chen"
-pi_email: "ychen[AT]reitaku-u.ac.jp"
+pi_email: "ychen[AI]reitaku-u.ac.jp"
 
-# 网站设置
+# Site Settings
 title: "AIoT Laboratory - Reitaku University"
 name: "AIoT Laboratory"
 description: "Artificial Intelligence of Things Laboratory at Reitaku University"
 lang: "en"
 timezone: "Asia/Tokyo"
 baseurl: ""
-url: "https://aiot-lab.github.io"  # 替换为您的实际网址
+url: "https://aiot-lab-yin.github.io"
 
-# 导航栏设置
+# Navigation Bar
 navbar-title: "🧠 AIoT Lab"
 navbar-links:
   Home: "/"
+  About: "/aboutme"
   Members: "/members"
-  Publications: "/publications"
-  #Research: "/research"
   Projects: "/projects"
+  Publications: "/publications"
   News: "/blog"
   Contact: "/contact"
-  About: "/aboutme"
 
-# 社交链接
+# Social Links
 social-network-links:
-  email: "ychen@reitaku-u.ac.jp"
+  # email: "ychen@reitaku-u.ac.jp"
   github: "aiot-lab-yin"
-  researchmap: "yinchen"  # 如果陈老师有researchmap
-  # 可选添加：
+  researchmap: "yinchen"
+  # orcid: "0000-0003-XXXX-XXXX"
+  # google-scholar: "citations?user=XXXXX"
+  # Optional:
   # twitter: "aiot_lab"
   # linkedin: "company/aiot-lab"
   # youtube: "channel/your_channel"
 
-# 主题设置
-# theme: beautiful-jekyll-theme
-remote_theme: daattali/beautiful-jekyll
+# Theme Configuration
+remote_theme: pages-themes/slate@v0.2.0
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
 
-
-
-
-# 评论功能（可选）
+# Comments (optional)
 comments:
   disqus: false
   facebook: false
   staticman: false
 
-# 分享按钮
+# Sharing Buttons
 share-links-active: true
 
-# 自定义CSS
+# Custom CSS
 custom_css:
   - "/assets/css/custom.scss"
+
+# Visual Elements
+favicon: "/assets/img/logo.png"
+logo: "/assets/img/logo.png"
