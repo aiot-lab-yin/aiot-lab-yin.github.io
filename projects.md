@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Research Projects
-description: "Our ongoing research projects"
+# title: Research Projects
+# description: "Our ongoing and past research projects"
 hide-title: true
 ---
 

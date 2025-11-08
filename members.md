@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Laboratory Members
-description: "AIoT Laboratory Members"
+# title: Laboratory Members
+# description: "AIoT Laboratory Members"
 hide-title: true
 ---
 
