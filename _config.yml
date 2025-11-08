@@ -44,7 +44,7 @@ social-network-links:
   # youtube: "channel/your_channel"
 
 # Theme Configuration
-remote_theme: StartBootstrap/startbootstrap-resume-jekyll
+remote_theme: academicpages/academicpages
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
