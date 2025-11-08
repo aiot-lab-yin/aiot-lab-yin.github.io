@@ -1,0 +1,29 @@
+# =========================================
+# AIoT Laboratory – Unified Information File
+# =========================================
+
+lab:
+  name: "Artificial Intelligence & IoT Laboratory"
+  university: "Reitaku University"
+  address_en: "2-1-1, Hikarigaoka, Kashiwa City, Chiba Prefecture, 277-8686, Japan"
+  address_jp: "〒277-8686 千葉県柏市光ヶ丘2丁目1-1 麗澤大学 さつき棟302室"
+  map_embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1524.7789070964382!2d139.95425498628745!3d35.83359010826469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018834ae0bd4b59%3A0xcace6f42f625fae3!2z6bqX5r6k5aSn5a2m!5e0!3m2!1sja!2sjp!4v1762508243827!5m2!1sja!2sjp"
+
+director:
+  name_en: "Dr. Yin Chen"
+  name_jp: "陳 寅（Yin Chen）"
+  position_en:
+    - "Associate Professor, Faculty of Engineering, Reitaku University"
+    - "Project Associate Professor, Keio University"
+  position_jp:
+    - "麗澤大学 工学部 准教授"
+  tel_main: "+81-471-73-3643"
+  tel_rep: "0471-73-3571（内線3571）"
+  email: "ychen@reitaku-u.ac.jp"
+
+resources:
+  visitor_pdf_en: "/assets/docs/Visitor_Information.pdf"
+  visitor_pdf_jp: "/assets/docs/Visitor_Information.pdf"
+
+social:
+  github: "https://github.com/aiot-lab-yin"
