@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ごみ収集車博士の快挙！AIoT研究室が「リサイクル技術開発本多賞」受賞"
-date: 2025-11-07
+date: 2025-11-08
 author: AIoT Laboratory
 categories: [Awards, Research]
 tags: [smart-city, environment, AI-sensing]

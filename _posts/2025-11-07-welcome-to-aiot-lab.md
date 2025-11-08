@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Welcome to the AIoT Laboratory Website"
-date: 2025-11-07
+date: 2025-10-01
 tags: [announcement]
 hide-title: true
 ---
