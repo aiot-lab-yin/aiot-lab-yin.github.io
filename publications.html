@@ -6,21 +6,18 @@ layout: page
   <p>Our research contributions in Artificial Intelligence of Things, wireless security, edge computing, intelligent systems, and radio frequency fingerprinting.</p>
 </div>
 
-{% assign publications_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
-{% assign total_count = 0 %}
-{% for year_group in publications_by_year %}
-  {% assign total_count = total_count | plus: year_group.items | size %}
-{% endfor %}
-{% assign current_count = total_count %}
+{% assign all_pubs = site.data.publications | sort: "year" %}
+{% assign pubs_by_year = all_pubs | group_by: "year" | sort: "name" | reverse %}
 
-{% include publication-stats.html total=total_count %}
+{% assign total = site.data.publications | size %}
+{% assign current = total %}
 
-{% for year_group in publications_by_year %}
-  <h3>{{ year_group.name }}</h3>
+{% for year_group in pubs_by_year %}
+## {{ year_group.name }}
 
   {% for pub in year_group.items %}
-    {% include publication-item.html publication=pub number=current_count %}
-    {% assign current_count = current_count | minus: 1 %}
+    {% include publication-item.html publication=pub number=current %}
+    {% assign current = current | minus: 1 %}
   {% endfor %}
 {% endfor %}
 

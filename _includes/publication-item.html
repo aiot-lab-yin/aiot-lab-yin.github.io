@@ -1,7 +1,7 @@
 <div class="publication-item {% if include.publication.category contains 'japanese' %}japanese{% endif %}">
   <div class="pub-title">
-    [{{ include.number }}] {{ include.publication.title }}
-    {% if include.publication.links.pdf or include.publication.links.doi or include.publication.links.code or include.publication.links.video %}
+    <strong>[{{ include.number }}]</strong> {{ include.publication.title }}
+    {% if include.publication.links.pdf or include.publication.links.doi or include.publication.links.code or include.publication.links.video or include.publication.links.slides or include.publication.links.poster or include.publication.links.demo %}
     <span class="pub-links">
       {% if include.publication.links.pdf %}[<a href="{{ include.publication.links.pdf }}" target="_blank">PDF</a>]{% endif %}
       {% if include.publication.links.doi %}[<a href="{{ include.publication.links.doi }}" target="_blank">DOI</a>]{% endif %}
