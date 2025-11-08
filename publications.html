@@ -6,8 +6,7 @@ layout: page
   <p>Our research contributions in Artificial Intelligence of Things, wireless security, edge computing, intelligent systems, and radio frequency fingerprinting.</p>
 </div>
 
-{% assign all_pubs = site.data.publications | sort: "year" %}
-{% assign pubs_by_year = all_pubs | group_by: "year" | sort: "name" | reverse %}
+{% assign pubs_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
 
 {% assign total = site.data.publications | size %}
 {% assign current = total %}
