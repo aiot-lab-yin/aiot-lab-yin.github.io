@@ -29,7 +29,7 @@ navbar-links:
   Projects: "/projects"
   Publications: "/publications"
   News: "/blog"
-  Contact: "/contact"
+  Contact: "#contact"
 
 # Social Links
 social-network-links:
