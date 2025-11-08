@@ -4,9 +4,7 @@ layout: page
 # description: "AIoT研究室からの最新情報"
 hide-title: true
 ---
-
-当研究室の最新の研究成果、受賞情報、イベントなどをご紹介します。
-
+<!-- 当研究室の最新の研究成果、受賞情報、イベントなどをご紹介します。 -->
 <style>
 .news-page-intro {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -226,6 +224,20 @@ hide-title: true
 </div> -->
 
 
+<div class="news-categories">
+    <h3>📁 カテゴリから探す</h3>
+    <div class="category-tags">
+        <a href="#" class="category-tag">🏆 受賞情報</a>
+        <a href="#" class="category-tag">📝 論文発表</a>
+        <a href="#" class="category-tag">🎤 学会発表</a>
+        <a href="#" class="category-tag">👥 メンバー情報</a>
+        <a href="#" class="category-tag">🏫 イベント</a>
+        <a href="#" class="category-tag">🤝 共同研究</a>
+        <a href="#" class="category-tag">💼 インターンシップ</a>
+        <a href="#" class="category-tag">🌐 国際交流</a>
+    </div>
+</div>
+
 <!-- ニュースリストの表示 -->
 <div class="news-list">
     <!-- <h2>最新ニュース</h2> -->
@@ -291,19 +303,6 @@ hide-title: true
 </div>
 
 
-<div class="news-categories">
-    <h3>📁 カテゴリから探す</h3>
-    <div class="category-tags">
-        <a href="#" class="category-tag">🏆 受賞情報</a>
-        <a href="#" class="category-tag">📝 論文発表</a>
-        <a href="#" class="category-tag">🎤 学会発表</a>
-        <a href="#" class="category-tag">👥 メンバー情報</a>
-        <a href="#" class="category-tag">🏫 イベント</a>
-        <a href="#" class="category-tag">🤝 共同研究</a>
-        <a href="#" class="category-tag">💼 インターンシップ</a>
-        <a href="#" class="category-tag">🌐 国際交流</a>
-    </div>
-</div>
 
 <div class="news-stats">
     <h3>📊 ニュース統計</h3>
