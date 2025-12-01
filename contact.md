@@ -10,7 +10,7 @@ permalink: /contact/
 Associate Professor, Faculty of Engineering, Reitaku University  
 Project Associate Professor, Keio University  
 
-📧 Email: [ychen@reitaku-u.ac.jp](mailto:ychen@reitaku-u.ac.jp)  
+📧 Email: [ychen[AT]reitaku-u.ac.jp](mailto:ychen@reitaku-u.ac.jp)  
 📞 Tel: +81-471-73-3643  
 
 ---
@@ -58,7 +58,7 @@ If you are interested in **AI, IoT, and intelligent systems**, please contact **
 麗澤大学 工学部  
 Tel（代表）: 0471-73-3571（内線3571）  
 Tel: 0471-73-3643（内線3643）  
-E-mail: [ychen@reitaku-u.ac.jp](mailto:ychen@reitaku-u.ac.jp)  
+E-mail: [ychen[AT]reitaku-u.ac.jp](mailto:ychen@reitaku-u.ac.jp)  
 
 〒277-8686 千葉県柏市光ヶ丘2丁目1-1  
 麗澤大学 さつき棟302室  
