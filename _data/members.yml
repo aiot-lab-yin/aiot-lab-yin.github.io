@@ -39,7 +39,7 @@ faculty:
     email: "kwatanab@reitaku-u.ac.jp"
     researchmap: "#"
     website: "#"
-    avatar: "/assets/img/members/watanabe-photo.jpg"
+    avatar: "/assets/img/members/watanabe-photo.png"
     tags: ["Wireless Security", "RF Fingerprinting"]
     japanese_tags: ["無線セキュリティ", "RFフィンガープリンティング"]
     education:
@@ -50,7 +50,7 @@ faculty:
     - "Project Assistant Professor, Reitaku University"
     japanese_affiliations:
     - "麗澤大学 特任助教"
-    
+
   - name: "Zhen Jia"
     japanese_name: "賈 臻"
     role: "Project Assistant Professor"
