@@ -27,6 +27,29 @@ faculty:
       - "麗澤大学 准教授（常勤）"
       - "慶應義塾大学 大学院メディアデザイン研究科 プロジェクト准教授（非常勤）"
 
+  - name: "Watanabe Kosuke"
+    japanese_name: "渡邊 康祐"
+    role: "Project Assistant Professor"
+    japanese_role: "特任助教"
+    position: "Associate Professor, Reitaku University"
+    japanese_position: "麗澤大学 特任助教"
+    period: "2024〜"
+    research: ""Wireless Security, RF Fingerprinting"
+    japanese_research: "無線セキュリティ, RFフィンガープリンティング"
+    email: "kwatanab@reitaku-u.ac.jp"
+    researchmap: "#"
+    website: "#"
+    avatar: "/assets/img/members/watanabe-photo.jpg"
+    tags: ["Wireless Security", "RF Fingerprinting"]
+    japanese_tags: ["無線セキュリティ", "RFフィンガープリンティング"]
+    education:
+    - "Ph.D. in Computer Science - Nagoya University, Japan (2021)"
+    - "M.S. in Computer Science - Nagoya University, Japan (2018)"
+    - "B.S. in Physica - Tokyo Metroporitan University, Japan (2009)"
+    affiliations:
+    - "Project Assistant Professor, Reitaku University"
+    japanese_affiliations:
+    - "麗澤大学 特任助教"
   - name: "Zhen Jia"
     japanese_name: "賈 臻"
     role: "Project Assistant Professor"
