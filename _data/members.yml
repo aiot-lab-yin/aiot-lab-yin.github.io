@@ -26,3 +26,26 @@ faculty:
     japanese_affiliations:
       - "麗澤大学 准教授（常勤）"
       - "慶應義塾大学 大学院メディアデザイン研究科 プロジェクト准教授（非常勤）"
+
+  - name: "Zhen Jia"
+    japanese_name: "賈 臻"
+    role: "Project Assistant Professor"
+    japanese_role: "特任助教"
+    position: "Project Assistant Professor, Keio University"
+    japanese_position: "慶應義塾大学 大学院メディアデザイン研究科 特任助教（有期）"
+    period: "2025〜"
+    research: "RF Fingerprinting, Physical-Layer Security"
+    japanese_research: "RFフィンガープリンティング、物理層セキュリティ"
+    email: "zjia@reitaku-u.ac.jp"
+    researchmap: "#"
+    website: "#"
+    avatar: "/assets/img/members/jia-photo.jpg"
+    tags: ["RF Fingerprinting", "Physical-Layer Security"]
+    japanese_tags: ["RFフィンガープリンティング", "物理層セキュリティ"]
+    education:
+      - "Ph.D. in Computer Science - Future University Hakodate (2025)"
+      - "M.S. in Computer Science - Shaanxi Normal University (2021)"
+      - "B.S. in Computer Science - Shaanxi Normal University (2018)"
+    affiliations:
+      - "Project Assistant Professor, Graduate School of Media and Governance, Keio University"
+    japanese_affiliations:
