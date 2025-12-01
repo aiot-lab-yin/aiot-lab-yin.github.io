@@ -34,7 +34,7 @@ faculty:
     position: "Associate Professor, Reitaku University"
     japanese_position: "麗澤大学 特任助教"
     period: "2024〜"
-    research: ""Wireless Security, RF Fingerprinting"
+    research: "Wireless Security, RF Fingerprinting"
     japanese_research: "無線セキュリティ, RFフィンガープリンティング"
     email: "kwatanab@reitaku-u.ac.jp"
     researchmap: "#"
@@ -50,6 +50,7 @@ faculty:
     - "Project Assistant Professor, Reitaku University"
     japanese_affiliations:
     - "麗澤大学 特任助教"
+    
   - name: "Zhen Jia"
     japanese_name: "賈 臻"
     role: "Project Assistant Professor"
