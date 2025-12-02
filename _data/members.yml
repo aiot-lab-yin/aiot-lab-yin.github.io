@@ -73,3 +73,29 @@ faculty:
     affiliations:
       - "Project Assistant Professor, Graduate School of Media and Governance, Keio University"
     japanese_affiliations:
+    
+  - name: "Mina Sakamura"
+    japanese_name: "坂村 美奈"
+    role: "Project Assistant Professor"
+    japanese_role: "研究助教（非常勤）"
+    position: "Project Assistant Professor, Reitaku University / minac, Inc. CEO"
+    japanese_position: "麗澤大学 研究助教 / minac株式会社　代表取締役"
+    period: "2025〜"
+    research: "Industry–Government–Academia Collaboration, Social Implementation, Business Development, Smart City, Participatory Sensing, Human–Computer Interaction (HCI)"
+    japanese_research: "産官学連携、社会実装、事業開発、スマートシティ、参加型センシング、HCI"
+    email: "msakamur@reitaku-u.ac.jp"
+    researchmap: "#"
+    website: "#"
+    avatar: "/assets/img/members/minasakamura-photo.jpg"
+    tags: ["Industry–Government–Academia Collaboration", "Social Implementation", "Business Development", "Smart City", "Participatory Sensing", "Human–Computer Interaction (HCI)"]
+    japanese_tags: ["産官学連携", "社会実装", "事業開発", "スマートシティ", "参加型センシング", "HCI"]
+    education:
+      - "Ph.D. in Media and Governance - Keio University, Japan(2019)"
+      - "M.S. in Media and Governance - Keio University, Japan (2016)"
+      - "B.S. in Environment and Information Studies - Keio University, Japan (2014)"
+    affiliations:
+      - "Project Assistant Professor, Reitaku University"
+      - "minac, Inc. CEO"
+    japanese_affiliations:
+      - "麗澤大学 研究助教（非常勤）"
+      - "minac株式会社　代表取締役"
