@@ -4,18 +4,20 @@ title: Wireless RF Fingerprinting and Device Identification
 description: "Identification and authentication of wireless devices using radiometric fingerprinting."
 permalink: /projects/wireless-rf-fingerprinting/
 project_id: wireless-rf-fingerprinting
+image: /assets/img/projects/wireless-rf-fingerprinting-overview.png
 ---
 
-# Wireless RF Fingerprinting and Device Identification
+<!-- # Wireless RF Fingerprinting and Device Identification -->
 
 > Treating the wireless signals of everyday devices as a new kind of biometric for secure, seamless human–robot interaction.
 
-![Project key image](/assets/img/projects/wireless-rf-fingerprinting-overview.png)
+![Project key image](/assets/img/projects/wireless-rf-fingerprinting-overview.png){: style="max-width: 100%; height: auto;"}
+*Figure 1. Treating the wireless signals of everyday devices as a new kind of biometric for secure, seamless human–robot interaction.*
 <!-- Optional: update or remove this line if you don't have an image yet. -->
 
 ---
 
-## Table of Contents
+<!-- ## Table of Contents
 
 1. [Overview](#1-overview)
 2. [Background and Motivation](#2-background-and-motivation)
@@ -30,7 +32,7 @@ project_id: wireless-rf-fingerprinting
 8. [Team](#8-team)
 9. [Supporting Projects](#9-supporting-projects)
 
----
+--- -->
 
 ## 1. Overview
 
@@ -75,28 +77,26 @@ Our key motivation is to bridge this gap by:
 
 We structure this project around the following goals:
 
-1. **RF Fingerprint Modeling for Everyday Devices**  
+1. **Large-scale RF Fingerprinting Dataset and Benchmarks**  
+   Build and maintain a publicly available dataset of IEEE 802.11g Wi-Fi signals from many **same-model devices**, together with clearly defined benchmark tasks (device classification, cross-session generalization, open-set detection).
+
+2. **Robust RF Fingerprint Modeling for Everyday Devices**  
    Develop methods to extract and model stable radiometric fingerprints from commodity wireless devices (smartphones, wearables, IoT nodes) across time, environment, and usage conditions.
 
-2. **Open-set and Long-term Identification**  
+3. **Open-set and Long-term Identification**  
    Design models and decision strategies that can reliably:
    - Identify known devices,
    - Reject unknown devices,
-   - And maintain performance over **weeks to months**.
+   - And maintain performance across **sessions, days, and environments**.
 
-3. **Edge/Robot-side Deployment and Heterogeneous Computing**  
-   Build a practical architecture that distributes computation across **CPU + GPU + NPU**, enabling real-time inference on robots and edge nodes.
-
-4. **Privacy-aware Human–Robot Interaction**  
-   Demonstrate how RF fingerprints can be used in **human–robot collaboration scenarios** (e.g., personalized services, access control) while respecting privacy and avoiding unnecessary sensing.
+4. **Edge/Robot-side Deployment and Human–Robot Interaction**  
+   Build a practical architecture that distributes computation across **CPU + GPU + NPU**, enabling real-time inference on robots and edge nodes, and explore how RF-based identity can support **privacy-aware human–robot collaboration** (e.g., personalized services, access control) while avoiding unnecessary sensing.
 
 ---
 
 ## 4. Technical Approach
 
-### 4.1 System Architecture
-
-At a high level, our system consists of:
+At a high level, our approach consists of:
 
 - **RF Sensing Layer**  
   - SDR-based receivers and embedded RF front-ends that capture physical-layer waveforms (IQ samples) from Wi-Fi, BLE, and other protocols.
@@ -106,140 +106,95 @@ At a high level, our system consists of:
   - Preprocessing modules for synchronization, channel estimation, and interference rejection.
   - Normalization to separate **device-specific hardware signatures** from channel effects as much as possible.
 
-- **Deep Fingerprint Embedding Layer**  
-  - Neural encoders (CNNs and Transformer-based models) that map short RF segments to a compact **device embedding**.
-  - Auxiliary heads for classification, open-set detection, and domain adaptation.
+- **Fingerprint Modeling Layer**  
+  - Machine learning-based models that map short RF segments to compact **device-level feature vectors** that can run on edge hardware (CPU / GPU / NPU).  
+  - Model designs and feature representations optimized for low-latency, low-power inference while still supporting tasks such as device classification and open-set / unknown-device detection.
 
 - **Application Layer**  
   - Device identity services exposed to robots and smart environments via APIs.
   - Downstream applications such as authenticated teleoperation, personalized robot behavior, and access management.
 
-![System architecture](/assets/img/projects/wireless-rf-fingerprinting-architecture.png)
-<!-- Optional: replace with your actual block diagram. -->
+<!-- ![System architecture](/assets/img/projects/wireless-rf-fingerprinting-architecture.png)
+Optional: replace with your actual block diagram. -->
 
-### 4.2 Core Methods
-
-Some of the key technical components include:
-
-- **Radiometric Fingerprint Extraction**  
-  - Using preamble-based segments (e.g., Wi-Fi training fields, BLE advertising packets) to obtain device-specific patterns.
-  - Applying channel equalization and denoising to reduce environment-induced variability.
-
-- **Deep Representation Learning**  
-  - Supervised classification models for known devices using CNN/Transformer architectures on IQ sequences or derived features.
-  - **Autoencoder and VAE-based models** for unknown-device detection, using reconstruction error and representation consistency as signals.
-  - **Open-set recognition** strategies combining thresholding, calibration, and ensemble scoring.
-
-- **Temporal and Session Robustness**  
-  - Training on multi-session data collected over days to months, with diverse positions, orientations, and interference.
-  - Domain adaptation and contrastive learning techniques to improve invariance to channel and environment changes.
-
-- **Heterogeneous Edge Computing**  
-  - Partitioning models and pipelines across **CPU (control + preprocessing)**, **GPU (training and heavy inference)**, and **NPU (low-power inference on robots and embedded devices)**.
-  - Profiling latency and power to design deployable models for real-time human–robot interaction.
-
-### 4.3 Implementation
-
-Our prototype implementations include:
-
-- **Hardware**  
-  - Software Defined Radios (e.g., USRP series) for flexible waveform capture.
-  - Embedded platforms and robots equipped with Wi-Fi/BLE receivers and NPUs.
-  - Testbeds in lab and semi-public spaces where people move with their personal devices.
-
-- **Software**  
-  - RF front-end and data collection implemented with **GNU Radio** and custom SDR scripts.
-  - Model training and evaluation using **PyTorch** and related ML tooling.
-  - Containerized deployments using **Docker** to ensure reproducible experiments and portable edge images.
-
-- **Integration**  
-  - Identity services exposed via APIs that can be called from robotic middleware.
-  - Logging and monitoring infrastructure for long-term deployments and field trials.
-
----
 
 ## 5. Experimental Setup
 
 We design experiments to evaluate both **algorithmic performance** and **system behavior in realistic settings**:
 
+![Experiment setup](/assets/img/projects/wireless-rf-fingerprinting-setup.png){: style="max-width: 100%; height: auto;"}
+*Figure 2. Experimental setup for collecting IEEE 802.11g Wi-Fi preamble I/Q data from many same-model M5Stack Core2 devices in a lab environment.*
+
 - **Environment**  
-  - Lab environments with controlled layouts and interference.
-  - Office and corridor-like spaces for mobility and multi-path.
-  - Robot-equipped spaces where the robot acts as a mobile RF sensor.
+  - Lab environments with controlled layouts and interference.  
+  - Office and corridor-like spaces for mobility and multi-path.  
 
 - **Data Collection**  
-  - Measurements from tens of personal devices (smartphones, wearables, IoT nodes), each recorded over multiple days and sessions.
-  - Collection of both stationary and mobile traces, with varying distances, orientations, and obstacles.
-  - Logging of metadata such as timestamp, location, protocol, and device role (owner / non-owner).
+  - Measurements from many personal and embedded devices (e.g., over one hundred same-model M5Stack Core2 devices), each recorded over multiple days and sessions.  
+  - Collection of both stationary and mobile traces, with varying distances, orientations, and obstacles.  
+  - Logging of metadata such as timestamp, protocol, device ID, and recording session.
 
-- **Dataset Split**  
-  - Training / validation / test splits that ensure **session disjointness** (train and test data come from different days / sessions).
-  - Open-set splits where a subset of devices is **held out** and only appears at test time to evaluate unknown-device detection.
+- **Dataset Split and Tasks**  
+  - Training / validation / test splits that ensure **session disjointness** (train and test data come from different days / sessions).  
+  - Device-wise splits where a subset of devices is **held out** and only appears at test time to evaluate unknown-device detection.  
+  - Benchmark tasks for (i) closed-set device classification, (ii) cross-session generalization, and (iii) open-set / unknown-device detection.
 
 - **Baselines**  
-  - Classical RF fingerprinting methods (e.g., handcrafted features + SVM).
-  - Pure ID-based approaches without RF fingerprinting (e.g., MAC address only, where applicable).
+  - Classical RF fingerprinting methods (e.g., handcrafted features + SVM).  
+  - Deep learning baselines such as CNN-based and Transformer-based models trained on IQ sequences or RF features.  
   - Conventional biometric or access-control baselines where appropriate in scenario comparisons.
 
-We plan to release anonymized versions of selected datasets and benchmarks as the project matures.
 
-![Experiment setup](/assets/img/projects/wireless-rf-fingerprinting-setup.jpg)
 <!-- Optional: replace with actual photos or diagrams. -->
 
 ---
 
 ## 6. Results and Discussion
 
-We are continuously updating this section as new results become available. Current findings include:
-
-- **High Device-level Identification Accuracy**  
-  - Deep fingerprint embeddings can distinguish devices with high accuracy under moderate mobility and interference conditions.
-
-- **Open-set and Unknown-device Rejection**  
-  - Autoencoder-based models and thresholding strategies achieve promising **AUC/EER** performance for unknown-device detection, even when test sessions are collected weeks after training.
-
-- **Robustness to Environment Changes**  
-  - With appropriate preprocessing and training strategies, the model maintains useful performance across different rooms and layouts, though extreme channel changes remain challenging.
-
-- **System-level Insights**  
-  - Edge deployment on heterogeneous CPU+GPU+NPU platforms demonstrates that **real-time identification** is feasible for human–robot interaction scenarios, with acceptable latency and power budgets.
+<!-- We are continuously updating this section as new results become available. Current findings include:
+ -->
 
 As the project progresses, we will add detailed quantitative tables, ablation studies, and visualizations of embedding spaces and decision boundaries.
 
-Example placeholder:
+<!-- Example placeholder:
 
 - *Figure 1.* Example embedding visualization for multiple devices.  
-  ![Result example](/assets/img/projects/wireless-rf-fingerprinting-result.png)
+  ![Result example](/assets/img/projects/wireless-rf-fingerprinting-result.png) -->
+
+---
+## 7. Software / Dataset
+
+![Relationship between software and datasets](/assets/img/projects/wireless-rf-fingerprinting-code-data.png){: style="max-width: 100%; height: auto;"}
+
+*Figure 3. Relationship between the Dockerized data-collection framework, feature-extraction notebook, and the two released datasets.*
+
+The following software and datasets are released as companion resources to our arXiv preprint [1] on large-scale RF fingerprinting of IEEE 802.11g same-model devices.
+  - [Dockerized-wifi-iq-preamble-capture](https://github.com/aiot-lab-yin/Dockerized-wifi-iq-preamble-capture) – Dockerized GNU Radio framework for IEEE 802.11g Wi-Fi preamble I/Q data collection.  
+  - [RFF_Data_Calculate](https://www.kaggle.com/code/zeweiguo/rff-data-calculate) – Kaggle notebook for RF feature calculation and baseline RF fingerprinting experiments.  
+  - [RFFI-IQ_only-wifi-802.11g-2.4G-123-m5stack](https://www.kaggle.com/datasets/yinchen1986/rffi-123-m5stack-iq-wifi-802-11g-2-4g) – Kaggle dataset of raw IEEE 802.11g preamble I/Q samples from 123 same-model M5Stack Core2 devices.  
+  - [RFFI-kf_feature-IQ-wifi-802.11g-2.4G-123-m5stack](https://www.kaggle.com/datasets/yinchen1986/rffi-kf-feature-iq-wifi-802-11g-2-4g-123-m5stack) – Kaggle dataset of derived RF features aligned with the same devices and frames.
+
+
+
+## 8. Publications
+
+<!-- Publications and outputs related to this project will be listed here.  
+If you manage publications in `_data/publications.yml` and tag them with this project's `project_id`, they can be automatically included: -->
+
+{% include project-publications.html project_id=page.project_id %}
 
 ---
 
-## 7. Publications and Outputs
+## 9. Team
 
-Publications and outputs related to this project will be listed here.  
-If you manage publications in `_data/publications.yml` and tag them with this project's `project_id`, they can be automatically included:
-
-{% raw %}{% include project-publications.html project_id=page.project_id %}{% endraw %}
-
-Additional outputs (software, datasets, demos) will appear as they become available:
-
-- **Software / Dataset (planned)**  
-  - GitHub repository for data collection and model training code.  
-  - Public benchmark dataset for RF fingerprinting and open-set device identification.
+This project is led by the [**AIoT Lab**](/home/) at Keio University Shonan Fujisawa Campus (SFC), in collaboration with partner laboratories.
 
 ---
 
-## 8. Team
+## 10. Supporting Projects
 
-This project is led by the **AIoT Lab** at Keio University Shonan Fujisawa Campus (SFC), in collaboration with partner laboratories.
+<!-- If you manage supporting funds in `_data/funds.yml` and link them via `projects: [project-id]`, you can automatically list them here: -->
 
-> For a full list of members, see the [Members](/members/) page.
+{% include project-funds.html project_id=page.project_id %}
 
----
-
-## 9. Supporting Projects
-
-If you manage supporting funds in `_data/funds.yml` and link them via `projects: [project-id]`, you can automatically list them here:
-
-{% raw %}{% include project-funds.html project_id=page.project_id %}{% endraw %}
-
-> This project is supported in part by internal funds and external grants related to wireless communications, edge AI, and human–robot interaction.
+<!-- > This project is supported in part by internal funds and external grants related to wireless communications, edge AI, and human–robot interaction. -->

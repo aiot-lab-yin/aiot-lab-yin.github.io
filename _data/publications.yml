@@ -1,4 +1,18 @@
 # 2025年出版物
+- year: 2025
+  category: "preprint"
+  title: "A Large-Scale Dataset and Reproducible Framework for RF Fingerprinting on IEEE 802.11g Same-Model Devices"
+  authors: "Zewei Guo, Zhen Jia, JinXiao Zhu, Wenhao Huang, Yin Chen"
+  venue: "arXiv preprint arXiv:2511.07770"
+  venue_short: "arXiv 2511.07770"
+  awards: []
+  links:
+    arxiv: "https://arxiv.org/abs/2511.07770"
+    pdf: "https://arxiv.org/pdf/2511.07770.pdf"
+  status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
+  note: "Preprint on RF fingerprinting with a large-scale IEEE 802.11g same-model device dataset (submitted November 11, 2025)."
 
 - year: 2025
   category: "conference"
@@ -13,6 +27,8 @@
     code: "#"
     video: "#"
   status: "accepted"
+  projects:
+    - "wireless-rf-fingerprinting"
 
 - year: 2025
   category: "conference"
@@ -24,6 +40,8 @@
     pdf: "#"
     poster: "#"
   status: "accepted"
+  projects:
+    - "wireless-rf-fingerprinting"
 
 - year: 2025
   category: "conference"
@@ -49,6 +67,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
   note: "Presented at BioX研究会, November 4, 2025"
 
 - year: 2025
@@ -75,6 +95,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
   note: "無線RF指紋と時系列分類によるWi-Fiデバイス識別"
 
 - year: 2025
@@ -87,6 +109,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
   note: "時系列特徴量とDynamic Time Warping距離に基づく無線指紋識別"
 
 - year: 2025
@@ -99,6 +123,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
   note: "クラスタリングとOne-vs-Rest法による未知デバイス識別"
 
 # 2024年新增出版物
@@ -124,6 +150,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
   note: "IEEE 802.11gにおけるRF指紋認証の実験的研究"
 
 # 2023年出版物
@@ -137,6 +165,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
 
 - year: 2023
   category: "conference"
@@ -149,6 +179,8 @@
     pdf: "#"
     doi: "https://doi.org/10.1145/3627050.3627058"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
   projects:
     - "gomi-zero-shonan"
 
@@ -164,6 +196,8 @@
     doi: "https://doi.org/10.1145/3627050.3630726"
   status: "published"
   projects:
+    - "wireless-rf-fingerprinting"
+  projects:
     - "gomi-zero-shonan"
 
 - year: 2023
@@ -177,6 +211,8 @@
     pdf: "#"
     doi: "https://doi.org/10.1016/j.adhoc.2023.103099"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
 
 # 2022年出版物
 - year: 2022
@@ -189,6 +225,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "wireless-rf-fingerprinting"
 
 # 2021年出版物
 - year: 2021

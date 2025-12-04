@@ -18,6 +18,8 @@ A research project that builds a digital platform for regional waste management,
 - **Project page:** [Gomi Zero Shonan](/projects/gomi-zero-shonan/)
 - **Period:** 2018–Present
 
+---
+
 ### [Wireless RF Fingerprinting and Device Identification](/projects/wireless-rf-fingerprinting/)
 
 A research project on physical-layer identification and authentication of wireless devices using **radiometric fingerprints** and **deep learning**, with a focus on building large-scale datasets of everyday personal devices and robust, privacy-aware authentication in realistic wireless environments.

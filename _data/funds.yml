@@ -17,9 +17,9 @@
   program_ja: "高度通信・放送研究開発委託研究"
   # Common fields
   period: "2022–2025"
-  pi: "Yin Chen"
+  pi: "Jin Nakazawa"
   co_pis:
-    - "Jin Nakazawa"
+    - "Yin Chen"
   url: "https://www.nict.go.jp/collabo/commission/k_22610.html"
   projects:
     - "gomi-zero-shonan"   # project_id of the Gomi Zero Shonan project page
@@ -92,3 +92,35 @@
     - "smart-city"
   note_en: "Young Scientists (B) project on heterogeneous opportunistic urban sensor networks using garbage-collecting trucks."
   note_ja: "清掃車を用いたヘテロジニアス機会都市センシングネットワークに関する若手研究(B)。Cruisers / ごみゼロ湘南系列の基盤課題。"
+
+# ----------------------------------------------------------
+# JST Moonshot R&amp;D Program JPMJMS2215
+# ----------------------------------------------------------
+- id: jst-moonshot-jpmjms2215
+  label: "SP-JST-MS1"
+  # English
+  name_en: "JST Moonshot R&amp;D Program Goal 1"
+  short_name_en: "Moonshot Goal 1: Safe and Trusted Avatars"
+  title_en: "Realization of a society where cybernetic avatars are safe and trusted to use"
+  agency_en: "Japan Science and Technology Agency (JST)"
+  program_en: "Moonshot Research and Development Program"
+  # Japanese
+  name_ja: "JST ムーンショット型研究開発事業 目標1"
+  short_name_ja: "ムーンショット目標1"
+  title_ja: "アバターを安全かつ信頼して利用できる社会の実現"
+  agency_ja: "国立研究開発法人 科学技術振興機構 (JST)"
+  program_ja: "戦略的な研究開発の推進 ムーンショット型研究開発事業"
+  # Common fields
+  period: "2022–2028"
+  pi: "Fumio Shimpo"
+  co_pis: []
+  url: "https://projectdb.jst.go.jp/grant/JST-PROJECT-22682698/"
+  projects: 
+    - "wireless-rf-fingerprinting"
+  tags:
+    - "cybernetic-avatar"
+    - "human-robot-interaction"
+    - "law-and-technology"
+    - "moonshot"
+  note_en: "JST Moonshot Goal 1 project on realizing a society where cybernetic avatars can be used safely and with trust."
+  note_ja: "サイバネティック・アバターを安全かつ信頼して利用できる社会の実現を目指すムーンショット目標1の研究開発プロジェクト。"
