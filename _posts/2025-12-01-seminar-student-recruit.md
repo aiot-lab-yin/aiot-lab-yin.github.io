@@ -7,13 +7,16 @@ tags: [seminar, recruitment, students, 2026]
 author: AIoT Lab
 hide-title: true
 # 記事上部に画像を入れる場合は、以下を編集してご利用ください
-# image: /assets/img/2026-seminar-recruit.jpg
-# image_description: "AIoT Lab 2026年度ゼミ募集"
+image: /assets/img/2026-seminar-recruit.png
+image_description: "AIoT Lab 2026年度ゼミ募集"
 ---
+
 
 2026年度に本研究室（AIoT Lab）で卒業研究・ゼミ参加を希望する学生を募集します。
 
 AIoT Lab では、「人工知能（AI）× IoT × 実社会課題解決」をキーワードに、無線通信・センシング・信号処理・機械学習を組み合わせた研究に取り組んでいます。
+
+![AIoT Lab 2026年度ゼミ募集](/assets/img/2026-seminar-recruit.png){: style="max-width: 100%; height: auto;"}
 
 ## 募集対象
 
