@@ -1,0 +1,44 @@
+{%- comment -%}
+  Usage in project pages:
+    {% include project-funds.html project_id=page.project_id %}
+  This template renders supporting projects in a reference-style list.
+{%- endcomment -%}
+
+{%- assign all_funds = site.data.funds -%}
+{%- assign project_id = include.project_id -%}
+
+{%- assign funds = all_funds | where_exp: "f", "f.projects contains project_id" -%}
+
+{%- if funds and funds.size > 0 -%}
+  <ol class="supporting-projects">
+    {%- for fund in funds -%}
+      <li>
+        {%- if fund.label -%}
+          [{{ fund.label }}]
+        {%- else -%}
+          [{{ forloop.index }}]
+        {%- endif -%}
+        {{ fund.short_name_en | default: fund.name_en }}
+        {%- if fund.agency_en %}, {{ fund.agency_en }}{% endif -%}
+        {%- if fund.period %}, {{ fund.period }}{% endif -%}.
+        {%- if fund.title_en %} “{{ fund.title_en }}.”{% endif -%}
+        {%- if fund.url %} <a href="{{ fund.url }}" target="_blank">Official page</a>{% endif -%}
+
+        {%- if fund.short_name_ja or fund.title_ja or fund.agency_ja -%}
+          <br/>
+          {%- if fund.short_name_ja -%}
+            {{ fund.short_name_ja }}
+          {%- endif -%}
+          {%- if fund.agency_ja -%}
+            （{{ fund.agency_ja }}{% if fund.period %}, {{ fund.period }}{% endif %}）
+          {%- endif -%}
+          {%- if fund.title_ja -%}
+            「{{ fund.title_ja }}」
+          {%- endif -%}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ol>
+{%- else -%}
+  <p>No funding information is registered for this project yet.</p>
+{%- endif -%}

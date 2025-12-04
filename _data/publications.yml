@@ -1,7 +1,5 @@
 # 2025年出版物
 
-
-
 - year: 2025
   category: "conference"
   title: "RF-Rock: An Intermodulation-based RFID Unauthorized Identification Attack without Tag Activation"
@@ -38,6 +36,8 @@
     pdf: "#"
     doi: "https://doi.org/10.1145/3715014.3722047"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 - year: 2025
   category: "conference_japanese"
@@ -149,6 +149,8 @@
     pdf: "#"
     doi: "https://doi.org/10.1145/3627050.3627058"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 - year: 2023
   category: "conference"
@@ -161,6 +163,8 @@
     pdf: "#"
     doi: "https://doi.org/10.1145/3627050.3630726"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 - year: 2023
   category: "journal"
@@ -197,6 +201,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"  
 
 - year: 2021
   category: "journal_japanese"
@@ -208,7 +214,8 @@
   links:
     pdf: "#"
   status: "published"
-
+  projects:
+    - "gomi-zero-shonan"
 - year: 2021
   category: "journal"
   title: "Rppuf: An Ultra-Lightweight Reconfigurable Pico-Physically Unclonable Function for Resource-Constrained IoT Devices"
@@ -242,6 +249,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 # 2019年出版物
 - year: 2019
@@ -254,6 +263,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 - year: 2019
   category: "journal"
@@ -288,6 +299,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 - year: 2018
   category: "conference"
@@ -299,10 +312,12 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 - year: 2018
   category: "conference"
-  title: "Using Deep Learning to Count Garbage Bags"
+  title: "Poster Abstract:Using Deep Learning to Count Garbage Bags"
   authors: "Kazuhiro Mikami, Yin Chen, Jin Nakazawa"
   venue: "Proceedings of the 16th ACM Conference on Embedded Networked Sensor Systems"
   venue_short: "ACM SenSys 2018"
@@ -310,6 +325,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 - year: 2018
   category: "journal"
@@ -321,7 +338,8 @@
   links:
     pdf: "#"
   status: "published"
-
+  projects:
+    - "gomi-zero-shonan"
 # 2017年出版物
 - year: 2017
   category: "conference"
@@ -333,7 +351,8 @@
   links:
     pdf: "#"
   status: "published"
-
+  projects:
+    - "gomi-zero-shonan"
 - year: 2017
   category: "journal"
   title: "On the Rate of Successful Transmissions in Finite Slotted Aloha MANETs"
@@ -379,7 +398,8 @@
   links:
     pdf: "#"
   status: "published"
-
+  projects:
+    - "gomi-zero-shonan"
 - year: 2016
   category: "conference"
   title: "An Empirical Study on Coverage-Ensured Automotive Sensing Using Door-to-Door Garbage Collecting Trucks"
@@ -390,6 +410,8 @@
   links:
     pdf: "#"
   status: "published"
+  projects:
+    - "gomi-zero-shonan"
 
 # 2015年及更早的出版物
 - year: 2015
@@ -426,8 +448,6 @@
   status: "published"
 
 
-
-
 # 博士论文
 - year: 2014
   category: "thesis"
@@ -440,11 +460,11 @@
     pdf: "#"
   status: "published"
 
-- title: "Secrecy transmission capacity in noisy wireless ad hoc networks"
+- year: 2014
+  title: "Secrecy transmission capacity in noisy wireless ad hoc networks"
   authors: "J. Zhu, Y. Chen, Y. Shen, O. Takahashi, X. Jiang, and N. Shiratori"
   venue: "Ad Hoc Networks"
   venue_short: "Ad Hoc Networks"
-  year: 2014
   category: "journal"
   links:
     pdf: "path/to/paper4.pdf"
@@ -465,7 +485,6 @@
   issue: 5
   pages: "2062-2070"
 
-
 - year: 2013
   title: "Throughput capacity of ALOHA manets"
   authors: "Y. Chen, Y. Shen, X. Jiang, and J. Li"
@@ -484,7 +503,7 @@
   year: 2013
   category: "conference"
   links:
-    pdf: 
+    pdf:
     doi: "https://doi.org/10.1109/ICCChina.2013.6671146"
   pages: "571-576"
 
@@ -495,6 +514,6 @@
   year: 2012
   category: "conference"
   links:
-    pdf: 
+    pdf:
     doi: "https://doi.org/10.1109/APCC.2012.6388295"
   pages: "450-455"

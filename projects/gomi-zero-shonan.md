@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management
+title: "Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management"
 description: "A digital platform that uses fine-grained waste emission data to support regional waste management, collection, and reduction."
 permalink: /projects/gomi-zero-shonan/
+project_id: gomi-zero-shonan
 ---
 
 # Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management
@@ -206,10 +207,7 @@ Ongoing and future work includes:
 
 ## 7. Publications and Outputs
 
-- **Gomi Zero Shonan: A Digital Platform for Regional Waste Management, Collection, and Reduction Using Fine-grained Waste Emission Data**  
-  IPSJ SIG UBI Technical Report, Vol. 2023-UBI-78 No. 14, May 2023.
-
-> Additional publications, datasets, and software repositories will be listed here as they become available.
+{% include project-publications.html project_id=page.project_id %}
 
 ---
 
@@ -229,5 +227,4 @@ Ongoing and future work includes:
 
 ## 9. Supporting Projects
 
-- **NICT Advanced Telecommunications and Broadcasting R&D Commissioned Research (ID 22610)**  
-  "Gomi Zero Shonan" – Digital platform for regional waste management, collection, and reduction using fine-grained waste emission data.
+{% include project-funds.html project_id=page.project_id %}

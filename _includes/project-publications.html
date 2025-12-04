@@ -1,0 +1,51 @@
+{%- comment -%}
+  Usage in project pages:
+    {% include project-publications.html project_id=page.project_id %}
+  Renders publications related to a given project in a reference-style list.
+{%- endcomment -%}
+
+{%- assign all_pubs = site.data.publications -%}
+{%- assign project_id = include.project_id -%}
+
+{%- assign pubs = all_pubs | where_exp: "p", "p.projects contains project_id" -%}
+
+{%- if pubs and pubs.size > 0 -%}
+  <ol class="project-publications">
+    {%- for pub in pubs -%}
+      <li>
+        {%- comment -%} Authors {%- endcomment -%}
+        {%- if pub.authors -%}
+          {{ pub.authors }}.
+        {%- endif -%}
+
+        {%- comment -%} Title {%- endcomment -%}
+        {%- if pub.title -%}
+          “{{ pub.title }}.”
+        {%- endif -%}
+
+        {%- comment -%} Venue + year {%- endcomment -%}
+        {%- if pub.venue_short or pub.venue or pub.year -%}
+          {%- if pub.venue_short -%}
+            <em>{{ pub.venue_short }}</em>
+          {%- elsif pub.venue -%}
+            <em>{{ pub.venue }}</em>
+          {%- endif -%}
+          {%- if pub.year %} ({{ pub.year }}){% endif -%}.
+        {%- endif -%}
+
+        {%- comment -%} Links {%- endcomment -%}
+        {%- if pub.links -%}
+          {%- if pub.links.doi -%}
+            <br/><a href="{{ pub.links.doi }}" target="_blank">DOI</a>
+          {%- endif -%}
+          {%- if pub.links.pdf and pub.links.pdf != "" -%}
+            {%- if pub.links.doi %} · {% else %}<br/>{% endif -%}
+            <a href="{{ pub.links.pdf }}" target="_blank">PDF</a>
+          {%- endif -%}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ol>
+{%- else -%}
+  <p>No publications are registered for this project yet.</p>
+{%- endif -%}
