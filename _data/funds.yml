@@ -1,0 +1,94 @@
+# ----------------------------------------------------------
+# NICT commissioned research: Gomi Zero Shonan (ID 22610)
+# ----------------------------------------------------------
+- id: nict-22610
+  label: "SP-NICT"
+  # English
+  name_en: "NICT Advanced Telecommunications and Broadcasting R&D Commissioned Research"
+  short_name_en: "NICT Commissioned Research (ID 22610)"
+  title_en: "Gomi Zero Shonan: Digital platform for regional waste management, collection, and reduction using fine-grained waste emission data"
+  agency_en: "National Institute of Information and Communications Technology (NICT)"
+  program_en: "Advanced Telecommunications and Broadcasting R&D Commissioned Research"
+  # Japanese
+  name_ja: "NICT 高度通信・放送研究開発委託研究"
+  short_name_ja: "NICT 高度通信・放送研究開発 (課題番号 22610)"
+  title_ja: "ごみゼロ湘南：細粒度なごみ排出量データに基づく地域ごみ処理・収集・削減のデジタルプラットフォーム"
+  agency_ja: "国立研究開発法人 情報通信研究機構 (NICT)"
+  program_ja: "高度通信・放送研究開発委託研究"
+  # Common fields
+  period: "2022–2025"
+  pi: "Yin Chen"
+  co_pis:
+    - "Jin Nakazawa"
+  url: "https://www.nict.go.jp/collabo/commission/k_22610.html"
+  projects:
+    - "gomi-zero-shonan"   # project_id of the Gomi Zero Shonan project page
+  tags:
+    - "smart-city"
+    - "waste-management"
+    - "edge-ai"
+    - "urban-sensing"
+  note_en: "NICT commissioned research project supporting the Gomi Zero Shonan digital platform."
+  note_ja: "細粒度なごみ排出量データに基づく『ごみゼロ湘南』デジタルプラットフォームを支援する NICT 委託研究プロジェクト。"
+
+# ----------------------------------------------------------
+# JSPS KAKENHI 21K17735
+# ----------------------------------------------------------
+- id: jsps-21K17735
+  label: "SP-K1"
+  # English
+  name_en: "JSPS KAKENHI 21K17735"
+  short_name_en: "JSPS KAKENHI 21K17735"
+  title_en: "Study on an intelligent sensing system for fine-grained data of urban garbage discharge"
+  agency_en: "Japan Society for the Promotion of Science (JSPS)"
+  program_en: "Grant-in-Aid for Early-Career Scientists"
+  # Japanese
+  name_ja: "科学研究費助成事業 (若手研究) 21K17735"
+  short_name_ja: "科研費 若手研究 21K17735"
+  title_ja: "細粒度な都市ごみ排出量データのための知的センシングシステムに関する研究"
+  agency_ja: "日本学術振興会 (JSPS)"
+  program_ja: "科学研究費助成事業 若手研究"
+  # Common fields
+  period: "2021–2023"   # 公開期間 2021-04-01〜2024-03-31 を年度ベースで表現
+  pi: "Yin Chen"
+  co_pis: []
+  url: "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-21K17735/"
+  projects:
+    - "gomi-zero-shonan"   # DeepCounter/Gomi系に紐づけるならここ
+  tags:
+    - "smart-city"
+    - "waste-management"
+    - "urban-sensing"
+  note_en: "Early-Career Scientists grant on intelligent sensing systems for fine-grained urban garbage discharge data."
+  note_ja: "細粒度な都市ごみ排出量データの知的センシングシステムに関する若手研究。ごみゼロ湘南関連の基盤課題。"
+
+# ----------------------------------------------------------
+# JSPS KAKENHI 17K12677
+# ----------------------------------------------------------
+- id: jsps-17K12677
+  label: "SP-K2"
+  # English
+  name_en: "JSPS KAKENHI 17K12677"
+  short_name_en: "JSPS KAKENHI 17K12677"
+  title_en: "Modeling, Design and Implementation of Heterogeneous Opportunistic Urban Sensor Network using Garbage-collecting Trucks as Communication Backbones"
+  agency_en: "Japan Society for the Promotion of Science (JSPS)"
+  program_en: "Grant-in-Aid for Young Scientists (B)"
+  # Japanese
+  name_ja: "科学研究費助成事業 (若手研究(B)) 17K12677"
+  short_name_ja: "科研費 若手研究(B) 17K12677"
+  title_ja: "清掃車を通信基盤とする異種機会都市センサネットワークのモデリング・設計と実装"
+  agency_ja: "日本学術振興会 (JSPS)"
+  program_ja: "科学研究費助成事業 若手研究(B)"
+  # Common fields
+  period: "2017–2018"   # 公開期間 2017-04-01〜2019-03-31 を年度ベースで表現
+  pi: "Yin Chen"
+  co_pis: []
+  url: "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-17K12677/"
+  projects:
+    - "gomi-zero-shonan"   # あるいは "cruisers" / "automotive-sensing" など別project_idでもOK
+  tags:
+    - "urban-sensing"
+    - "vehicular-sensing"
+    - "smart-city"
+  note_en: "Young Scientists (B) project on heterogeneous opportunistic urban sensor networks using garbage-collecting trucks."
+  note_ja: "清掃車を用いたヘテロジニアス機会都市センシングネットワークに関する若手研究(B)。Cruisers / ごみゼロ湘南系列の基盤課題。"
