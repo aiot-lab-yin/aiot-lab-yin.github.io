@@ -1,12 +1,15 @@
 ---
-layout: page
+layout: project
 title: PROJECT TITLE
 description: "Short one-line description of the project."
 permalink: /projects/project-id/
 project_id: project-id
+image: /assets/img/projects/project-id-overview.png  
+videos:
+  - title: "demo"
+    url: "https://www.youtube.com/demo"
 ---
 
-# PROJECT TITLE
 
 > One-sentence tagline that captures the main idea of the project.
 

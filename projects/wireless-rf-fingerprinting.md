@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project
 title: Wireless RF Fingerprinting and Device Identification
 description: "Identification and authentication of wireless devices using radiometric fingerprinting."
 permalink: /projects/wireless-rf-fingerprinting/

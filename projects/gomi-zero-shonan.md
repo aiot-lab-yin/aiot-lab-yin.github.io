@@ -1,9 +1,15 @@
 ---
-layout: page
+layout: project
 title: "Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management"
 description: "A digital platform that uses fine-grained waste emission data to support regional waste management, collection, and reduction."
 permalink: /projects/gomi-zero-shonan/
 project_id: gomi-zero-shonan
+image: /assets/img/projects/gomi-zero-shonan-overview.png
+videos:
+  - title: "Bag detection demo"
+    url: "https://www.youtube.com/embed/UKOxn13rtKI?si=OPdvYKRy9ibg4WYF"
+  - title: "Data visualization demo"
+    url: "https://www.youtube.com/embed/0BvZaEKFHcg?si=h3Ao6DnNPD2J1XtB"
 ---
 
 <!-- # Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management -->
