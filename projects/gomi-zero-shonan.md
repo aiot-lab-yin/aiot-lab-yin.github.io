@@ -6,11 +6,11 @@ permalink: /projects/gomi-zero-shonan/
 project_id: gomi-zero-shonan
 ---
 
-# Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management
+<!-- # Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management -->
 
 > A city-scale edge-AI and IoT platform that senses fine-grained household waste emissions from garbage truck videos to accelerate data-driven municipal waste reduction.
 
-![Project key image](/assets/img/projects/gomi-zero-shonan-overview.png)
+![Project key image](/assets/img/projects/gomi-zero-shonan-overview.png){: style="max-width: 100%; height: auto;"}
 <!-- Optional: replace with a real overview figure, or remove this line if not available. -->
 
 ---
@@ -27,7 +27,6 @@ Key ideas:
 - Continuously stream **time–space indexed waste data** (location, time, number of bags, truck ID, etc.) to a central platform.
 - Combine waste emission data with **regional, social, and environmental datasets** to support **data-driven environmental administration** and **waste reduction policies**.
 
-As of FY2022, a total of **14 garbage trucks** in Kamakura, Fujisawa, and Yokosuka have been upgraded and are in regular operation.
 
 ---
 
@@ -82,7 +81,7 @@ This project addresses these issues by turning garbage trucks into **mobile sens
 
 ### 4.1 System Architecture
 
-![System architecture](/assets/img/projects/gomi-zero-shonan-architecture.png)
+![System architecture](/assets/img/projects/gomi-zero-shonan-architecture.png){: style="max-width: 100%; height: auto;"}
 <!-- Optional: draw a block diagram with sensing, network, and visualization components. -->
 
 The Gomi Zero Shonan platform consists of three main layers:
@@ -132,7 +131,7 @@ The Gomi Zero Shonan platform consists of three main layers:
 
 - **Scalable Data Management and APIs**
   - The MQTT-based infrastructure and backend must scale to handle:
-    - **Many trucks** (e.g., about 100 in Fujisawa City alone),
+    - **Many trucks** 
     - **Multiple municipalities** sharing the same platform.
   - Future work includes designing APIs that allow selective, cross-municipality queries over accumulated waste data while respecting privacy and access control.
 
@@ -142,9 +141,8 @@ The Gomi Zero Shonan platform consists of three main layers:
   - Embedded GPU computer: EdgePlant T1 with **NVIDIA Jetson TX2**, running Ubuntu 18.04, JetPack 32.7.2, CUDA 10.2, and cuDNN 8.0.
   - Uses the existing **rear camera** of the garbage truck via a video capture module.
   - Equipped with:
-    - **GNSS module** (u-blox NEO-M8U),
-    - **4G communication module** (Sierra Wireless EM7430),
-    - External SSD for local storage.
+    - **GNSS module** ,
+    - **4G communication module** 
 
 - **Deployment and Power**
   - Edge devices are installed behind the passenger seat to avoid interfering with daily operations.
@@ -156,75 +154,42 @@ The Gomi Zero Shonan platform consists of three main layers:
 
 ---
 
-## 5. Experimental Setup
+## 5. Experiments and Results
 
-- **Deployment Area**
-  - Shonan region, Kanagawa Prefecture (Kamakura, Fujisawa, Yokosuka).
+### 5.1 Bag Detection Video
 
-- **Number of Trucks**
-  - 14 garbage trucks equipped with sensing devices and operating daily in real collection tasks.
+We deployed the edge-AI system on real garbage trucks in the Shonan area and recorded rear-camera videos during regular collection operations.  
+The detection model runs on the in-vehicle GPU and draws bounding boxes around garbage bags in real time, while tracking their movement until they are loaded into the truck.  
+The videos confirm that the system can robustly detect bags under various conditions.
 
-- **Data Generation**
-  - Each truck sends approximately 160-byte MQTT messages every second:
-    - Around 576 KB per truck per hour,
-    - Around 2.3 MB per truck for 4 hours of operation per day.
-  - For a city like Fujisawa (~440,000 population, ~100 trucks), this corresponds to roughly 230 MB of data per day.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UKOxn13rtKI?si=OPdvYKRy9ibg4WYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-- **Evaluation Aspects**
-  - Bag counting accuracy and latency of edge AI processing.
-  - Stability and robustness of communication and data collection in real operations.
-  - Usability and usefulness of visualization tools for municipal staff and collection companies.
 
----
 
-## 6. Results and Discussion
+### 5.2 Data Visualization
 
-Current achievements include:
-
-- **Operational IoT Garbage Trucks**
-  - 14 trucks are IoT-enabled and continuously generating fine-grained waste data during regular collection operations.
-
-- **Automated Real-time Data Collection**
-  - Compared to previous approaches that relied on offline batch processing of recorded videos, the new system enables automated, real-time data collection via edge AI and MQTT.
-
-- **Visualization Applications**
-  - Implemented applications that:
-    - Visualize fine-grained waste amounts across the city over arbitrary periods (daily, weekly, monthly),
-    - Replay collection routes with time-synchronized waste data, where bars and lines on the map move over time.
-
-- **Insights for Municipal Operations**
-  - Visualizations reveal areas with unusually high or low collection amounts and temporal patterns related to holidays, seasonal events, and local festivals.
-  - These insights support route optimization (e.g., visiting low-load areas first to reduce fuel consumption) and policy design such as targeted campaigns and behavior-change interventions.
-
-Ongoing and future work includes:
-
-- Improving bag counting accuracy toward 90%+.
-- Recognizing waste types (e.g., combustible vs. non-combustible) from bag color and size.
-- Detecting hazardous items (e.g., spray cans, batteries) to prevent fires and explosions in trucks.
-- Enhancing the scalability of the platform for multiple municipalities and larger numbers of trucks.
+From the detection and tracking results, we generate fine-grained waste-emission records with timestamps and GPS coordinates.  
+These data are visualized on a city map, where each point or segment of a route is associated with the number of collected bags.  
+The visualization allows municipal officials to quickly identify areas with unusually high or low waste emissions and to explore temporal patterns over days, weeks, or months.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0BvZaEKFHcg?si=h3Ao6DnNPD2J1XtB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
-## 7. Publications and Outputs
+## 6. Publications and Outputs
 
 {% include project-publications.html project_id=page.project_id %}
 
 ---
 
-## 8. Team
+## 7. Team
 
-- **Principal Investigators:**
-  - Jin Nakazawa – Keio University, Faculty of Environment and Information Studies
-  - Yin Chen – Reitaku University / Keio University SFC Research Institute
+This project is jointly conducted by the following laboratories:
 
-- **Co-authors / Collaborators:**
-  - Wenhao Huang – Graduate School of Media and Governance, Keio University
-  - Kazuhiro Mikami – Graduate School of Media and Governance, Keio University
-
-(Team information can be updated or linked from the Members page as needed.)
+- [Nakazawa and Okoshi Laboratory, Keio University Shonan Fujisawa Campus](https://www.jn.sfc.keio.ac.jp/)
+- [AIoT Lab, Reitaku University](https://www.aiotlabs.org/)
 
 ---
 
-## 9. Supporting Projects
+## 8. Supporting Projects
 
 {% include project-funds.html project_id=page.project_id %}
