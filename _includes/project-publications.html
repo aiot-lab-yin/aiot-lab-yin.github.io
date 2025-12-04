@@ -1,7 +1,8 @@
 {%- comment -%}
   Usage in project pages:
     {% include project-publications.html project_id=page.project_id %}
-  Renders publications related to a given project in a reference-style list.
+  Renders publications related to a given project
+  in a reference-style list like [1], [2], ...
 {%- endcomment -%}
 
 {%- assign all_pubs = site.data.publications -%}
@@ -10,20 +11,19 @@
 {%- assign pubs = all_pubs | where_exp: "p", "p.projects contains project_id" -%}
 
 {%- if pubs and pubs.size > 0 -%}
-  <ol class="project-publications">
+  <!-- 用无序列表 + 去掉默认符号，只保留 [n] -->
+  <ul class="project-publications" style="list-style-type:none; padding-left:0;">
     {%- for pub in pubs -%}
       <li>
-        {%- comment -%} Authors {%- endcomment -%}
+        <span class="pub-index">[{{ forloop.index }}]</span> 
         {%- if pub.authors -%}
           {{ pub.authors }}.
         {%- endif -%}
 
-        {%- comment -%} Title {%- endcomment -%}
         {%- if pub.title -%}
           “{{ pub.title }}.”
         {%- endif -%}
 
-        {%- comment -%} Venue + year {%- endcomment -%}
         {%- if pub.venue_short or pub.venue or pub.year -%}
           {%- if pub.venue_short -%}
             <em>{{ pub.venue_short }}</em>
@@ -33,19 +33,23 @@
           {%- if pub.year %} ({{ pub.year }}){% endif -%}.
         {%- endif -%}
 
-        {%- comment -%} Links {%- endcomment -%}
         {%- if pub.links -%}
-          {%- if pub.links.doi -%}
-            <br/><a href="{{ pub.links.doi }}" target="_blank">DOI</a>
-          {%- endif -%}
-          {%- if pub.links.pdf and pub.links.pdf != "" -%}
-            {%- if pub.links.doi %} · {% else %}<br/>{% endif -%}
+        {%- assign has_doi = pub.links.doi and pub.links.doi != "" -%}
+        {%- assign has_pdf = pub.links.pdf and pub.links.pdf != "" -%}
+        {%- if has_doi or has_pdf -%}
+            {%- if has_doi -%}
+            <!-- 句子后紧跟 DOI / PDF，不换行 -->
+            <span> </span><a href="{{ pub.links.doi }}" target="_blank">DOI</a>
+            {%- endif -%}
+            {%- if has_pdf -%}
+            {%- if has_doi -%} · {% else %} <span> </span>{% endif -%}
             <a href="{{ pub.links.pdf }}" target="_blank">PDF</a>
-          {%- endif -%}
+            {%- endif -%}
+        {%- endif -%}
         {%- endif -%}
       </li>
     {%- endfor -%}
-  </ol>
+  </ul>
 {%- else -%}
   <p>No publications are registered for this project yet.</p>
 {%- endif -%}
