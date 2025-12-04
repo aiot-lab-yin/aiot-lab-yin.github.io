@@ -26,7 +26,7 @@ navbar-links:
   Home: "/"
   About: "/aboutme"
   Members: "/members"
-  Research: "/projects"
+  Researches: "/projects"
   Publications: "/publications"
   News: "/blog"
   Contact: "#contact"

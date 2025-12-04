@@ -3,6 +3,7 @@ layout: page
 title: PROJECT TITLE
 description: "Short one-line description of the project."
 permalink: /projects/project-id/
+project_id: project-id
 ---
 
 # PROJECT TITLE
@@ -11,6 +12,23 @@ permalink: /projects/project-id/
 
 ![Project key image](/assets/img/projects/project-id-overview.png)
 <!-- Optional: remove this line if you don't have an image yet. -->
+
+---
+
+## Table of Contents
+
+1. [Overview](#1-overview)
+2. [Background and Motivation](#2-background-and-motivation)
+3. [Research Goals](#3-research-goals)
+4. [Technical Approach](#4-technical-approach)
+   - [System Architecture](#41-system-architecture)
+   - [Core Methods](#42-core-methods)
+   - [Implementation](#43-implementation)
+5. [Experimental Setup](#5-experimental-setup)
+6. [Results and Discussion](#6-results-and-discussion)
+7. [Publications and Outputs](#7-publications-and-outputs)
+8. [Team](#8-team)
+9. [Supporting Projects](#9-supporting-projects)
 
 ---
 
@@ -113,19 +131,15 @@ Example placeholder:
 
 ## 7. Publications and Outputs
 
-List related papers and artifacts:
+If you manage publications in `_data/publications.yml`, and tag them with this project's `project_id`, you can automatically list them here:
 
-- **[Paper Title]**  
-  *Conference / Journal*, Year.  
-  [PDF](#) · [BibTeX](#) · [Slides](#) · [Demo](#)
+{% raw %}{% include project-publications.html project_id=page.project_id %}{% endraw %}
+
+You can also add extra items manually if needed (software, datasets, demos, etc.):
 
 - **Software / Dataset (optional)**  
   - [GitHub Repository](#)  
   - [Dataset / Benchmark](#)
-
-If there are no outputs yet, you can write:
-
-> Publications and outputs will be listed here when available.
 
 ---
 
@@ -143,12 +157,10 @@ Or simply:
 
 ## 9. Supporting Projects
 
-List only the supporting projects/grants (no detailed funding breakdown):
+If you manage supporting funds in `_data/funds.yml` and link them via `projects: [project-id]`, you can automatically list them here:
 
-- **Project / Grant Name 1** – Funding agency / program name.  
-- **Project / Grant Name 2** – Funding agency / program name.
+{% raw %}{% include project-funds.html project_id=page.project_id %}{% endraw %}
 
-Example:
+You can also add a short note if needed:
 
-- **NICT Commissioned Research Project (ID 22610)**  
-  [Official project page](https://www.nict.go.jp/collabo/commission/k_22610.html)
+> This project is supported in part by the above grants and commissioned research programs.
