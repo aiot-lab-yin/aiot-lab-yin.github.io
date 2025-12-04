@@ -5,6 +5,12 @@ description: "Identification and authentication of wireless devices using radiom
 permalink: /projects/wireless-rf-fingerprinting/
 project_id: wireless-rf-fingerprinting
 image: /assets/img/projects/wireless-rf-fingerprinting-overview.png
+keywords:
+  - RF fingerprinting
+  - wireless security
+  - device authentication
+  - deep learning
+  - edge AI
 ---
 
 <!-- # Wireless RF Fingerprinting and Device Identification -->

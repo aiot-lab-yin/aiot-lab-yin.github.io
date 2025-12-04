@@ -14,18 +14,8 @@ Each project has its own page with a detailed description, publications, and sup
 
 A research project that builds a digital platform for regional waste management, collection, and reduction using **fine-grained waste emission data**.
 {% include project-demo.html project_id="gomi-zero-shonan" %}
-<!-- <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 900px; margin: 0 auto 1rem;">
-  <iframe
-    src="https://www.youtube.com/embed/UKOxn13rtKI?si=OPdvYKRy9ibg4WYF"
-    title="Gomi Zero Shonan demo video"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-  </iframe>
-</div> -->
-- **Keywords:** smart city, urban sensing, waste management, automotive sensing, edge AI  
+{% assign gzs = site.pages | where: "project_id", "gomi-zero-shonan" | first %}
+- **Keywords:** {% if gzs and gzs.keywords %}{{ gzs.keywords | join: ', ' }}{% endif %}   
 - **Project page:** [Gomi Zero Shonan](/projects/gomi-zero-shonan/)
 - **Period:** 2018–Present
 
@@ -34,8 +24,10 @@ A research project that builds a digital platform for regional waste management,
 ### [Wireless RF Fingerprinting and Device Identification](/projects/wireless-rf-fingerprinting/)
 
 A research project on physical-layer identification and authentication of wireless devices using **radiometric fingerprints** and **machine learning**, with a focus on building large-scale datasets of everyday personal devices and robust, privacy-aware authentication in realistic wireless environments.
-{% include project-demo.html project_id="wireless-rf-fingerprinting"  %}
-- **Keywords:** RF fingerprinting, wireless security, device authentication, deep learning, edge AI  
+{% include project-demo.html project_id="wireless-rf-fingerprinting" %}
+
+{% assign wrf = site.pages | where: "project_id", "wireless-rf-fingerprinting" | first %}
+- **Keywords:** {% if wrf and wrf.keywords %}{{ wrf.keywords | join: ', ' }}{% endif %}  
 - **Project page:** [Wireless RF Fingerprinting and Device Identification](/projects/wireless-rf-fingerprinting/)
 - **Period:** 2018–Present
 

@@ -10,6 +10,12 @@ videos:
     url: "https://www.youtube.com/embed/UKOxn13rtKI?si=OPdvYKRy9ibg4WYF"
   - title: "Data visualization demo"
     url: "https://www.youtube.com/embed/0BvZaEKFHcg?si=h3Ao6DnNPD2J1XtB"
+keywords:
+  - smart city
+  - urban sensing
+  - waste management
+  - automotive sensing
+  - edge AI
 ---
 
 <!-- # Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management -->
