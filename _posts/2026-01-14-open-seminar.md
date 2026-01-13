@@ -11,7 +11,7 @@ hide-title: true
 # image_description: "Visualization of RF signal patterns and security concepts"
 event_name: "AIoT Lab Invited Talks / Research Seminar"
 event_dates: "2026-01-14"
-event_time: "14:00–17:00"
+event_time: "15:00–17:30"
 event_location: "Lab1, Satsuki, Reitaku University"
 host: "AIoT Lab"
 registration: "TBA"
@@ -23,19 +23,20 @@ This seminar brings together invited researchers working at the intersection of 
 
  - **Series:** AIoT Lab Invited Talks / Research Seminar
 - **Date:** January 14, 2026
-- **Time:** 14:00–17:00
+ - **Time:** 15:00–17:30
 - **Venue:** Lab1, Satsuki, Reitaku University
-- **Host:** AIoT Lab
+ - **Host:** AIoT Lab
+- **MC:** Jinxiao Zhu (Assistant Professor, Tokyo Denki University)
 
 
 ## Program Schedule
 
 | Time | Speaker | Affiliation | Title |
 |---|---|---|---|
-| 14:00–15:00 | Chenren Xu | Peking University | Towards Hypervision Embodied AI |
-| 15:00–16:00 | Lin Gu | Tohoku University | Artificial Cortex from Evolution: Synthesizing Multimodal Intelligence for Next-Generation AI |
-| 16:00–16:30 | Wenhao Huang | Keio University | Real-time Fine-grained Garbage Disposal Sensing |
-| 16:30–17:00 | Zhen Jia | Keio University | A Review and Research Agenda for Radio Frequency Fingerprinting |
+| 15:00–15:45 | Chenren Xu | Peking University | Towards Hypervision Embodied AI |
+| 15:45–16:30 | Lin Gu | Tohoku University | Artificial Cortex from Evolution: Synthesizing Multimodal Intelligence for Next-Generation AI |
+| 16:30–17:00 | Wenhao Huang | Keio University | Real-time Fine-grained Garbage Disposal Sensing |
+| 17:00–17:30 | Zhen Jia | Keio University | A Review and Research Agenda for Radio Frequency Fingerprinting |
 
 ---
 
