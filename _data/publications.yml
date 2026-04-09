@@ -1,18 +1,20 @@
 # 2025年出版物
-- year: 2025
-  category: "preprint"
-  title: "A Large-Scale Dataset and Reproducible Framework for RF Fingerprinting on IEEE 802.11g Same-Model Devices"
-  authors: "Zewei Guo, Zhen Jia, JinXiao Zhu, Wenhao Huang, Yin Chen"
-  venue: "arXiv preprint arXiv:2511.07770"
-  venue_short: "arXiv 2511.07770"
+- year: 2026
+  category: "journal"
+  title: "SMoRFFI: A large-scale same-model 2.4 GHz Wi-Fi dataset and reproducible framework for RF fingerprinting"
+  authors: "Zewei Guo, Zhen Jia, Jinxiao Zhu, Wenhao Huang, Yin Chen"
+  venue: "Computer Networks, 2026, 112309"
+  venue_short: "Computer Networks"
   awards: []
   links:
+    article: "https://www.sciencedirect.com/science/article/abs/pii/S138912862600321X?via%3Dihub"
+    doi: "https://doi.org/10.1016/j.comnet.2026.112309"
     arxiv: "https://arxiv.org/abs/2511.07770"
     pdf: "https://arxiv.org/pdf/2511.07770.pdf"
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
-  note: "Preprint on RF fingerprinting with a large-scale IEEE 802.11g same-model device dataset (submitted November 11, 2025)."
+  note: "Published in Computer Networks (2026), article 112309; preprint available on arXiv."
 
 - year: 2025
   category: "conference"
