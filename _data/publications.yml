@@ -1,21 +1,37 @@
-# 2025年出版物
+# 2026年出版物
+
+- year: 2026
+  category: "conference"
+  title: "Towards Generalizable Wireless Sensing Models via Pre-training on Multi-Source Datasets"
+  authors: "Chen Gong, Bo Liang, Qihao Zhu, Wei Gao, Yin Chen, Jin Nakazawa, Chenren Xu"
+  venue: "Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems (SenSys 2026)"
+  venue_short: "ACM SenSys 2026"
+  awards: []
+  links:
+    doi: "https://doi.org/10.1145/3774906.3802759"
+    article: "https://doi.org/10.1145/3774906.3802759"
+  status: "published"
+  projects:
+    - "wireless-sensing"
+  note: "WiSwiss: a self-supervised multi-source pre-training framework for generalizable wireless sensing."
+
 - year: 2026
   category: "journal"
   title: "SMoRFFI: A large-scale same-model 2.4 GHz Wi-Fi dataset and reproducible framework for RF fingerprinting"
   authors: "Zewei Guo, Zhen Jia, Jinxiao Zhu, Wenhao Huang, Yin Chen"
-  venue: "Computer Networks, 2026, 112309"
+  venue: "Computer Networks, Volume 282, 2026, 112309"
   venue_short: "Computer Networks"
   awards: []
   links:
-    article: "https://www.sciencedirect.com/science/article/abs/pii/S138912862600321X?via%3Dihub"
+    article: "https://www.sciencedirect.com/science/article/pii/S138912862600321X"
     doi: "https://doi.org/10.1016/j.comnet.2026.112309"
-    arxiv: "https://arxiv.org/abs/2511.07770"
-    pdf: "https://arxiv.org/pdf/2511.07770.pdf"
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
-  note: "Published in Computer Networks (2026), article 112309; preprint available on arXiv."
+  note: "Large-scale same-model Wi-Fi RF fingerprinting dataset with 123 IEEE 802.11g devices, 35.42 million raw I/Q samples, 1.85 million RF features, and a fully reproducible open-source evaluation framework."
 
+  
+# 2025年出版物
 - year: 2025
   category: "conference"
   title: "RF-Rock: An Intermodulation-based RFID Unauthorized Identification Attack without Tag Activation"
@@ -28,7 +44,7 @@
     slides: "#"
     code: "#"
     video: "#"
-  status: "accepted"
+  status: "published"
   projects:
     - "wireless-rf-fingerprinting"
 
@@ -41,7 +57,7 @@
   links:
     pdf: "#"
     poster: "#"
-  status: "accepted"
+  status: "published"
   projects:
     - "wireless-rf-fingerprinting"
 
