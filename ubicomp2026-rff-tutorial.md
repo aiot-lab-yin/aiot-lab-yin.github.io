@@ -81,7 +81,7 @@ The main stages are:
 The instructors will demonstrate a Wi-Fi RFF data-acquisition workflow using USRP B210, GNU Radio, Wi-Fi access points, M5Stack transmitters, and PC-based data collection.
 
 <p align="center">
-  <img src="/assets/img/ubicomp2026-rff-tutorial/acquisition-workflow.png" alt="Wi-Fi RFF signal acquisition workflow" style="max-width: 85%;">
+  <img src="/assets/img/ubicomp2026-rff-tutorial/acquisition-workflow.pdf" alt="Wi-Fi RFF signal acquisition workflow" style="max-width: 85%;">
 </p>
 
 The hands-on labs will use prepared data, so participants do not need to bring SDR hardware.
