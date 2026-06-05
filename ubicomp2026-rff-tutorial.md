@@ -2,7 +2,7 @@
 layout: page
 title: "UbiComp/ISWC 2026 Tutorial"
 permalink: /ubicomp2026-rff-tutorial/
----
+-------------------------------------
 
 ## Building Reproducible Wi-Fi RF Fingerprinting Pipelines: Signal Collection, Datasets, and Evaluation
 
@@ -12,18 +12,18 @@ permalink: /ubicomp2026-rff-tutorial/
 
 ### Quick Facts
 
-| Item                 | Information                                                               |
-| -------------------- | ------------------------------------------------------------------------- |
-| Topic                | Wi-Fi RF fingerprinting for IoT device identification                     |
-| Format               | Short lectures, guided notebooks, hardware walkthrough, and open-set demo |
-| Main case study      | SMoRFFI Wi-Fi RFF dataset                                                 |
-| Participant hardware | Laptop only                                                               |
-| Prior SDR experience | Not required                                                              |
-| Materials            | Slides, notebooks, dataset subset, setup guide, and reference outputs     |
+| Item                 | Information                                                                            |
+| -------------------- | -------------------------------------------------------------------------------------- |
+| Topic                | Wi-Fi RF fingerprinting for IoT device identification                                  |
+| Format               | Short lectures, guided notebooks, hardware walkthrough, debugging, and open discussion |
+| Main case study      | SMoRFFI Wi-Fi RFF dataset                                                              |
+| Participant hardware | Laptop only                                                                            |
+| Prior SDR experience | Not required                                                                           |
+| Materials            | Slides, notebooks, dataset subset, setup guide, and reference outputs                  |
 
 ## Overview
 
-This tutorial introduces a reproducible Wi-Fi radio frequency fingerprinting (RFF) workflow for IoT device identification. Participants will learn the complete process from Wi-Fi signal collection and dataset exploration to RF feature construction, baseline model evaluation, and open-set device interaction.
+This tutorial introduces a reproducible Wi-Fi radio frequency fingerprinting (RFF) workflow for IoT device identification. Participants will learn the complete process from Wi-Fi signal collection and dataset exploration to RF feature construction, baseline model evaluation, debugging, and workflow adaptation.
 
 The tutorial uses prepared Wi-Fi RFF records, extracted RF features, executable notebooks, and reference outputs. The goal is to help participants understand both the technical workflow and the evaluation practice required for reproducible RFF experiments.
 
@@ -35,7 +35,8 @@ During the tutorial, participants will:
 * construct and visualize selected RF features;
 * train and evaluate a baseline identification model;
 * analyze accuracy, confusion patterns, and reproducibility issues;
-* observe a controlled open-set device interaction demo.
+* compare intermediate outputs with reference results;
+* discuss workflow adaptation and open challenges in reproducible RFF research.
 
 ## Tutorial Flow
 
@@ -57,22 +58,21 @@ The main stages are:
    Baseline device-identification model training and prediction.
 
 4. **Evaluation and Deployment**
-   Accuracy analysis, confusion patterns, reproducibility checks, and open-set behavior.
+   Accuracy analysis, confusion patterns, reproducibility checks, workflow adaptation, and open discussion.
 
 ## Schedule
 
-| Time        | Module                            | Activity                                                                                   |
-| ----------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| 0–15 min    | Task Introduction                 | Define the target task: RFF-based identification for IoT devices.                          |
-| 15–40 min   | Signal and Feature Introduction   | Introduce Wi-Fi preamble and RF feature knowledge.                                         |
-| 40–60 min   | Data Acquisition Walkthrough      | Present the acquisition pipeline with USRP B210, GNU Radio, Wi-Fi AP, and M5Stack devices. |
-| 60–90 min   | Lab 1                             | Load and explore the prepared Wi-Fi RFF dataset subset.                                    |
-| 90–110 min  | Coffee Break and Hardware Display | Inspect the acquisition setup and hardware.                                                |
-| 110–140 min | Lab 2                             | Construct and visualize selected RF features.                                              |
-| 140–170 min | Lab 3                             | Build and evaluate a baseline identification model.                                        |
-| 170–185 min | Debug Clinic                      | Check outputs and resolve common setup issues.                                             |
-| 185–205 min | Lab 4                             | Demonstrate open-set device identification and unseen-device rejection.                    |
-| 205–210 min | Wrap-up                           | Recap the workflow and discuss future use.                                                 |
+| Time        | Module                                            | Activity                                                                                                                                                                            |
+| ----------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0–15 min    | Task Introduction                                 | Define the target task: RFF-based identification for IoT devices.                                                                                                                   |
+| 15–40 min   | Signal and Feature Introduction                   | Introduce the Wi-Fi preamble and RF feature knowledge needed for the lab.                                                                                                           |
+| 40–60 min   | Data Acquisition Pipeline Walkthrough             | Present a data acquisition pipeline with USRP B210, GNU Radio, and M5Stack, then explain the data-collection process of the released Wi-Fi records.                                 |
+| 60–90 min   | Lab 1: Load and Explore the Dataset               | Load the prepared Wi-Fi RFF dataset subset, explore device labels and preamble records, and identify RF feature fields.                                                             |
+| 90–110 min  | Coffee Break and Hardware Display                 | Inspect the USRP B210, M5Stack transmitter, and acquisition setup materials.                                                                                                        |
+| 110–140 min | Lab 2: Construct and Visualize RF Features        | Compute selected RF features and visualize feature distributions.                                                                                                                   |
+| 140–170 min | Lab 3: Build and Evaluate the Baseline            | Build and run a device-identification baseline using prepared notebooks. Train a baseline classifier, generate identification outputs, and inspect accuracy and confusion patterns. |
+| 170–190 min | Debug and Output Checking                         | Compare intermediate results with instructor-provided reference outputs. Resolve setup and implementation issues.                                                                   |
+| 190–210 min | Wrap-up, Workflow Adaptation, and Open Discussion | Recap the hands-on workflow, discuss adaptation to participants’ own datasets, and identify open challenges in reproducible RFF research.                                           |
 
 ## Hardware Demonstration
 
