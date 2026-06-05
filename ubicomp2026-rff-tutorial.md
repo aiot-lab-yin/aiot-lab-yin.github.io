@@ -10,27 +10,56 @@ permalink: /ubicomp2026-rff-tutorial/
 
 **UbiComp/ISWC 2026 Tutorial**
 **Shanghai, China**
-**Format: Half-day hands-on tutorial**
+**Format:** Half-day hands-on tutorial
 
-This tutorial provides a hands-on introduction to reproducible Wi-Fi radio frequency fingerprinting (RFF) pipelines for IoT device identification. Participants will learn the complete workflow from Wi-Fi signal collection and dataset exploration to RF feature construction, baseline model evaluation, and open-set device interaction.
+### Quick Facts
 
-The tutorial uses SMoRFFI as the main teaching case study. The hands-on sessions will use prepared Wi-Fi RFF records, extracted RF features, executable notebooks, and reference outputs.
+| Item                 | Information                                                               |
+| -------------------- | ------------------------------------------------------------------------- |
+| Topic                | Wi-Fi RF fingerprinting for IoT device identification                     |
+| Format               | Short lectures, guided notebooks, hardware walkthrough, and open-set demo |
+| Main case study      | SMoRFFI Wi-Fi RFF dataset                                                 |
+| Participant hardware | Laptop only                                                               |
+| Prior SDR experience | Not required                                                              |
+| Materials            | Slides, notebooks, dataset subset, setup guide, and reference outputs     |
+
+## Overview
+
+This tutorial introduces a reproducible Wi-Fi radio frequency fingerprinting (RFF) workflow for IoT device identification. Participants will learn the complete process from Wi-Fi signal collection and dataset exploration to RF feature construction, baseline model evaluation, and open-set device interaction.
+
+The tutorial uses prepared Wi-Fi RFF records, extracted RF features, executable notebooks, and reference outputs. The goal is to help participants understand both the technical workflow and the evaluation practice required for reproducible RFF experiments.
+
+## What Participants Will Do
+
+During the tutorial, participants will:
+
+* inspect Wi-Fi RFF records and device labels;
+* construct and visualize selected RF features;
+* train and evaluate a baseline identification model;
+* analyze accuracy, confusion patterns, and reproducibility issues;
+* observe a controlled open-set device interaction demo.
 
 ## Tutorial Flow
 
-The tutorial is organized around four main stages:
+The tutorial follows an end-to-end RFF pipeline.
+
+<p align="center">
+  <img src="/assets/img/ubicomp2026-rff-tutorial/rff-pipeline.png" alt="End-to-end Wi-Fi RFF pipeline" style="max-width: 85%;">
+</p>
+
+The main stages are:
 
 1. **Wireless Signal Acquisition**
-   Wi-Fi packet transmission, preamble capture, and record generation using USRP B210, GNU Radio, Wi-Fi access points, and M5Stack devices.
+   Wi-Fi packet transmission, preamble capture, and record generation.
 
 2. **RF Feature Construction**
-   Feature extraction and interpretation for Wi-Fi RFF experiments, including selected preamble-based RF features.
+   Extraction and interpretation of selected preamble-based RF features.
 
 3. **Recognition and Decision**
-   Baseline device-identification model training, prediction, and result inspection.
+   Baseline device-identification model training and prediction.
 
 4. **Evaluation and Deployment**
-   Accuracy analysis, confusion patterns, reproducibility issues, and open-set device interaction.
+   Accuracy analysis, confusion patterns, reproducibility checks, and open-set behavior.
 
 ## Schedule
 
@@ -46,6 +75,16 @@ The tutorial is organized around four main stages:
 | 170–185 min | Debug Clinic                      | Check outputs and resolve common setup issues.                                             |
 | 185–205 min | Lab 4                             | Demonstrate open-set device identification and unseen-device rejection.                    |
 | 205–210 min | Wrap-up                           | Recap the workflow and discuss future use.                                                 |
+
+## Hardware Demonstration
+
+The instructors will demonstrate a Wi-Fi RFF data-acquisition workflow using USRP B210, GNU Radio, Wi-Fi access points, M5Stack transmitters, and PC-based data collection.
+
+<p align="center">
+  <img src="/assets/img/ubicomp2026-rff-tutorial/acquisition-workflow.png" alt="Wi-Fi RFF signal acquisition workflow" style="max-width: 85%;">
+</p>
+
+The hands-on labs will use prepared data, so participants do not need to bring SDR hardware.
 
 ## Target Audience
 
@@ -87,6 +126,10 @@ For local execution, the expected software environment includes:
 * matplotlib.
 
 Detailed setup instructions will be released before the tutorial.
+
+## Responsible Use
+
+The tutorial uses controlled laboratory device data. No personal wireless devices will be recorded during the session. The tutorial will also discuss responsible use of RFF, including local radio regulations, controlled data collection, and privacy-aware deployment.
 
 ## Organizers
 
