@@ -1,8 +1,4 @@
----
-
----
-
-## Building Reproducible Wi-Fi RF Fingerprinting Pipelines: Signal Collection, Datasets, and Evaluation
+# Building Reproducible Wi-Fi RF Fingerprinting Pipelines: Signal Collection, Datasets, and Evaluation
 
 **UbiComp/ISWC 2026 Tutorial**
 **Shanghai, China**
