@@ -1,3 +1,90 @@
+<style>
+/* Page-level fixes for the AIoT Lab Beautiful Jekyll theme. */
+.header-section {
+  display: none;
+}
+
+main.container-md {
+  max-width: 1320px;
+}
+
+.page-content-wrapper {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-left: 0 !important;
+  margin-top: 24px !important;
+  padding-top: 0 !important;
+}
+
+.page-content-wrapper > h1:first-child {
+  max-width: 980px;
+  margin: 0 auto 1.25rem;
+  font-size: 2.4rem;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.page-content-wrapper h2 {
+  margin-top: 2.25rem;
+  font-size: 1.8rem;
+}
+
+.page-content-wrapper h3 {
+  margin-top: 1.75rem;
+  font-size: 1.25rem;
+}
+
+.page-content-wrapper p,
+.page-content-wrapper li {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.page-content-wrapper table {
+  display: table;
+  width: 100%;
+  margin: 1.25rem 0 2rem;
+  table-layout: auto;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  word-break: normal;
+}
+
+.page-content-wrapper table th,
+.page-content-wrapper table td {
+  padding: 0.7rem 0.85rem;
+  vertical-align: top;
+}
+
+.page-content-wrapper table th:first-child,
+.page-content-wrapper table td:first-child {
+  width: 20%;
+  min-width: 9rem;
+}
+
+@media (max-width: 768px) {
+  main.container-md {
+    max-width: 100%;
+  }
+
+  .page-content-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .page-content-wrapper > h1:first-child {
+    font-size: 1.9rem;
+    text-align: left;
+  }
+
+  .page-content-wrapper table {
+    display: block;
+    overflow-x: auto;
+    font-size: 0.9rem;
+  }
+}
+</style>
+
 # Building Reproducible Wi-Fi RF Fingerprinting Pipelines: Signal Collection, Datasets, and Evaluation
 
 **UbiComp/ISWC 2026 Tutorial**  
