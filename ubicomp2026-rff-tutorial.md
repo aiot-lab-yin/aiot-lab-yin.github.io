@@ -458,4 +458,4 @@ Zewei Guo, Zhen Jia, Jinxiao Zhu, Wenhao Huang, and Yin Chen. 2026. **SMoRFFI: A
 Slides, notebooks, setup instructions, reference outputs, and additional attendee information will be posted on this page before the tutorial.
 
 ## Acknowledgment
-This work was partly supported by JST Moonshot R&D Grant Number JPMJMS2215, and JSPS KAKENHI Grant Number JP24K07482.
+This work was partly supported by JST Moonshot R&D Grant Number JPMJMS2215, JSPS KAKENHI Grant Number JP24K07482, and the Research Promotion Program for Security Technology (Grant Number JPJ004596) of Acquisition, Technology & Logistics Agency in JAPAN.
