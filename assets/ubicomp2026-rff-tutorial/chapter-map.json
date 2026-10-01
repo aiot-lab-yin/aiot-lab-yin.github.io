@@ -1,0 +1,84 @@
+[
+  {
+    "section": "background",
+    "title": "Background and Task Introduction",
+    "original_pages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "file": "background.pdf"
+  },
+  {
+    "section": "signal-features",
+    "title": "Signal and Feature Introduction",
+    "original_pages": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "file": "signal-features.pdf"
+  },
+  {
+    "section": "acquisition",
+    "title": "Data Acquisition Pipeline Walkthrough",
+    "original_pages": [
+      22
+    ],
+    "file": "acquisition.pdf"
+  },
+  {
+    "section": "lab-1",
+    "title": "Lab 1: Load and Explore the Dataset",
+    "original_pages": [
+      24,
+      25
+    ],
+    "file": "lab-1.pdf"
+  },
+  {
+    "section": "lab-2",
+    "title": "Lab 2: Construct and Visualize RF Features",
+    "original_pages": [
+      27,
+      28,
+      29,
+      30
+    ],
+    "file": "lab-2.pdf"
+  },
+  {
+    "section": "lab-3",
+    "title": "Lab 3: Build and Evaluate the Baseline",
+    "original_pages": [
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "file": "lab-3.pdf"
+  },
+  {
+    "section": "summary",
+    "title": "Summary and Open Discussion",
+    "original_pages": [
+      38,
+      39,
+      40,
+      41
+    ],
+    "file": "summary.pdf"
+  }
+]
