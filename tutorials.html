@@ -1,0 +1,47 @@
+---
+layout: page
+title: Tutorials
+description: "Hands-on tutorials from AIoT Laboratory, with summaries, original venues, and teaching materials."
+share-description: "Explore AIoT Laboratory tutorials, their original presentation venues, practical exercises, and teaching materials."
+permalink: /tutorials/
+---
+
+<div id="tutorial-catalog">
+  <p class="catalog-intro">Explore our tutorials on wireless sensing, device identification, and AIoT research. Each tutorial brings together lecture slides, practical exercises, and supporting resources for independent study.</p>
+
+  {% assign tutorials = site.pages | where: "tutorial", true | sort: "tutorial_date" | reverse %}
+  <div class="tutorial-list">
+    {% for tutorial in tutorials %}
+    <article class="tutorial-card" aria-labelledby="tutorial-title-{{ forloop.index }}">
+      {% if tutorial.preview_image %}
+      <a class="tutorial-preview" href="{{ tutorial.url | relative_url }}" aria-label="Preview: {{ tutorial.title | escape }}">
+        <img src="{{ tutorial.preview_image | relative_url }}" alt="{{ tutorial.preview_alt | default: tutorial.title | escape }}" width="1400" height="788" loading="lazy">
+      </a>
+      {% endif %}
+      <div class="tutorial-details">
+        <p class="tutorial-venue"><strong>First presented at {{ tutorial.first_presented_at | escape }}</strong><br>{{ tutorial.first_presented_location | escape }} &middot; {{ tutorial.tutorial_date | date: "%B %-d, %Y" }}</p>
+        <h2 id="tutorial-title-{{ forloop.index }}"><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | escape }}{% if tutorial.subtitle %}: {{ tutorial.subtitle | escape }}{% endif %}</a></h2>
+        <p>{{ tutorial.summary | escape }}</p>
+        <a class="btn btn-outline-primary" href="{{ tutorial.url | relative_url }}">Explore tutorial <span aria-hidden="true">&rarr;</span><span class="visually-hidden">: {{ tutorial.title | escape }}</span></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+#tutorial-catalog .catalog-intro {color:#586b79;line-height:1.75;margin:0 0 2rem;}
+#tutorial-catalog .tutorial-list {display:grid;gap:2rem;}
+#tutorial-catalog .tutorial-card {overflow:hidden;border:1px solid #dce4e8;border-radius:12px;background:#fff;box-shadow:0 4px 18px rgba(25,43,59,.05);}
+#tutorial-catalog .tutorial-preview {display:block;background:#f6f7f9;border-bottom:1px solid #dce4e8;}
+#tutorial-catalog .tutorial-preview img {display:block;width:100%;height:auto;aspect-ratio:1400/788;object-fit:contain;margin:0;}
+#tutorial-catalog .tutorial-details {padding:1.75rem;}
+#tutorial-catalog .tutorial-venue {color:#586b79;font-size:.9rem;line-height:1.7;margin:0 0 1rem;}
+#tutorial-catalog .tutorial-venue strong {color:#087e83;}
+#tutorial-catalog h2 {font-size:1.5rem;line-height:1.4;margin:0 0 1rem;}
+#tutorial-catalog h2 a {color:#192b3b;text-decoration:none;}
+#tutorial-catalog h2 a:hover {color:#087e83;text-decoration:underline;}
+#tutorial-catalog .tutorial-details > p {line-height:1.75;}
+#tutorial-catalog a:focus-visible {outline:3px solid #e7a53c;outline-offset:4px;}
+@media(max-width:575px) {#tutorial-catalog .tutorial-details {padding:1.25rem;}#tutorial-catalog h2 {font-size:1.25rem;}}
+</style>

@@ -2,6 +2,14 @@
 layout: page
 title: "Building Reproducible Wi-Fi RF Fingerprinting Pipelines"
 permalink: /ubicomp2026-rff-tutorial/
+tutorial: true
+tutorial_date: 2026-10-12
+subtitle: "Signal Collection, Datasets, and Evaluation"
+first_presented_at: "UbiComp / ISWC 2026"
+first_presented_location: "Shanghai, China"
+summary: "A hands-on introduction to reproducible Wi-Fi RF fingerprinting with the SMoRFFI dataset of 123 same-model IoT devices. Follow the workflow from signal collection and dataset preparation to feature extraction, Kalman filtering, and Random Forest evaluation through three guided labs."
+preview_image: /assets/ubicomp2026-rff-tutorial/slide-01.webp
+preview_alt: "Title slide for Building Reproducible Wi-Fi RF Fingerprinting Pipelines: Signal Collection, Datasets, and Evaluation"
 ---
 
 <style>
@@ -127,6 +135,7 @@ body:has(#rff-tutorial) {background:#f6f7f9;}
 
 </style>
 <div id="rff-tutorial">
+<a class="back-to-tutorials" href="{{ '/tutorials/' | relative_url }}">&larr; All tutorials</a>
 <a class="skip-link" href="#background">Skip to the tutorial</a>
 <header class="tutorial-hero" id="tutorial-top"><p class="eyebrow">AIoT LABORATORY / UBICOMP &amp; ISWC 2026</p><h1>Building Reproducible<br>Wi-Fi RF Fingerprinting Pipelines</h1><p class="hero-subtitle">Signal Collection, Datasets, and Evaluation</p><p class="hero-description">Follow the lecture, work through three labs, and build a Wi-Fi device-identification pipeline with SMoRFFI.</p><div class="hero-meta"><span>Shanghai, China</span><span>Workshop &amp; tutorial days: 11-12 October 2026</span><span>Half-day hands-on tutorial</span></div><div class="hero-actions"><a class="button primary" href="#background">Start the tutorial <span>→</span></a><a class="button secondary" href="#materials">Tutorial materials</a></div><p class="hero-footnote">123 same-model IoT devices · Prepared Wi-Fi records · Laptop-based labs</p></header>
 <div class="tutorial-layout"><aside class="course-nav" aria-label="Tutorial navigation"><div class="nav-utilities"><a href="#overview">Overview</a><a href="#schedule">Schedule</a><a href="#materials">Materials</a><a href="#resources">Tutorial information</a></div><p class="nav-label">FOLLOW THE SESSION</p><nav><a href="#background"><span>01</span>Background & task</a><a href="#signal-features"><span>02</span>Signal & features</a><a href="#acquisition"><span>03</span>Acquisition walkthrough</a><a href="#lab-1"><span>04</span>Lab 1 · Explore data</a><a href="#lab-2"><span>05</span>Lab 2 · RF features</a><a href="#lab-3"><span>06</span>Lab 3 · Baseline</a><a href="#summary"><span>07</span>Summary & discussion</a></nav></aside><div class="course-content">

@@ -28,7 +28,7 @@ navbar-links:
   Members: "/members"
   Researches: "/projects"
   Publications: "/publications"
-  Tutorial: "/ubicomp2026-rff-tutorial/"
+  Tutorials: "/tutorials/"
   News: "/blog"
   Contact: "#contact"
 
