@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "Artificial Intelligent IoT Laboratory at Reitaku University - Bridging AI and IoT for Intelligent Systems"
+description: "Artificial Intelligence of Things Laboratory at Reitaku University - Bridging AI and IoT for Intelligent Systems"
 hide-title: true
 ---
 
@@ -9,7 +9,7 @@ hide-title: true
   <div class="col-lg-8 mx-auto">
     <div class="card bg-light">
       <div class="card-body text-center">
-        <h3>Welcome to AIoT Lab</h3>
+        <h1 class="h3">Welcome to AIoT Lab</h1>
         <p class="card-text">
           We are a research laboratory at Reitaku University focused on the integration of Artificial Intelligence 
           and Internet of Things technologies. Our mission is to develop intelligent systems that solve real-world 
@@ -90,15 +90,7 @@ hide-title: true
           <p class="text-muted mb-2">{{ pub.authors }}</p>
           <p class="text-muted small mb-2">{{ pub.venue }}, {{ pub.year }}</p>
           <div>
-            {% if pub.links.pdf %}
-            <a href="{{ pub.links.pdf }}" class="btn btn-sm btn-outline-secondary me-1">PDF</a>
-            {% endif %}
-            {% if pub.links.code %}
-            <a href="{{ pub.links.code }}" class="btn btn-sm btn-outline-secondary me-1">Code</a>
-            {% endif %}
-            {% if pub.links.doi %}
-            <a href="{{ pub.links.doi }}" class="btn btn-sm btn-outline-secondary">DOI</a>
-            {% endif %}
+            <span class="pub-links">{% include publication-links.html links=pub.links %}</span>
           </div>
         </div>
         {% endfor %}

@@ -31,7 +31,7 @@ faculty:
     japanese_name: "渡邊 康祐"
     role: "Project Assistant Professor"
     japanese_role: "特任助教"
-    position: "Associate Professor, Reitaku University"
+    position: "Project Assistant Professor, Reitaku University"
     japanese_position: "麗澤大学 特任助教"
     period: "2024〜"
     research: "Wireless Security, RF Fingerprinting"
@@ -45,7 +45,7 @@ faculty:
     education:
     - "Ph.D. in Computer Science - Nagoya University, Japan (2021)"
     - "M.S. in Computer Science - Nagoya University, Japan (2018)"
-    - "B.S. in Physica - Tokyo Metroporitan University, Japan (2009)"
+    - "B.S. in Physics - Tokyo Metropolitan University, Japan (2009)"
     affiliations:
     - "Project Assistant Professor, Reitaku University"
     japanese_affiliations:

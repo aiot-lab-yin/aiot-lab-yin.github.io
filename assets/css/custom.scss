@@ -177,8 +177,7 @@ body {
 // ==================== 响应式图片样式 ====================
 
 // 确保所有文章图片都不会过大 - 基础规则
-.post-content img,
-article img {
+.blog-post img {
   max-width: 100% !important;
   height: auto !important;
   display: block;
@@ -578,4 +577,28 @@ article img {
         box-shadow: none !important;
         border: 1px solid #ddd !important;
     }
+}
+
+// Shared structure formerly supplied by absent theme assets.
+html { scroll-padding-top: 96px; }
+body { color: #263746; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.7; }
+img { max-width: 100%; height: auto; }
+.navbar-custom { padding-left: 1rem; padding-right: 1rem; }
+.navbar-custom .nav-link.active { background: rgba(255,255,255,.15); }
+.intro-header { margin: 2rem 0; }
+.intro-header h1 { font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.25; }
+.post-meta { color: #586b79; font-size: .9rem; }
+.blog-post { overflow-wrap: anywhere; }
+.blog-post iframe { max-width: 100%; }
+.blog-post h2, .blog-post h3 { margin-top: 2rem; }
+.blog-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0; }
+.blog-pager { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0; }
+.blog-pager .next { margin-left: auto; }
+.pub-links:empty { display: none; }
+footer { margin-top: 4rem; padding: 2rem 0; border-top: 1px solid #dce4e8; text-align: center; background: #f8f9fa; }
+footer .list-inline-item { margin: 0 .4rem; }
+footer .copyright, footer .theme-by { font-size: .85rem; margin-bottom: .5rem; }
+a:focus-visible, button:focus-visible { outline: 3px solid #e7a53c; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }

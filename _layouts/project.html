@@ -48,6 +48,7 @@ layout: base
       {% endif %}
 
       {{ content }}
+      {% unless page.show_videos_in_body %}
       {% if page.videos %}
         <section class="project-videos" style="margin-top: 2rem;">
           {% for v in page.videos %}
@@ -58,6 +59,7 @@ layout: base
               <iframe
                 src="{{ v.url }}"
                 title="{{ v.title | default: 'Project demo video' }}"
+                loading="lazy"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
@@ -80,6 +82,8 @@ layout: base
           </div>
         </section>
       {% endif %}
+
+      {% endunless %}
 
       {% if page.after-content %}
         <div class="after-content">

@@ -2,32 +2,32 @@
 layout: page
 hide-title: true
 permalink: /contact/
+title: "Contact"
+description: "Contact details, visitor information, and directions to AIoT Laboratory."
 ---
 
 ## Laboratory Director
 
-**Dr. Yin Chen**  
-Associate Professor, Faculty of Engineering, Reitaku University  
-Project Associate Professor, Keio University  
+**{{ site.data.lab_info.director.name_en }}**<br>
+{{ site.data.lab_info.director.position_en | join: "<br>" }}<br>
 
-📧 Email: [ychen[AT]reitaku-u.ac.jp](mailto:ychen@reitaku-u.ac.jp)  
-📞 Tel: +81-471-73-3643  
+📧 Email: [ychen[AT]reitaku-u.ac.jp](mailto:{{ site.data.lab_info.director.email }})<br>
+📞 Tel: {{ site.data.lab_info.director.tel_main }}<br>
 
 ---
 
 ## Laboratory Address
 
-**Reitaku University AIoT Laboratory**  
-2-1-1, Hikarigaoka, Kashiwa City,  
-Chiba Prefecture, 277-8686, Japan  
+**Reitaku University AIoT Laboratory**<br>
+{{ site.data.lab_info.lab.address_en }}<br>
 
-📄 [Visitor Information (PDF)](/assets/docs/Visitor_Information.pdf)
+📄 [Visitor Information (PDF)]({{ site.data.lab_info.resources.visitor_pdf_en | relative_url }})
 
 ---
 
 ## Join Our Laboratory
 
-We are always looking for highly motivated students and collaborators.  
+We are always looking for highly motivated students and collaborators.<br>
 If you are interested in **AI, IoT, and intelligent systems**, please contact **Dr. Chen** via email.
 
 ---
@@ -41,7 +41,8 @@ If you are interested in **AI, IoT, and intelligent systems**, please contact **
 ## 🗺️ Access Map
 
 <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1524.7789070964382!2d139.95425498628745!3d35.83359010826469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018834ae0bd4b59%3A0xcace6f42f625fae3!2z6bqX5r6k5aSn5a2m!5e0!3m2!1sja!2sjp!4v1762508243827!5m2!1sja!2sjp"
+  src="{{ site.data.lab_info.lab.map_embed }}"
+  title="Map of Reitaku University"
   width="100%"
   height="400"
   style="border:0;"
@@ -54,13 +55,12 @@ If you are interested in **AI, IoT, and intelligent systems**, please contact **
 
 ## 日本語（アクセス情報）
 
-**陳 寅（Yin Chen）准教授**  
-麗澤大学 工学部  
-Tel（代表）: 0471-73-3571（内線3571）  
-Tel: 0471-73-3643（内線3643）  
-E-mail: [ychen[AT]reitaku-u.ac.jp](mailto:ychen@reitaku-u.ac.jp)  
+**{{ site.data.lab_info.director.name_jp }}准教授**<br>
+麗澤大学 工学部<br>
+Tel（代表）: {{ site.data.lab_info.director.tel_rep }}<br>
+Tel: 0471-73-3643（内線3643）<br>
+E-mail: [ychen[AT]reitaku-u.ac.jp](mailto:{{ site.data.lab_info.director.email }})<br>
 
-〒277-8686 千葉県柏市光ヶ丘2丁目1-1  
-麗澤大学 さつき棟302室  
+{{ site.data.lab_info.lab.address_jp }}<br>
 
-📄 [来訪案内（PDF）](/assets/docs/Visitor_Information.pdf)
+📄 [来訪案内（PDF）]({{ site.data.lab_info.resources.visitor_pdf_en | relative_url }})

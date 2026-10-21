@@ -1,7 +1,10 @@
 ---
 layout: default
 title: Lab News
+description: "News, publications, events, and achievements from AIoT Laboratory."
 ---
+
+<h1>{{ page.title | escape }}</h1>
 
 <!-- Tag filter UI (works for posts that have `tags:` in front matter) -->
 <div class="news-filter" style="margin: 1rem 0; display: flex; flex-wrap: wrap; gap: .5rem; align-items: center;">

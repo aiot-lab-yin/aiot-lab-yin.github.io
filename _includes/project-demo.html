@@ -7,8 +7,9 @@
   {% if proj.image %}
 <p align="center">
 <img
-  src="{{ proj.image }}"
-  alt="{{ proj.title }} key image"
+  src="{{ proj.image | relative_url }}"
+  alt="{{ proj.title | escape }} key image"
+  loading="lazy"
   style="max-width: 900px; width: 100%; height: auto; display: block; margin: 0 auto;"
 />
 </p>
@@ -18,20 +19,22 @@
 <iframe
   src="{{ v.url }}"
   title="{{ v.title | default: proj.title }}"
+  loading="lazy"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen
-  style="width: 100%; height: 400px;">
+  style="width: 100%; aspect-ratio: 16 / 9; border: 0;">
 </iframe>
     {% endfor %}
   {% elsif proj.video %}
 <iframe
   src="{{ proj.video }}"
   title="{{ proj.video_title | default: proj.title }}"
+  loading="lazy"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen
-  style="width: 100%; height: 400px;">
+  style="width: 100%; aspect-ratio: 16 / 9; border: 0;">
 </iframe>
   {% endif %}
 {% endif %}

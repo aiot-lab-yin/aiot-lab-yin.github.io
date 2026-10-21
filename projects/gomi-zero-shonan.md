@@ -5,6 +5,7 @@ description: "A digital platform that uses fine-grained waste emission data to s
 permalink: /projects/gomi-zero-shonan/
 project_id: gomi-zero-shonan
 image: /assets/img/projects/gomi-zero-shonan-overview.png
+show_videos_in_body: true
 videos:
   - title: "Bag detection demo"
     url: "https://www.youtube.com/embed/UKOxn13rtKI?si=OPdvYKRy9ibg4WYF"
@@ -174,7 +175,7 @@ We deployed the edge-AI system on real garbage trucks in the Shonan area and rec
 The detection model runs on the in-vehicle GPU and draws bounding boxes around garbage bags in real time, while tracking their movement until they are loaded into the truck.  
 The videos confirm that the system can robustly detect bags under various conditions.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UKOxn13rtKI?si=OPdvYKRy9ibg4WYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe loading="lazy" style="width:100%;aspect-ratio:16/9;height:auto;" src="https://www.youtube.com/embed/UKOxn13rtKI?si=OPdvYKRy9ibg4WYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
@@ -183,7 +184,7 @@ The videos confirm that the system can robustly detect bags under various condit
 From the detection and tracking results, we generate fine-grained waste-emission records with timestamps and GPS coordinates.  
 These data are visualized on a city map, where each point or segment of a route is associated with the number of collected bags.  
 The visualization allows municipal officials to quickly identify areas with unusually high or low waste emissions and to explore temporal patterns over days, weeks, or months.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0BvZaEKFHcg?si=h3Ao6DnNPD2J1XtB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe loading="lazy" style="width:100%;aspect-ratio:16/9;height:auto;" src="https://www.youtube.com/embed/0BvZaEKFHcg?si=h3Ao6DnNPD2J1XtB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 

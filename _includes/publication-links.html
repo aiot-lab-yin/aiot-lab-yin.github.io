@@ -1,0 +1,14 @@
+{% assign resource_keys = "pdf,doi,article,code,video,slides,poster,demo" | split: "," %}
+{% for key in resource_keys %}
+  {% assign resource_url = include.links[key] | default: "" | strip %}
+  {% if resource_url != "" and resource_url != "#" %}
+    {% unless resource_url contains "path/to/" %}
+      {% case key %}
+        {% when "pdf" %}{% assign label = "PDF" %}
+        {% when "doi" %}{% assign label = "DOI" %}
+        {% else %}{% assign label = key | capitalize %}
+      {% endcase %}
+      <a href="{{ resource_url | relative_url | escape }}" target="_blank" rel="noopener">{{ label }}</a>
+    {% endunless %}
+  {% endif %}
+{% endfor %}

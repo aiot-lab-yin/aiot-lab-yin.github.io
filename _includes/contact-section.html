@@ -11,14 +11,14 @@
       <div class="col-md-6 mb-4">
         <div class="contact-info p-4 shadow-sm rounded bg-light h-100">
           <h4 class="mb-3">Laboratory Director</h4>
-          <p><strong>Dr. Yin Chen</strong></p>
-          <p>Email: <a href="mailto:ychen@reitaku-u.ac.jp">ychen@reitaku-u.ac.jp</a></p>
+          <p><strong>{{ site.data.lab_info.director.name_en }}</strong></p>
+          <p>Email: <a href="mailto:{{ site.data.lab_info.director.email }}">{{ site.data.lab_info.director.email }}</a></p>
 
           <h4 class="mt-4 mb-3">Laboratory Address</h4>
-          <p>2-1-1, Hikarigaoka, Kashiwa City,<br>Chiba Prefecture, 277-8686, Japan</p>
-          <p>Tel: +81-471-73-3643</p>
+          <p>{{ site.data.lab_info.lab.address_en }}</p>
+          <p>Tel: {{ site.data.lab_info.director.tel_main }}</p>
 
-          <a href="/assets/docs/Visitor_Information.pdf" class="btn btn-outline-primary btn-sm" target="_blank">
+          <a href="{{ site.data.lab_info.resources.visitor_pdf_en | relative_url }}" class="btn btn-outline-primary btn-sm" target="_blank">
             📄 Visitor Information (PDF)
           </a>
         </div>
@@ -27,7 +27,8 @@
       <div class="col-md-6 mb-4">
         <div class="contact-map shadow-sm rounded overflow-hidden h-100">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1524.7789070964382!2d139.95425498628745!3d35.83359010826469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018834ae0bd4b59%3A0xcace6f42f625fae3!2z6bqX5r6k5aSn5a2m!5e0!3m2!1sja!2shk!4v1762508243827!5m2!1sja!2shk"
+            src="{{ site.data.lab_info.lab.map_embed }}"
+  title="Map of Reitaku University"
             width="100%" height="350" style="border:0;" allowfullscreen=""
             loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>

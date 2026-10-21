@@ -128,7 +128,7 @@ Optional: replace with your actual block diagram. -->
 
 We design experiments to evaluate both **algorithmic performance** and **system behavior in realistic settings**:
 
-![Experiment setup](/assets/img/projects/wireless-rf-fingerprinting-setup.png){: style="max-width: 100%; height: auto;"}
+![Experiment setup](/assets/img/projects/wireless-rf-fingerprinting-setup.webp){: style="max-width: 100%; height: auto;"}
 *Figure 2. Experimental setup for collecting IEEE 802.11g Wi-Fi preamble I/Q data from many same-model M5Stack Core2 devices in a lab environment.*
 
 - **Environment**  
@@ -174,7 +174,7 @@ As the project progresses, we will add detailed quantitative tables, ablation st
 
 *Figure 3. Relationship between the Dockerized data-collection framework, feature-extraction notebook, and the two released datasets.*
 
-The following software and datasets are released as companion resources to our arXiv preprint [1] on large-scale RF fingerprinting of IEEE 802.11g same-model devices.
+The following software and datasets are released as companion resources to our SMoRFFI article on large-scale RF fingerprinting of IEEE 802.11g same-model devices.
   - [Dockerized-wifi-iq-preamble-capture](https://github.com/aiot-lab-yin/Dockerized-wifi-iq-preamble-capture) – Dockerized GNU Radio framework for IEEE 802.11g Wi-Fi preamble I/Q data collection.  
   - [RFF_Data_Calculate](https://www.kaggle.com/code/zeweiguo/rff-data-calculate) – Kaggle notebook for RF feature calculation and baseline RF fingerprinting experiments.  
   - [RFFI-IQ_only-wifi-802.11g-2.4G-123-m5stack](https://www.kaggle.com/datasets/yinchen1986/rffi-123-m5stack-iq-wifi-802-11g-2-4g) – Kaggle dataset of raw IEEE 802.11g preamble I/Q samples from 123 same-model M5Stack Core2 devices.  
@@ -193,7 +193,7 @@ If you manage publications in `_data/publications.yml` and tag them with this pr
 
 ## 9. Team
 
-This project is led by the [**AIoT Lab**](/home/) at Keio University Shonan Fujisawa Campus (SFC), in collaboration with partner laboratories.
+This project is led by the [**AIoT Lab**](/) at Keio University Shonan Fujisawa Campus (SFC), in collaboration with partner laboratories.
 
 ---
 

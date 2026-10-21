@@ -23,11 +23,14 @@
   {% capture description %}
     {%- if page.share-description -%}
       {{ page.share-description | strip_html | xml_escape }}
+    {%- elsif page.description -%}
+      {{ page.description | strip_html | xml_escape }}
     {%- elsif page.subtitle -%}
       {{ page.subtitle | strip_html | xml_escape }}
+    {%- elsif page.id and page.excerpt -%}
+      {{ page.excerpt | markdownify | strip_html | strip_newlines | truncatewords: 50 | xml_escape }}
     {%- else -%}
-      {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
-      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
+      {{ site.description | strip_html | xml_escape }}
     {%- endif -%}
   {% endcapture %}
 
@@ -145,8 +148,11 @@
   {% else %}
   <meta name="twitter:card" content="summary">
   {% endif %}
+  {% if site.social-network-links.twitter %}
   <meta name="twitter:site" content="@{{ site.social-network-links.twitter }}">
   <meta name="twitter:creator" content="@{{ site.social-network-links.twitter }}">
+
+  {% endif %}
 
   <meta property="twitter:title" content="{{ title }}">
   <meta property="twitter:description" content="{{ description }}">
@@ -162,7 +168,9 @@
   {% endif %}
 
   {% assign favicon_exists = site.static_files | where: "path", "/favicon.ico" | size %}
-  {% if favicon_exists == 1 %}
+  {% if site.favicon %}
+  <link rel="icon" href="{{ site.favicon | relative_url }}" />
+  {% elsif favicon_exists == 1 %}
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
   {% endif %}
 
