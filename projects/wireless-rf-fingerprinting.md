@@ -1,4 +1,5 @@
 ---
+searchable: true
 layout: project
 title: Wireless RF Fingerprinting and Device Identification
 description: "Identification and authentication of wireless devices using radiometric fingerprinting."
@@ -193,7 +194,7 @@ If you manage publications in `_data/publications.yml` and tag them with this pr
 
 ## 9. Team
 
-This project is led by the [**AIoT Lab**](/) at Keio University Shonan Fujisawa Campus (SFC), in collaboration with partner laboratories.
+This project is led by the [**AIoT Lab**](/) at Reitaku University, in collaboration with partner laboratories.
 
 ---
 

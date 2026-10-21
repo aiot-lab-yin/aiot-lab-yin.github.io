@@ -1,4 +1,4 @@
-<div class="publication-item {% if include.publication.category contains 'japanese' %}japanese{% endif %}">
+<div id="publication-{{ include.publication.title | slugify: 'pretty' }}" class="publication-item {% if include.publication.category contains 'japanese' %}japanese{% endif %}">
   <div class="pub-title">
     <strong>[{{ include.number }}]</strong> {{ include.publication.title }}
     <span class="pub-links">

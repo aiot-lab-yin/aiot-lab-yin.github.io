@@ -1,0 +1,18 @@
+{%- assign without_styles = include.content | split: '</style>' -%}
+{%- capture clean_styles -%}
+  {%- for part in without_styles -%}{{ part | split: '<style' | first }} {%- endfor -%}
+{%- endcapture -%}
+{%- assign without_scripts = clean_styles | split: '</script>' -%}
+{%- capture clean_scripts -%}
+  {%- for part in without_scripts -%}{{ part | split: '<script' | first }} {%- endfor -%}
+{%- endcapture -%}
+{%- assign liquid_tag_end = '%' | append: '}' -%}
+{%- assign liquid_chunks = clean_scripts | split: liquid_tag_end -%}
+{%- capture clean_tags -%}
+  {%- for part in liquid_chunks -%}{{ part | split: '{%' | first }} {%- endfor -%}
+{%- endcapture -%}
+{%- assign variable_chunks = clean_tags | split: '}}' -%}
+{%- capture clean_variables -%}
+  {%- for part in variable_chunks -%}{{ part | split: '{{' | first }} {%- endfor -%}
+{%- endcapture -%}
+{{- clean_variables | markdownify | strip_html | normalize_whitespace -}}

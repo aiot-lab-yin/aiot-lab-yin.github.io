@@ -1,4 +1,5 @@
 ---
+searchable: true
 layout: page
 hide-title: true
 title: Laboratory Members
@@ -346,6 +347,16 @@ Meet the researchers and students of AIoT Laboratory. -->
                     <div class="member-position">{{ member.position }}</div>
                     {% endif %}
                     <div class="member-period">{{ member.period }}</div>
+                    {% if member.affiliation_history %}
+                    <details class="mt-2">
+                        <summary>Affiliation history</summary>
+                        <ul class="detail-list mt-2">
+                            {% for affiliation in member.affiliation_history %}
+                            <li>{{ affiliation | escape }}</li>
+                            {% endfor %}
+                        </ul>
+                    </details>
+                    {% endif %}
                 </div>
             </div>
             

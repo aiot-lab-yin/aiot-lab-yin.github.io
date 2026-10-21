@@ -1,6 +1,7 @@
 # project
 _site
 .sass-cache
+.jekyll-cache
 .vagrant
 
 # general
@@ -8,6 +9,6 @@ _site
 Thumbs.db
 ehthumbs.db
 
-Gemfile.lock
+# Gemfile.lock is versioned to keep local and CI dependencies aligned.
 
 beautiful-jekyll-theme-*.gem

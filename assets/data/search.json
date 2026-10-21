@@ -1,0 +1,44 @@
+---
+layout: null
+permalink: /assets/data/search.json
+---
+[
+  {% for post in site.posts %}
+  {% capture post_text %}{% include search-text.html content=post.content %}{% endcapture %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "type": "News",
+    "summary": {{ post.excerpt | markdownify | strip_html | normalize_whitespace | truncate: 240 | jsonify }},
+    "text": {{ post_text | jsonify }}
+  },
+  {% endfor %}
+  {% assign searchable_pages = site.pages | where: "searchable", true %}
+  {% for entry in searchable_pages %}
+  {% capture page_text %}{% include search-text.html content=entry.content %}{% endcapture %}
+  {% if entry.path == "members.md" %}
+    {% capture page_text %}
+      {% for group in site.data.members %}{% for member in group[1] %}
+      {{ member.name }} {{ member.japanese_name }} {{ member.position }} {{ member.research }} {{ member.affiliation_history | join: ' ' }}
+      {% endfor %}{% endfor %}
+    {% endcapture %}
+  {% endif %}
+  {
+    "title": {{ entry.title | default: site.title | jsonify }},
+    "url": {{ entry.url | relative_url | jsonify }},
+    "type": "Page",
+    "summary": {{ entry.summary | default: entry.description | default: entry.title | jsonify }},
+    "text": {{ page_text | normalize_whitespace | jsonify }}
+  },
+  {% endfor %}
+  {% for pub in site.data.publications %}
+  {% assign publication_anchor = pub.title | slugify: "pretty" %}
+  {
+    "title": {{ pub.title | jsonify }},
+    "url": {{ '/publications/' | relative_url | append: '#publication-' | append: publication_anchor | jsonify }},
+    "type": "Publication",
+    "summary": {{ pub.authors | append: ' — ' | append: pub.venue | jsonify }},
+    "text": {{ pub.authors | append: ' ' | append: pub.venue | append: ' ' | append: pub.year | append: ' ' | append: pub.note | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

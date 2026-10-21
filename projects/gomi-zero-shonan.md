@@ -1,4 +1,5 @@
 ---
+searchable: true
 layout: project
 title: "Gomi Zero Shonan: Digital Platform for Fine-grained Waste Management"
 description: "A digital platform that uses fine-grained waste emission data to support regional waste management, collection, and reduction."

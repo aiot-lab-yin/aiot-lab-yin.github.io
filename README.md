@@ -18,6 +18,7 @@ For a production build and local link checks:
 ```bash
 JEKYLL_ENV=production bundle exec jekyll build --future --strict_front_matter
 python3 scripts/check_site.py _site
+node scripts/test_search.cjs
 ```
 
 ## Publishing
@@ -36,6 +37,8 @@ site. Manual runs on `main` also deploy. The `github-pages` environment must all
 - `_posts/` — news posts (Markdown), with a default `post` layout
 - `_data/lab_info.yml` — shared contact details and map
 - `_data/publications.yml` — publications; omit unavailable resource links
+- `assets/data/search.json` — generated local search index
+- `assets/js/search.js` — search dialog and matching logic
 - `projects/example-project.md` — reusable template, excluded from publishing
 - `tutorials.html` — tutorial overview, automatically populated from tutorial pages
 - `tutorials/` — individual tutorial pages (Markdown)
@@ -72,3 +75,26 @@ The publishing workflow follows the [GitHub Pages custom workflow documentation]
 
 ## Logo
 A placeholder SVG logo is in `assets/img/lab-logo.svg`. Replace it with your own when ready.
+
+## Homepage publications
+
+Set `featured: true` and a unique integer `featured_order` on the publications
+that should appear on the homepage. The two lowest orders appear first. This
+keeps the homepage order explicit when full publication dates are unknown.
+New publications should still be inserted under their year in the data file.
+
+## Search and sharing
+
+`post_search: true` enables the navigation search dialog. The local JSON index
+contains news, publications, and pages marked `searchable: true`. Search works
+with English and Japanese text and does not use a third-party search service.
+
+`share-links-active` controls individual sharing services. News posts enable
+sharing by default; set `social-share: false` on a post to hide its buttons.
+
+## Dependencies and news
+
+Commit `Gemfile.lock` alongside changes to `Gemfile` so local builds and CI use
+the same dependency versions. The lockfile includes macOS and Linux platforms.
+Run `bundle install` after pulling dependency changes. News content lives in
+`_posts/`; `_data/news.yml` is an empty legacy data file, not a second news source.

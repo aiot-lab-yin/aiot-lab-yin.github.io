@@ -60,7 +60,15 @@ comments:
   staticman: false
   
 # Sharing Buttons
-share-links-active: true
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+  vk: false
+  reddit: false
+
+# Local site search (no third-party search service).
+post_search: true
 
 # Custom CSS
 site-css:
@@ -77,6 +85,7 @@ defaults:
       type: posts
     values:
       layout: post
+      social-share: true
 
 # Keep templates, development files, and build tools out of the published site.
 exclude:
@@ -92,5 +101,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-site-js: []
+site-js:
+  - "/assets/js/search.js"
 rss-description: "News and research updates from AIoT Laboratory at Reitaku University."

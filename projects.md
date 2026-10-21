@@ -1,4 +1,5 @@
 ---
+searchable: true
 layout: page
 title: Research Projects
 description: "Our ongoing and past research projects"

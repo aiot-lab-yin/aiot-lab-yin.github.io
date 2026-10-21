@@ -1,0 +1,12 @@
+{% if site.post_search %}
+<dialog id="site-search-dialog" aria-labelledby="site-search-title" data-index-url="{{ '/assets/data/search.json' | relative_url }}">
+  <div class="search-toolbar">
+    <h2 id="site-search-title">Search AIoT Lab</h2>
+    <button id="site-search-close" class="btn btn-outline-secondary btn-sm" type="button">Close</button>
+  </div>
+  <label for="site-search-input" class="form-label">Search pages, news, and publications</label>
+  <input id="site-search-input" type="search" class="form-control" placeholder="e.g. RF fingerprinting, Zhen Jia, waste sensing" autocomplete="off" aria-controls="site-search-results">
+  <p id="site-search-status" class="text-muted mt-3" role="status" aria-live="polite">Enter a search term to begin.</p>
+  <ul id="site-search-results" class="list-unstyled"></ul>
+</dialog>
+{% endif %}

@@ -1,4 +1,5 @@
 ---
+searchable: true
 layout: default
 title: Lab News
 description: "News, publications, events, and achievements from AIoT Laboratory."

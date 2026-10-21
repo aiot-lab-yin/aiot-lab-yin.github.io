@@ -2,6 +2,39 @@
 
 - year: 2026
   category: "conference"
+  title: "Toward Practical Venous Industry Digital Transformation: Lessons from a Long-term Deployment of City-scale Municipal Waste Sensing"
+  authors: "Yin Chen, Wenhao Huang, Jin Nakazawa"
+  venue: "Proceedings of the First ACM Conference on Digital Transformation (ACM DXConf 2026)"
+  venue_short: "ACM DXConf 2026"
+  status: "forthcoming"
+  featured: true
+  featured_order: 1
+  links:
+    article: "https://sigdx.org/program/"
+  projects:
+    - "gomi-zero-shonan"
+  note: "Accepted; presentation scheduled for October 29, 2026. Lessons from a long-term municipal waste sensing deployment across three Japanese municipalities and 40 collection vehicles."
+
+- year: 2026
+  category: "conference"
+  title: "Tutorial: Building Reproducible Wi-Fi RF Fingerprinting Pipelines: Signal Collection, Datasets, and Evaluation"
+  authors: "Zhen Jia, Jinxiao Zhu, Wenhao Huang, Zewei Guo, Yin Chen"
+  venue: "The 2026 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp 2026) "
+  venue_short: "UbiComp 2026"
+  status: "published"
+  featured: true
+  featured_order: 2
+  links:
+    url: "https://www.ubicomp.org/ubicomp-iswc-2026/tutorials-2026/"
+    pdf: "/assets/ubicomp2026-rff-tutorial/tutorial-paper.pdf"
+    slides: "/assets/ubicomp2026-rff-tutorial/tutorial-slides.pdf"
+    article: "/ubicomp2026-rff-tutorial/"
+  projects:
+    - "wireless-rf-fingerprinting"
+  note: "Hands-on tutorial at UbiComp / ISWC 2026 in Shanghai, China, covering signal collection, datasets, feature extraction, and reproducible evaluation."
+
+- year: 2026
+  category: "conference"
   title: "Towards Generalizable Wireless Sensing Models via Pre-training on Multi-Source Datasets"
   authors: "Chen Gong, Bo Liang, Qihao Zhu, Wei Gao, Yin Chen, Jin Nakazawa, Chenren Xu"
   venue: "Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems (SenSys 2026)"

@@ -4,6 +4,7 @@ from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
 import sys
+import json
 from urllib.parse import unquote, urlsplit
 
 
@@ -31,7 +32,7 @@ class Page(HTMLParser):
             self.descriptions.append(attrs.get("content", ""))
         if tag == "link" and attrs.get("rel") == "canonical":
             self.canonicals.append(attrs.get("href", ""))
-        for attr in ("src", "href"):
+        for attr in ("src", "href", "data-index-url"):
             if attrs.get(attr):
                 self.refs.append(attrs[attr])
 
@@ -88,6 +89,31 @@ def check(root):
             elif url.fragment and target in pages:
                 if unquote(url.fragment) not in pages[target].ids:
                     errors.append(f"{label}: missing anchor {ref}")
+    index_path = root / "assets/data/search.json"
+    if index_path.exists():
+        try:
+            entries = json.loads(index_path.read_text(encoding="utf-8"))
+            if not isinstance(entries, list) or not entries:
+                raise ValueError("expected a nonempty array")
+            for entry in entries:
+                if not isinstance(entry, dict) or not entry.get("title") or not entry.get("url"):
+                    raise ValueError("each entry needs a title and URL")
+                url = urlsplit(entry["url"])
+                if url.scheme or url.netloc or not url.path.startswith("/"):
+                    raise ValueError(f"expected a local search URL: {entry['url']}")
+                target = (root / unquote(url.path).lstrip("/")).resolve()
+                if not target.is_relative_to(root):
+                    raise ValueError("search target outside site")
+                if target.is_dir():
+                    target /= "index.html"
+                if target not in pages:
+                    raise ValueError(f"missing search page: {entry['url']}")
+                if url.fragment and unquote(url.fragment) not in pages[target].ids:
+                    raise ValueError(f"missing search anchor: {entry['url']}")
+                if any(token in entry.get("text", "") for token in ("{%", "{{", "<script", "<style")):
+                    raise ValueError(f"template or script code in search text: {entry['title']}")
+        except (ValueError, TypeError) as error:
+            errors.append(f"assets/data/search.json: {error}")
     return sorted(set(errors)), len(pages)
 
 

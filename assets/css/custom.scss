@@ -602,3 +602,15 @@ a:focus-visible, button:focus-visible { outline: 3px solid #e7a53c; outline-offs
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+// Native dialog search uses the generated local index.
+#mainNav button.nav-link { border: 0; background: transparent; }
+#site-search-dialog { width: min(760px, calc(100vw - 2rem)); max-height: calc(100vh - 3rem); overflow-y: auto; border: 1px solid #dce4e8; border-radius: 12px; padding: 1.5rem; color: #263746; }
+#site-search-dialog::backdrop { background: rgba(16, 32, 48, .65); }
+.search-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+.search-toolbar h2 { margin: 0; font-size: 1.4rem; }
+#site-search-results li { padding: 1rem 0; border-top: 1px solid #dce4e8; }
+#site-search-results a { display: block; font-weight: 600; line-height: 1.5; }
+#site-search-results p { color: #586b79; font-size: .9rem; margin: .5rem 0 0; }
+.search-result-type { display: block; color: #087e83; font-size: .75rem; margin-bottom: .25rem; }
+.publication-item { scroll-margin-top: 100px; }

@@ -1,4 +1,5 @@
 ---
+searchable: true
 layout: page
 hide-title: true
 title: "About Our Lab"

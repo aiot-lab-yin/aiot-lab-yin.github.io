@@ -28,6 +28,8 @@ jobs:
         run: bundle exec jekyll build --future --strict_front_matter
       - name: Check generated pages and local links
         run: python3 scripts/check_site.py _site
+      - name: Test local search
+        run: node scripts/test_search.cjs
       - name: Upload artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4

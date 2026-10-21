@@ -1,4 +1,5 @@
 ---
+searchable: true
 layout: page
 title: "Building Reproducible Wi-Fi RF Fingerprinting Pipelines"
 permalink: /ubicomp2026-rff-tutorial/
