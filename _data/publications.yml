@@ -72,7 +72,6 @@
   venue: "Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (ACM MobiCom 2025)"
   venue_short: "ACM MobiCom 2025"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -83,7 +82,6 @@
   authors: "Takamasa Kikuchi, Koki Shibata, Keiichi Yasumoto, Jinxiao Zhu, Yin Chen"
   venue: "Proceedings of the 31st Annual International Conference on Mobile Computing and Networking (ACM MobiCom 2025)"
   venue_short: "ACM MobiCom 2025"
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -108,7 +106,6 @@
   venue: "IEICE Technical Report, vol. 125, no. 221, BioX2025-86, pp. 1-5"
   venue_short: "IEICE Tech. Rep. BioX2025-86"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -134,7 +131,6 @@
   venue: "バイオメトリクス研究会 (BioX研究会), 2025年3月19日"
   venue_short: "BioX研究会 2025"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -147,7 +143,6 @@
   venue: "バイオメトリクス研究会 (BioX研究会), 2025年3月19日"
   venue_short: "BioX研究会 2025"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -160,7 +155,6 @@
   venue: "バイオメトリクス研究会 (BioX研究会), 2025年3月19日"
   venue_short: "BioX研究会 2025"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -174,7 +168,6 @@
   venue: "電子情報通信学会バイオメトリクス研究会 (BioX研究会), 2024年7月22日"
   venue_short: "BioX研究会 2024"
   awards: ["招待講演"]
-  links: {}
   status: "published"
   note: "サイバネティック・アバターのユースケースとセキュリティに関するバックキャスト分析"
 
@@ -185,7 +178,6 @@
   venue: "Biometrics Research Meeting (BioX研究会), 2024年6月23日"
   venue_short: "BioX Workshop 2024"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -199,7 +191,6 @@
   venue: "IEEE Transactions on Mobile Computing, vol. 23, no. 2, pp. 1416-1430"
   venue_short: "IEEE TMC"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -255,7 +246,6 @@
   venue: "Ad Hoc Networks, vol. 127, pp. 102780"
   venue_short: "Ad Hoc Networks"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
@@ -268,7 +258,6 @@
   venue: "Journal of The Institute of Electrical Engineers of Japan, vol. 141, no. 1, pp. 11-14"
   venue_short: "IEEJ Journal"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"  
@@ -280,7 +269,6 @@
   venue: "電気学会誌, vol. 141, no. 1, pp. 11-14"
   venue_short: "電気学会誌"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -291,7 +279,6 @@
   venue: "Electronics, vol. 10, no. 23, pp. 3039"
   venue_short: "Electronics"
   awards: []
-  links: {}
   status: "published"
 
 # 2020年出版物
@@ -302,7 +289,6 @@
   venue: "IEEE Access, vol. 8, pp. 10796-10826"
   venue_short: "IEEE Access"
   awards: []
-  links: {}
   status: "published"
 
 - year: 2020
@@ -312,7 +298,6 @@
   venue: "情報処理学会論文誌, vol. 61, no. 1, pp. 36-48"
   venue_short: "情報処理学会論文誌"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -325,7 +310,6 @@
   venue: "Ad Hoc Networks, vol. 85, pp. 32-45"
   venue_short: "Ad Hoc Networks"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -337,7 +321,6 @@
   venue: "IEEE Access, vol. 7, pp. 38322-38336"
   venue_short: "IEEE Access"
   awards: []
-  links: {}
   status: "published"
 
 - year: 2019
@@ -347,7 +330,6 @@
   venue: "研究報告ヒューマンコンピュータインタラクション (HCI), vol. 2019, no. 2, pp. 1-8"
   venue_short: "HCI Research Report"
   awards: []
-  links: {}
   status: "published"
 
 # 2018年出版物
@@ -358,7 +340,6 @@
   venue: "2018 Eleventh International Conference on Mobile Computing and Ubiquitous Network (ICMU)"
   venue_short: "ICMU 2018"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -370,7 +351,6 @@
   venue: "2018 IEEE 24th International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)"
   venue_short: "RTCSA 2018"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -382,7 +362,6 @@
   venue: "Proceedings of the 16th ACM Conference on Embedded Networked Sensor Systems"
   venue_short: "ACM SenSys 2018"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -394,7 +373,6 @@
   venue: "Journal Article"
   venue_short: "Journal Article"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -406,7 +384,6 @@
   venue: "2017 Tenth International Conference on Mobile Computing and Ubiquitous Network (ICMU)"
   venue_short: "ICMU 2017"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -417,7 +394,6 @@
   venue: "Ad Hoc Networks, vol. 62, pp. 76-87"
   venue_short: "Ad Hoc Networks"
   awards: []
-  links: {}
   status: "published"
 
 - year: 2017
@@ -427,7 +403,6 @@
   venue: "2017 International Conference on Networking and Network Applications (NaNA)"
   venue_short: "NaNA 2017"
   awards: []
-  links: {}
   status: "published"
 
 # 2016年出版物
@@ -449,7 +424,6 @@
   venue: "2016 IEEE 36th International Conference on Distributed Computing Systems (ICDCS)"
   venue_short: "IEEE ICDCS 2016"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -460,7 +434,6 @@
   venue: "Proceedings of the 2nd International Workshop on Smart"
   venue_short: "Smart Workshop 2016"
   awards: []
-  links: {}
   status: "published"
   projects:
     - "gomi-zero-shonan"
@@ -473,7 +446,6 @@
   venue: "Wireless Networks, vol. 21, pp. 2453-2466"
   venue_short: "Wireless Networks"
   awards: []
-  links: {}
   status: "published"
 
 - year: 2015
@@ -483,7 +455,6 @@
   venue: "2015 Eighth International Conference on Mobile Computing and Ubiquitous Networking (ICMU)"
   venue_short: "ICMU 2015"
   awards: []
-  links: {}
   status: "published"
 
 - year: 2015
@@ -493,7 +464,6 @@
   venue: "Adjunct Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2015 ACM International Symposium on Wearable Computers"
   venue_short: "UbiComp/ISWC 2015"
   awards: []
-  links: {}
   status: "published"
 
 
@@ -505,7 +475,6 @@
   venue: "PhD Dissertation, Future University Hakodate"
   venue_short: "PhD Dissertation"
   awards: []
-  links: {}
   status: "published"
 
 - year: 2014
@@ -514,8 +483,6 @@
   venue: "Ad Hoc Networks"
   venue_short: "Ad Hoc Networks"
   category: "journal"
-  links:
-    doi: "https://doi.org/10.1016/j.adhoc.2014.05.001"
   volume: 21
   pages: "123-133"
 
@@ -525,8 +492,6 @@
   venue_short: "IEEE Trans. Veh. Technol."
   year: 2014
   category: "journal"
-  links:
-    doi: "https://doi.org/10.1109/TVT.2014.2334635"
   volume: 64
   issue: 5
   pages: "2062-2070"
@@ -537,8 +502,6 @@
   venue: "2013 IEEE/CIC International Conference on Communications in China-Workshops (CIC/ICCC)"
   venue_short: "CIC/ICCC 2013"
   category: "conference"
-  links:
-    doi: "https://doi.org/10.1109/ICCChinaW.2013.6670692"
   pages: "71-75"
 
 - title: "Asymptotic upper bound on the packet propagation speed in WANETs with directional antennas"
@@ -547,9 +510,6 @@
   venue_short: "ICCC 2013"
   year: 2013
   category: "conference"
-  links:
-    pdf:
-    doi: "https://doi.org/10.1109/ICCChina.2013.6671146"
   pages: "571-576"
 
 - title: "Exact throughput capacity in MANETs with directional antenna and transmission power constraint"
@@ -558,7 +518,4 @@
   venue_short: "APCC 2012"
   year: 2012
   category: "conference"
-  links:
-    pdf:
-    doi: "https://doi.org/10.1109/APCC.2012.6388295"
   pages: "450-455"
