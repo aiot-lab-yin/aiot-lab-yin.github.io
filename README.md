@@ -36,6 +36,8 @@ site. Manual runs on `main` also deploy. The `github-pages` environment must all
 - `aboutme.md`, `projects.md`, `publications.html`, `contact.md` — pages
 - `_posts/` — news posts (Markdown), with a default `post` layout
 - `_data/lab_info.yml` — shared contact details and map
+- `members.md`, `_data/members.yml` — faculty and research staff
+- `students.html`, `_data/students.yml` — current student profiles and a compact alumni list
 - `_data/publications.yml` — publications; omit unavailable resource links
 - `assets/data/search.json` — generated local search index
 - `assets/js/search.js` — search dialog and matching logic

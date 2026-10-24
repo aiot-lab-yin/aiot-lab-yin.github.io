@@ -26,6 +26,7 @@ navbar-links:
   Home: "/"
   About: "/aboutme"
   Members: "/members"
+  Students: "/students/"
   Research: "/projects"
   Publications: "/publications"
   Tutorials: "/tutorials/"

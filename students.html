@@ -1,0 +1,118 @@
+---
+searchable: true
+layout: page
+hide-title: true
+title: Students
+description: "Current students and alumni of AIoT Laboratory"
+permalink: /students/
+---
+
+<style>
+.students-page { color: #333; }
+.students-page .students-heading { font-weight: 700; margin-bottom: 12px; }
+.students-page .students-intro { color: #666; line-height: 1.7; margin-bottom: 24px; }
+.students-page .students-section { margin-top: 40px; }
+.students-page .students-section h2 { border-bottom: 3px solid #667eea; padding-bottom: 10px; margin-bottom: 24px; font-weight: 700; }
+.students-page .student-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 24px; }
+.students-page .student-card { min-width: 0; padding: 24px; border: 1px solid #e9ecef; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,.06); }
+.students-page .student-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.students-page .student-avatar { width: 72px; height: 72px; flex-shrink: 0; border-radius: 50%; object-fit: cover; }
+.students-page .student-card h3 { font-size: 1.3rem; font-weight: 700; margin: 0 0 4px; overflow-wrap: anywhere; }
+.students-page .student-japanese-name { color: #666; margin: 0; }
+.students-page .student-level { color: #5869bc; font-weight: 600; }
+.students-page .student-affiliation, .students-page .student-research { color: #666; line-height: 1.6; }
+.students-page .student-links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 16px; }
+.students-page .alumni-scroll { overflow-x: auto; }
+.students-page .alumni-table { width: 100%; border-collapse: collapse; }
+.students-page .alumni-table caption { caption-side: top; color: #666; padding: 0 0 16px; }
+.students-page .alumni-table th, .students-page .alumni-table td { text-align: left; padding: 14px 12px; border-bottom: 1px solid #e9ecef; vertical-align: top; }
+.students-page .alumni-table th { background: #f8f9fa; font-weight: 600; }
+.students-page .alumni-name { font-weight: 600; }
+.students-page .students-empty { color: #666; padding: 20px; background: #f8f9fa; border-radius: 10px; }
+@media (max-width: 480px) {
+    .students-page .student-card { padding: 20px; }
+    .students-page .alumni-table th, .students-page .alumni-table td { padding: 10px 8px; }
+}
+</style>
+
+<div class="students-page">
+    <h1 class="students-heading">Students</h1>
+    <p class="students-intro">Meet the students of AIoT Laboratory and see where our alumni have gone next.</p>
+    <p><a href="{{ '/members' | relative_url }}">Faculty &amp; research staff →</a></p>
+
+    <section class="students-section" aria-labelledby="current-students-heading">
+        <h2 id="current-students-heading">Current Students</h2>
+        {% if site.data.students.current.size > 0 %}
+        <div class="student-grid">
+            {% for student in site.data.students.current %}
+            <article class="student-card">
+                <div class="student-header">
+                    {% if student.avatar and student.avatar != '' %}
+                    <img class="student-avatar" src="{{ student.avatar | relative_url }}" alt="{{ student.name | escape }}" width="72" height="72" loading="lazy">
+                    {% endif %}
+                    <div>
+                        <h3>{{ student.name | escape }}</h3>
+                        {% if student.japanese_name and student.japanese_name != '' %}
+                        <p class="student-japanese-name" lang="ja">{{ student.japanese_name | escape }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if student.degree != blank or student.year != blank %}
+                <p class="student-level">{{ student.degree | escape }}{% if student.degree != blank and student.year != blank %} · {% endif %}{{ student.year | escape }}</p>
+                {% endif %}
+                {% if student.affiliation and student.affiliation != '' %}
+                <p class="student-affiliation">{{ student.affiliation | escape }}</p>
+                {% endif %}
+                {% if student.research and student.research != '' %}
+                <p class="student-research"><strong>Research interests:</strong> {{ student.research | escape }}</p>
+                {% endif %}
+                <div class="student-links">
+                    {% if student.website and student.website != '' and student.website != '#' %}
+                    <a href="{{ student.website | relative_url | escape }}">Homepage<span class="visually-hidden"> of {{ student.name | escape }}</span></a>
+                    {% endif %}
+                    {% if student.github and student.github != '' and student.github != '#' %}
+                    <a href="{{ student.github | escape }}">GitHub<span class="visually-hidden"> of {{ student.name | escape }}</span></a>
+                    {% endif %}
+                    {% if student.email and student.email != '' %}
+                    <a href="mailto:{{ student.email | escape }}">Email<span class="visually-hidden"> {{ student.name | escape }}</span></a>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="students-empty">Student profiles will be added soon.</p>
+        {% endif %}
+    </section>
+
+    <section class="students-section" aria-labelledby="alumni-heading">
+        <h2 id="alumni-heading">Alumni</h2>
+        {% if site.data.students.alumni.size > 0 %}
+        <div class="alumni-scroll">
+            <table class="alumni-table">
+                <caption>Graduates and their next destinations in further study or employment.</caption>
+                <thead><tr><th scope="col">Name</th><th scope="col">Graduated</th><th scope="col">Next Destination</th></tr></thead>
+                <tbody>
+                    {% assign alumni = site.data.students.alumni | sort: 'graduation_year' | reverse %}
+                    {% for student in alumni %}
+                    <tr>
+                        <td>
+                            {% if student.website and student.website != '' and student.website != '#' %}
+                            <a class="alumni-name" href="{{ student.website | relative_url | escape }}">{{ student.name | escape }}</a>
+                            {% else %}
+                            <span class="alumni-name">{{ student.name | escape }}</span>
+                            {% endif %}
+                            {% if student.japanese_name and student.japanese_name != '' %}<br><span lang="ja">{{ student.japanese_name | escape }}</span>{% endif %}
+                        </td>
+                        <td>{{ student.graduation_year | default: '—' | escape }}</td>
+                        <td>{{ student.destination | default: '—' | escape }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="students-empty">Alumni information will be added as available.</p>
+        {% endif %}
+    </section>
+</div>

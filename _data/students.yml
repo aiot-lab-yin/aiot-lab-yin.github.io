@@ -1,0 +1,26 @@
+# Current students appear as profile cards; alumni appear in a compact table.
+# Leave unknown optional fields empty. Links without a URL are hidden.
+# To move a graduating student, transfer their entry to alumni and add
+# graduation_year and destination (graduate school, employer, or other next step).
+#
+# Current student fields:
+# - name: ""
+#   japanese_name: ""
+#   degree: "Undergraduate"  # Undergraduate, Master's, or PhD
+#   year: ""
+#   affiliation: ""
+#   research: ""
+#   avatar: ""              # Optional local image path
+#   website: ""
+#   github: ""
+#   email: ""
+#
+# Alumni fields:
+# - name: ""
+#   japanese_name: ""
+#   graduation_year: ""
+#   website: ""
+#   destination: ""
+
+current: []
+alumni: []
