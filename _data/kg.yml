@@ -1,0 +1,23 @@
+# Research groups shown on /kg/.
+# Keep groups in your preferred display order within each list.
+# Move a group's entire entry from active to past when its activities end.
+# Only name is required. Omit unknown optional fields and unavailable URLs.
+# website accepts either an https:// URL or a local path such as /kg/group-name/.
+#
+# Example structure (uncomment and replace with actual information):
+# active:
+#   - name: "Your Research Group"
+#     japanese_name: "研究グループ名"
+#     description: "A short introduction to the group's research."
+#     website: "https://example.com/"
+#     period: "2026–Present"
+#     members: ["Member A", "Member B"]
+#     topics: ["IoT", "Wireless Sensing"]
+# past:
+#   - name: "Former Research Group"
+#     description: "A short summary of the group's work."
+#     website: "https://example.org/"
+#     period: "2024–2025"
+
+active: []
+past: []

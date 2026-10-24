@@ -1,0 +1,54 @@
+---
+searchable: true
+layout: page
+title: Research Group(kg)
+description: "Explore active and past research groups at AIoT Laboratory and visit their websites."
+permalink: /kg/
+---
+
+<div id="research-groups">
+  <p class="kg-intro">Explore the research groups of AIoT Laboratory. Visit each group's website to learn about its research, members, and activities.</p>
+
+  <section class="kg-section" aria-labelledby="kg-active-heading">
+    <h2 id="kg-active-heading">Active Groups</h2>
+    {% if site.data.kg.active.size > 0 %}
+    <div class="kg-grid">
+      {% for group in site.data.kg.active %}
+      {% include kg-group.html group=group %}
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="kg-empty">Research group information will be added soon.</p>
+    {% endif %}
+  </section>
+
+  <section class="kg-section kg-past" aria-labelledby="kg-past-heading">
+    <h2 id="kg-past-heading">Past Groups</h2>
+    {% if site.data.kg.past.size > 0 %}
+    <div class="kg-list">
+      {% for group in site.data.kg.past %}
+      {% include kg-group.html group=group %}
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="kg-empty">No past research groups are listed yet.</p>
+    {% endif %}
+  </section>
+</div>
+
+<style>
+#research-groups .kg-intro { color: #586b79; line-height: 1.75; margin-bottom: 2rem; }
+#research-groups .kg-section { margin-bottom: 3rem; }
+#research-groups .kg-section > h2 { font-size: 1.6rem; border-bottom: 3px solid #667eea; padding-bottom: .7rem; margin-bottom: 1.5rem; }
+#research-groups .kg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 1.5rem; }
+#research-groups .kg-list { display: grid; gap: 1rem; }
+#research-groups .kg-card { min-width: 0; padding: 1.5rem; border: 1px solid #dce4e8; border-radius: 12px; background: #fff; box-shadow: 0 4px 18px rgba(25,43,59,.05); overflow-wrap: anywhere; }
+#research-groups .kg-card h3 { font-size: 1.3rem; line-height: 1.4; margin: 0 0 .5rem; }
+#research-groups .kg-japanese-name, #research-groups .kg-period { color: #586b79; margin-bottom: .75rem; }
+#research-groups .kg-period { font-size: .9rem; }
+#research-groups .kg-topics { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 1rem 0; }
+#research-groups .kg-topics li { background: #f0f2fc; color: #435299; border-radius: 20px; padding: .2rem .75rem; font-size: .85rem; }
+#research-groups .kg-members { color: #586b79; font-size: .95rem; }
+#research-groups .kg-past .kg-card { box-shadow: none; padding: 1.25rem; }
+#research-groups .kg-empty { background: #f8f9fa; color: #586b79; padding: 1.25rem; border-radius: 10px; }
+</style>

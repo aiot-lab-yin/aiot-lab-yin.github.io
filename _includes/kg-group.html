@@ -1,0 +1,24 @@
+{% assign group = include.group %}
+<article class="kg-card">
+  <h3>{{ group.name | escape }}</h3>
+  {% if group.japanese_name and group.japanese_name != '' %}
+  <p class="kg-japanese-name" lang="ja">{{ group.japanese_name | escape }}</p>
+  {% endif %}
+  {% if group.period and group.period != '' %}
+  <p class="kg-period">{{ group.period | escape }}</p>
+  {% endif %}
+  {% if group.description and group.description != '' %}
+  <p>{{ group.description | escape }}</p>
+  {% endif %}
+  {% if group.topics.size > 0 %}
+  <ul class="kg-topics" aria-label="Research topics">
+    {% for topic in group.topics %}<li>{{ topic | escape }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+  {% if group.members.size > 0 %}
+  <p class="kg-members"><strong>Members:</strong> {{ group.members | join: ', ' | escape }}</p>
+  {% endif %}
+  {% if group.website and group.website != '' and group.website != '#' %}
+  <a href="{{ group.website | relative_url | escape }}">Visit group website <span aria-hidden="true">&rarr;</span><span class="visually-hidden">: {{ group.name | escape }}</span></a>
+  {% endif %}
+</article>

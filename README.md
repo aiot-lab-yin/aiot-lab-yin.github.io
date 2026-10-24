@@ -36,12 +36,25 @@ site. Manual runs on `main` also deploy. The `github-pages` environment must all
 - `aboutme.md`, `projects.md`, `publications.html`, `contact.md` — pages
 - `_posts/` — news posts (Markdown), with a default `post` layout
 - `_data/lab_info.yml` — shared contact details and map
+- `kg.html`, `_data/kg.yml` — research group directory and its active/past lists
 - `_data/publications.yml` — publications; omit unavailable resource links
 - `assets/data/search.json` — generated local search index
 - `assets/js/search.js` — search dialog and matching logic
 - `projects/example-project.md` — reusable template, excluded from publishing
 - `tutorials.html` — tutorial overview, automatically populated from tutorial pages
 - `tutorials/` — individual tutorial pages (Markdown)
+
+## Research groups (kg)
+
+The **Research Group(kg)** navigation item opens `/kg/`. Edit `_data/kg.yml`
+to add groups under `active` or `past`. Each entry requires a `name` and can
+include `japanese_name`, `description`, `website`, `period`, `members`, and
+`topics`. The last two fields are lists. See the commented examples in the file.
+
+Set `website` to the group's external URL or an existing local page path.
+Omit it until the group website is ready; no placeholder link will appear.
+To archive a group, move its entire entry from `active` to `past` and update
+its `period`. The directory and local search index update during the next build.
 
 ## Add a tutorial
 

@@ -23,6 +23,14 @@ permalink: /assets/data/search.json
       {% endfor %}{% endfor %}
     {% endcapture %}
   {% endif %}
+  {% if entry.path == "kg.html" %}
+    {% capture page_text %}
+      {{ entry.description }}
+      {% for category in site.data.kg %}{% for group in category[1] %}
+      {{ group.name }} {{ group.japanese_name }} {{ group.description }} {{ group.members | join: ' ' }} {{ group.topics | join: ' ' }} {{ group.period }}
+      {% endfor %}{% endfor %}
+    {% endcapture %}
+  {% endif %}
   {
     "title": {{ entry.title | default: site.title | jsonify }},
     "url": {{ entry.url | relative_url | jsonify }},
