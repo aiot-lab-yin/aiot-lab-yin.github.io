@@ -16,6 +16,10 @@
   {% if include.publication.note %}
   <div class="pub-note">{{ include.publication.note }}</div>
   {% endif %}
+  {% if include.publication.revision %}
+  <div class="pub-note">{{ include.publication.revision }}</div>
+  {% endif %}
+
 
   {% if include.publication.awards and include.publication.awards.size > 0 %}
   <div class="pub-awards">
