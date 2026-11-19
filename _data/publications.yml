@@ -61,8 +61,8 @@
   status: "published"
   projects:
     - "wireless-rf-fingerprinting"
-  note: "Large-scale same-model Wi-Fi RF fingerprinting dataset with 123 IEEE 802.11g devices, 35.42 million raw I/Q samples, 1.85 million RF features, and a fully reproducible open-source evaluation framework."
-
+  note: "Large-scale same-model Wi-Fi RF fingerprinting dataset with 123 IEEE 802.11g devices, 35 million raw I/Q samples, 1.7 million RF features, and a fully reproducible open-source evaluation framework."
+  revision: 'Author-revised version (v2, November 2026): the dataset and feature computation were corrected and the benchmark rerun. <a href="/assets/docs/Smorffi-revised-2026-11.pdf">Download the revised manuscript</a>.'
   
 # 2025年出版物
 - year: 2025
